@@ -1,0 +1,18 @@
+---
+title: "Your article title"
+author: "Tian"
+date: 2026-10-10
+categories: [Mathematics, Harmonic Analysis]
+description: "A short description for the essay index."
+draft: true
+---
+
+Write your introduction here.
+
+## First idea
+
+Use inline mathematics such as $e^{ix\cdot\xi}$ and display mathematics:
+
+$$
+\widehat{(v\cdot\nabla)f}(\xi)=i(v\cdot\xi)\hat f(\xi).
+$$
