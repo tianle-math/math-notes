@@ -41,9 +41,16 @@ class Page(HTMLParser):
         self.h1 = 0
         self.math = 0
         self.active_external = []
+        self.elements = []
+        self.has_content = False
 
     def handle_starttag(self, tag, attrs):
+        self.elements.append(tag)
         attrs = dict(attrs)
+        # Quarto's `draft-mode: gone` emits only an empty <html> element.
+        # Do not accept attributes that could turn that placeholder into content.
+        if tag != "html" or set(attrs) - {"xmlns", "lang", "xml:lang"}:
+            self.has_content = True
         if attrs.get("id"):
             self.ids.add(attrs["id"])
         self.h1 += tag == "h1"
@@ -56,6 +63,13 @@ class Page(HTMLParser):
             active = attrs.get("href")
         if active and (urlsplit(active).scheme in ("http", "https") or active.startswith("//")):
             self.active_external.append(active)
+
+    def handle_data(self, data):
+        if data.strip():
+            self.has_content = True
+
+    def handle_comment(self, data):
+        self.has_content = True
 
 
 if MODE == "source":
@@ -73,7 +87,8 @@ elif MODE == "output":
         page = Page()
         page.feed(scan(path))
         pages[path.resolve()] = page
-        if page.h1 != 1:
+        empty_placeholder = page.elements == ["html"] and not page.has_content
+        if page.h1 != 1 and not empty_placeholder:
             fail(path, f"expected one main heading, found {page.h1}")
         if page.active_external:
             fail(path, "external active resource")
