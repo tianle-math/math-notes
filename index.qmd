@@ -1,0 +1,56 @@
+---
+pagetitle: "Notes on Analysis — Mathematical essays"
+description: "An open notebook of mathematical ideas, from the geometry of frequency to harmonic analysis."
+toc: false
+page-layout: full
+listing:
+  id: essays
+  contents: essays
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  date-format: "DD MMM YYYY"
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 0px
+---
+
+::: {.notebook-hero}
+::: {.hero-copy}
+::: {.eyebrow}
+AN OPEN MATHEMATICAL NOTEBOOK
+:::
+
+# Simple ideas.<br>Deeper structures. {.hero-title}
+
+Essays on harmonic analysis and the geometry behind its proofs. A place to follow an idea carefully, from its first intuition to what it makes possible.
+
+[Read the first essay →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
+:::
+
+::: {.hero-figure}
+![Parallel phase lines of a plane wave, with a frequency vector normal to the lines.](assets/phase-geometry.svg){width=560 height=400}
+:::
+:::
+
+::: {.section-kicker}
+## Latest writing {#latest-writing}
+
+One idea at a time.
+:::
+
+::: {#essays}
+:::
+
+::: {.series-note}
+::: {.eyebrow}
+THE FIRST SERIES
+:::
+
+### The geometry of frequency
+
+A series building from Fourier atoms, direction, and scale toward Seeger's work on singular integrals.
+
+[Explore the series →](series.qmd){.reading-link}
+:::

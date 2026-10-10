@@ -1,0 +1,24 @@
+---
+title: "The geometry of frequency"
+subtitle: "From elementary observations to harmonic analysis"
+description: "Follow the series on the geometric meaning of frequency in Fourier analysis."
+toc: false
+---
+
+The first essay begins with a single Fourier atom. It asks what a frequency vector actually tells us about a function: its directions of variation, its phase surfaces, and its spatial scale.
+
+The planned series will gradually connect these basic ideas to Seeger's work on singular integrals.
+
+::: {.series-entry}
+::: {.eyebrow}
+PART I · OCTOBER 10, 2026
+:::
+
+## [The Basic Geometric Meaning of Frequency in Fourier Analysis (1)](essays/fourier-frequency-geometry-1.qmd)
+
+Fourier atoms and frequency · Directional smoothness and frequency localization · Spatial scale versus frequency scale.
+
+[Read the essay →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
+:::
+
+Further essays will appear here as they are published.

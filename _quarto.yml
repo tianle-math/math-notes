@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - series.qmd
+    - 404.qmd
+    - essays/*.qmd
+  resources:
+    - assets/*.svg
+
+website:
+  title: "Notes on Analysis"
+  description: "Mathematical essays on harmonic analysis, frequency, and the ideas behind the proofs."
+  favicon: assets/favicon.svg
+  search: false
+  navbar:
+    background: light
+    pinned: false
+    title: "Notes on Analysis"
+    left:
+      - href: index.qmd
+        text: Essays
+      - href: series.qmd
+        text: Fourier geometry
+  page-footer:
+    left: "Notes on Analysis · Mathematical essays"
+    right: "Written by Tian"
+  open-graph: true
+  twitter-card: false
+  draft-mode: unlinked
+
+format:
+  html:
+    theme:
+      - default
+      - assets/styles.scss
+    lang: en
+    toc: true
+    toc-title: "On this page"
+    toc-depth: 2
+    number-sections: false
+    anchor-sections: true
+    smooth-scroll: false
+    html-math-method: mathml
+    code-copy: true
+    code-tools: false
+    link-external-newwindow: false
+    date-format: "MMMM D, YYYY"
+    include-in-header: assets/head.html
+    grid:
+      sidebar-width: 200px
+      body-width: 790px
+      margin-width: 240px
+      gutter-width: 2rem
+
+execute:
+  enabled: false
+
+editor: source
