@@ -28,7 +28,7 @@ website:
     right: "Written by Tian"
   open-graph: true
   twitter-card: false
-  draft-mode: unlinked
+  draft-mode: gone
 
 format:
   html:
