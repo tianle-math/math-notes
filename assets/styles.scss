@@ -63,6 +63,10 @@ math[display="block"] { margin: 0; min-width: min-content; }
 .hero-figure p, .hero-figure figure { margin: 0; }
 .hero-figure .quarto-figure { margin: 0; }
 .hero-figure figcaption { display: none; }
+// Keep the longer English home-page heading within the existing hero columns.
+@media (min-width: 851px) {
+  body:has(.topic-grid) .hero-title > h1, body:has(.topic-grid) h1.hero-title { font-size: clamp(1.95rem, 3.25vw, 3rem); line-height: 1.15; }
+}
 // Section illustrations retain their full composition, including formula annotations.
 .hero-figure img { aspect-ratio: 4 / 3; object-fit: contain; }
 .topic-artwork { margin: 1.05rem 0 1.25rem; }
