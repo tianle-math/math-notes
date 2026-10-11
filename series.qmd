@@ -1,15 +1,15 @@
 ---
-title: "频率的几何意义"
-subtitle: "调和分析 · 阅读系列"
-description: "从傅里叶原子出发，理解频率的方向、等相位面与空间尺度。"
+title: "The Geometry of Frequency"
+subtitle: "Harmonic Analysis · Reading Series"
+description: "Starting with Fourier atoms, explore frequency direction, surfaces of constant phase, and spatial scale."
 toc: false
 ---
 
 ::: {.page-breadcrumb}
-[首页](index.qmd) / [调和分析](harmonic-analysis.qmd) / 频率的几何意义
+[Home](index.qmd) / [Harmonic Analysis](harmonic-analysis.qmd) / The Geometry of Frequency
 :::
 
-频率不只是一个描述“快慢”的数字。这个系列从单个傅里叶原子出发，观察频率向量如何编码函数的变化方向、等相位面与空间尺度。
+Frequency is more than a number describing how fast something changes. This series starts with a single Fourier atom and explores how the frequency vector encodes the direction of variation, surfaces of constant phase, and spatial scale.
 
 ::: {.series-entry}
 ::: {.eyebrow}
@@ -18,9 +18,9 @@ PART I · 2026-10-10
 
 ## [The Basic Geometric Meaning of Frequency in Fourier Analysis (1)](essays/fourier-frequency-geometry-1.qmd)
 
-傅里叶原子与频率 · 方向上的光滑性与频率局部化 · 空间尺度与频率尺度。
+Fourier atoms and frequency · Directional smoothness and frequency localization · Spatial scale versus frequency scale.
 
-[阅读全文 →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
+[Read the full article →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
 :::
 
-后续文章发表后会整理到这里。
+Further articles will appear here as they are published.

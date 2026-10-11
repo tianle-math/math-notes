@@ -1,7 +1,7 @@
 ---
-title: "算子代数"
+title: "Operator Algebras"
 subtitle: "OPERATOR ALGEBRAS"
-description: "从 Hilbert 空间上的算子出发，梳理 C* 代数与 von Neumann 代数的语言和例子。"
+description: "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces."
 toc: false
 listing:
   id: essays
@@ -19,18 +19,22 @@ listing:
 ---
 
 ::: {.page-breadcrumb}
-[首页](index.qmd) / 数学笔记 / 算子代数
+[Home](index.qmd) / Mathematical Notes / Operator Algebras
 :::
 
-从 Hilbert 空间上的算子出发，梳理 C* 代数与 von Neumann 代数的语言和例子。
+Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.
+
+<div class="category-artwork">
+<img src="assets/operator-algebras.webp" alt="Spectral projections and the spectral decomposition of an operator." width="1448" height="1086" loading="eager" decoding="async">
+</div>
 
 ::: {.empty-note}
-笔记会陆续整理在这里。
+Notes will be added here over time.
 :::
 
-## 文章与笔记
+## Articles & Notes
 
 ::: {#essays}
 :::
 
-[返回首页，浏览其他主题 →](index.qmd#mathematical-notes){.reading-link}
+[Return home to explore other topics →](index.qmd#mathematical-notes){.reading-link}

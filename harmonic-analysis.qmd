@@ -1,6 +1,6 @@
 ---
-pagetitle: "调和分析"
-description: "关于频率、振荡、尺度与函数结构的笔记，从傅里叶分析的基本直觉逐步展开。"
+pagetitle: "Harmonic Analysis"
+description: "Notes on frequency, oscillation, scale, and the structure of functions, starting with the basic intuitions of Fourier analysis."
 toc: false
 page-layout: full
 listing:
@@ -19,7 +19,7 @@ listing:
 ---
 
 ::: {.page-breadcrumb}
-[首页](index.qmd) / 数学笔记 / 调和分析
+[Home](index.qmd) / Mathematical Notes / Harmonic Analysis
 :::
 
 ::: {.notebook-hero}
@@ -28,22 +28,22 @@ listing:
 MATHEMATICAL NOTES · HARMONIC ANALYSIS
 :::
 
-# 调和分析 {.hero-title}
+# Harmonic Analysis {.hero-title}
 
-在频率、振荡与尺度之间，寻找理解函数的不同方式。这里收录关于傅里叶分析及相关主题的笔记，从基本概念的直觉出发，逐步走向更细致的论证。
+Exploring different ways to understand functions through frequency, oscillation, and scale. These notes on Fourier analysis and related topics begin with the intuition behind basic concepts and develop toward more detailed arguments.
 
-[从频率的几何意义读起 →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
+[Start with the geometry of frequency →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
 :::
 
 ::: {.hero-figure}
-![平面波的等相位线，以及与它们垂直的频率向量。](assets/phase-geometry.svg){width=560 height=400}
+<img src="assets/harmonic-analysis.webp" alt="A wave decomposed into Fourier modes and a frequency spectrum." width="1448" height="1086" loading="eager" decoding="async">
 :::
 :::
 
 ::: {.section-kicker}
-## 文章与笔记
+## Articles & Notes
 
-从一个直觉，走向一个清楚的解释。
+From an intuition to a clear explanation.
 :::
 
 ::: {#essays}
@@ -54,9 +54,9 @@ MATHEMATICAL NOTES · HARMONIC ANALYSIS
 READING SERIES
 :::
 
-### 频率的几何意义
+### The Geometry of Frequency
 
-从单个傅里叶原子出发，观察频率如何描述方向、变化与空间尺度。
+Starting with a single Fourier atom, explore how frequency describes direction, variation, and spatial scale.
 
-[按系列阅读 →](series.qmd){.reading-link}
+[Read the series →](series.qmd){.reading-link}
 :::

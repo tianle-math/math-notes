@@ -1,7 +1,7 @@
 ---
-title: "鞅论"
+title: "Martingale Theory"
 subtitle: "MARTINGALE THEORY"
-description: "围绕条件期望、鞅与停时，记录随机过程中的基本概念、收敛与不等式。"
+description: "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes."
 toc: false
 listing:
   id: essays
@@ -19,18 +19,22 @@ listing:
 ---
 
 ::: {.page-breadcrumb}
-[首页](index.qmd) / 数学笔记 / 鞅论
+[Home](index.qmd) / Mathematical Notes / Martingale Theory
 :::
 
-围绕条件期望、鞅与停时，记录随机过程中的基本概念、收敛与不等式。
+Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.
+
+<div class="category-artwork">
+<img src="assets/martingales.webp" alt="Conditional expectation along a martingale path through an increasing filtration." width="1448" height="1086" loading="eager" decoding="async">
+</div>
 
 ::: {.empty-note}
-笔记会陆续整理在这里。
+Notes will be added here over time.
 :::
 
-## 文章与笔记
+## Articles & Notes
 
 ::: {#essays}
 :::
 
-[返回首页，浏览其他主题 →](index.qmd#mathematical-notes){.reading-link}
+[Return home to explore other topics →](index.qmd#mathematical-notes){.reading-link}

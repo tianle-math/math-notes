@@ -11,11 +11,11 @@ description: "Fourier atoms, directional variation, and the reciprocal relations
 ---
 
 ::: {.page-breadcrumb}
-[首页](../index.qmd) / [调和分析](../harmonic-analysis.qmd) / [频率的几何意义](../series.qmd)
+[Home](../index.qmd) / [Harmonic Analysis](../harmonic-analysis.qmd) / [The Geometry of Frequency](../series.qmd)
 :::
 
 <details class="article-mobile-toc">
-<summary>On this page · 文章目录</summary>
+<summary>On this page</summary>
 
 - [Fourier atoms and frequency](#fourier-atoms-and-frequency)
 - [Directional smoothness and frequency localization](#directional-smoothness-and-frequency-localization)
