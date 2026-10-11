@@ -123,6 +123,12 @@ math[display="block"] { margin: 0; min-width: min-content; }
 .series-entry h2 { margin-top: 0; border: 0; font-size: 1.7rem; }
 .series-entry .eyebrow p { margin-bottom: 1rem; }
 .nav-footer { max-width: 1220px; margin: auto; border-top: 1px solid var(--rule); font-family: system-ui, sans-serif; font-size: .67rem; color: var(--muted); padding: 1.3rem 1.6rem; }
+.nav-footer:has(.copyright-notice) > .nav-footer-left, .nav-footer:has(.copyright-notice) > .nav-footer-right { display: none; }
+.nav-footer:has(.copyright-notice) > .nav-footer-center { flex: 1 1 100%; min-width: 0; margin: 0; order: 0; }
+.copyright-notice { max-width: 1040px; margin: 0 auto; text-align: left; font-size: .76rem; line-height: 1.7; }
+.copyright-notice p { margin: 0 0 .5rem; }
+.copyright-notice p:last-child { margin-bottom: 0; }
+.copyright-line { color: var(--ink); }
 @media (max-width: 850px) {
   .notebook-hero { grid-template-columns: 1fr; gap: 2rem; margin: 2rem 0 2.8rem; }
   .hero-copy > p, .hero-copy > section > p { max-width: 620px; }
