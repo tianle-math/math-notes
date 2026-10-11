@@ -3,6 +3,11 @@ project:
   output-dir: _site
   render:
     - index.qmd
+    - harmonic-analysis.qmd
+    - martingales.qmd
+    - operator-algebras.qmd
+    - functional-analysis.qmd
+    - personal.qmd
     - series.qmd
     - 404.qmd
     - essays/*.qmd
@@ -10,21 +15,31 @@ project:
     - assets/*.svg
 
 website:
-  title: "Notes on Analysis"
-  description: "Mathematical essays on harmonic analysis, frequency, and the ideas behind the proofs."
+  title: "Tian · 数学与随笔"
+  description: "Tian 的公开笔记：调和分析、鞅论、算子代数、泛函分析，以及杂谈与随笔。"
   favicon: assets/favicon.svg
   search: false
   navbar:
     background: light
     pinned: false
-    title: "Notes on Analysis"
+    title: "Tian · 数学与随笔"
     left:
       - href: index.qmd
-        text: Essays
-      - href: series.qmd
-        text: Fourier geometry
+        text: 首页
+      - text: 数学笔记
+        menu:
+          - href: harmonic-analysis.qmd
+            text: 调和分析
+          - href: martingales.qmd
+            text: 鞅论
+          - href: operator-algebras.qmd
+            text: 算子代数
+          - href: functional-analysis.qmd
+            text: 泛函分析
+      - href: personal.qmd
+        text: 杂谈与随笔
   page-footer:
-    left: "Notes on Analysis · Mathematical essays"
+    left: "数学笔记 · 杂谈与随笔"
     right: "Written by Tian"
   open-graph: true
   twitter-card: false
@@ -35,9 +50,9 @@ format:
     theme:
       - default
       - assets/styles.scss
-    lang: en
+    lang: zh-CN
     toc: true
-    toc-title: "On this page"
+    toc-title: "本页目录"
     toc-depth: 2
     number-sections: false
     anchor-sections: true

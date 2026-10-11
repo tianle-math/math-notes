@@ -3,6 +3,8 @@ title: "Your article title"
 author: "Tian"
 date: 2026-10-10
 categories: [Mathematics, Harmonic Analysis]
+notebook-topic: harmonic-analysis
+lang: en
 description: "A short description for the essay index."
 draft: true
 ---

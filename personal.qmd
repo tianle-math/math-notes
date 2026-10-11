@@ -1,0 +1,36 @@
+---
+title: "杂谈与随笔"
+subtitle: "REFLECTIONS & ESSAYS"
+description: "给不必写成定理的想法留一个地方。这里收录阅读中的感受、日常的观察，以及数学之外的随笔。"
+toc: false
+listing:
+  id: essays
+  contents: essays
+  include:
+    notebook-topic: personal
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  date-format: "YYYY-MM-DD"
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 0px
+---
+
+::: {.page-breadcrumb}
+[首页](index.qmd) / 杂谈与随笔
+:::
+
+给不必写成定理的想法留一个地方。这里收录阅读中的感受、日常的观察，以及数学之外的随笔。
+
+::: {.empty-note}
+笔记会陆续整理在这里。
+:::
+
+## 文章与笔记
+
+::: {#essays}
+:::
+
+[返回首页，浏览其他主题 →](index.qmd#mathematical-notes){.reading-link}

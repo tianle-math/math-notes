@@ -1,0 +1,36 @@
+---
+title: "鞅论"
+subtitle: "MARTINGALE THEORY"
+description: "围绕条件期望、鞅与停时，记录随机过程中的基本概念、收敛与不等式。"
+toc: false
+listing:
+  id: essays
+  contents: essays
+  include:
+    notebook-topic: martingales
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  date-format: "YYYY-MM-DD"
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 0px
+---
+
+::: {.page-breadcrumb}
+[首页](index.qmd) / 数学笔记 / 鞅论
+:::
+
+围绕条件期望、鞅与停时，记录随机过程中的基本概念、收敛与不等式。
+
+::: {.empty-note}
+笔记会陆续整理在这里。
+:::
+
+## 文章与笔记
+
+::: {#essays}
+:::
+
+[返回首页，浏览其他主题 →](index.qmd#mathematical-notes){.reading-link}

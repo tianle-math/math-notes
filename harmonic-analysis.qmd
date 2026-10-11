@@ -1,0 +1,62 @@
+---
+pagetitle: "调和分析"
+description: "关于频率、振荡、尺度与函数结构的笔记，从傅里叶分析的基本直觉逐步展开。"
+toc: false
+page-layout: full
+listing:
+  id: essays
+  contents: essays
+  include:
+    notebook-topic: harmonic-analysis
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  date-format: "YYYY-MM-DD"
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 0px
+---
+
+::: {.page-breadcrumb}
+[首页](index.qmd) / 数学笔记 / 调和分析
+:::
+
+::: {.notebook-hero}
+::: {.hero-copy}
+::: {.eyebrow}
+MATHEMATICAL NOTES · HARMONIC ANALYSIS
+:::
+
+# 调和分析 {.hero-title}
+
+在频率、振荡与尺度之间，寻找理解函数的不同方式。这里收录关于傅里叶分析及相关主题的笔记，从基本概念的直觉出发，逐步走向更细致的论证。
+
+[从频率的几何意义读起 →](essays/fourier-frequency-geometry-1.qmd){.reading-link}
+:::
+
+::: {.hero-figure}
+![平面波的等相位线，以及与它们垂直的频率向量。](assets/phase-geometry.svg){width=560 height=400}
+:::
+:::
+
+::: {.section-kicker}
+## 文章与笔记
+
+从一个直觉，走向一个清楚的解释。
+:::
+
+::: {#essays}
+:::
+
+::: {.series-note}
+::: {.eyebrow}
+READING SERIES
+:::
+
+### 频率的几何意义
+
+从单个傅里叶原子出发，观察频率如何描述方向、变化与空间尺度。
+
+[按系列阅读 →](series.qmd){.reading-link}
+:::

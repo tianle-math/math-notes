@@ -1,6 +1,6 @@
-# Notes on Analysis
+# Tian · 数学与随笔
 
-A Quarto website for mathematical essays. The first essay is **The Basic Geometric Meaning of Frequency in Fourier Analysis (1)**, credited to the byline **Tian** supplied in the manuscript.
+A Quarto website for mathematical notes, reflections, and essays. The first essay is **The Basic Geometric Meaning of Frequency in Fourier Analysis (1)**, credited to the byline **Tian** supplied in the manuscript.
 
 ## 本地预览
 
@@ -32,7 +32,9 @@ quarto render
 
 首篇文章位于 `essays/fourier-frequency-geometry-1.qmd`。修改它并保存即可更新本地预览；提交并推送后，线上网页自动更新。
 
-新增文章时，将 `templates/article.qmd` 复制到 `essays/`，改成只含英文小写字母、数字和短横线的文件名，填写标题、日期、简介和正文。确认准备好发表后，把 `draft: true` 改成 `draft: false`。文章目录会自动收录。
+新增文章时，将 `templates/article.qmd` 复制到 `essays/`，改成只含英文小写字母、数字和短横线的文件名，填写标题、日期、简介和正文。确认准备好发表后，把 `draft: true` 改成 `draft: false`。总首页与对应分类页会自动收录。
+
+文章的 `notebook-topic` 选择一个分类值：`harmonic-analysis`（调和分析）、`martingales`（鞅论）、`operator-algebras`（算子代数）、`functional-analysis`（泛函分析）或 `personal`（杂谈与随笔）。`categories` 是读者可见的标签；`lang` 按正文语言设为 `en` 或 `zh-CN`。新增文章应附上首页和所属分类页的返回链接。长文如需手机折叠目录，可参考首篇文章的 `article-mobile-toc`，并让目录链接与章节保持一致。
 
 生产构建使用 `draft-mode: gone`：`draft: true` 的文章只生成空白占位页，不发布正文，也不出现在文章目录、搜索索引或站点地图中；其网址可能仍存在。本地 `quarto preview` 仍会显示草稿。不要把私人草稿提交到公开仓库：这些设置只控制生成的网站，不保护公开仓库里的源码。
 
@@ -59,7 +61,10 @@ python scripts/check-site.py output
 
 ## 页面
 
-- `index.qmd`：首页与自动文章目录。
+- `index.qmd`：总首页、四个数学分类、杂谈入口与最近更新。
+- `harmonic-analysis.qmd`：调和分析分类与文章目录。
+- `martingales.qmd`、`operator-algebras.qmd`、`functional-analysis.qmd`：鞅论、算子代数、泛函分析分类。
+- `personal.qmd`：杂谈与随笔。
 - `series.qmd`：傅里叶频率几何系列索引。
 - `essays/`：正式文章。
 - `assets/styles.scss`：页面样式。

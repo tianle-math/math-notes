@@ -30,7 +30,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #a88235; outline-offs
 .navbar-toggler { border: 0; }
 #quarto-content { padding-top: 1rem; }
 body:has(.notebook-hero) #title-block-header { display: none; }
-main { padding-bottom: 3rem; }
+main { min-width: 0; padding-bottom: 3rem; }
+main > section { min-width: 0; }
 #title-block-header { margin: 2.25rem 0 2.8rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
 #title-block-header h1 { font-size: clamp(2.15rem, 4.4vw, 3.25rem); line-height: 1.17; letter-spacing: -.035em; max-width: 850px; }
 #title-block-header .subtitle { color: var(--muted); font-size: 1.1rem; margin-top: 1rem; }
@@ -43,14 +44,15 @@ main p { margin-bottom: 1.25rem; }
 main h2 { font-size: 1.75rem; line-height: 1.3; letter-spacing: -.02em; margin-top: 3rem; padding-bottom: .7rem; border-color: var(--rule); }
 main h3 { font-size: 1.45rem; line-height: 1.35; margin-top: 1.5rem; }
 hr { border-top: 1px solid var(--rule); opacity: 1; margin: 2.5rem 0; }
-.math.display { display: block; overflow-x: auto; padding: 1.05rem .75rem; margin: 1.35rem 0; background: #f0f2eb; border-radius: 4px; text-align: center; }
+.math.display { display: block; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; padding: 1.05rem .75rem; margin: 1.35rem 0; background: #f0f2eb; border-radius: 4px; text-align: center; }
 math { font-family: "Cambria Math", "STIX Two Math", "Latin Modern Math", math; font-size: 1.03em; }
 math[display="block"] { margin: 0; min-width: min-content; }
 #quarto-margin-sidebar { padding-top: 3rem; }
 #TOC { font-family: system-ui, sans-serif; font-size: .76rem; line-height: 1.65; }
 #TOC .nav-link { padding-block: .4rem; }
 #TOC #toc-title { font-size: .64rem; text-transform: uppercase; letter-spacing: .15em; color: var(--muted); margin-bottom: .8rem; }
-.notebook-hero { max-width: 1140px; margin: 3.5rem auto 3.9rem; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 3.5rem; }
+.notebook-hero { max-width: 1140px; margin: 3.5rem auto 3.9rem; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: 3.5rem; }
+.notebook-hero > * { min-width: 0; }
 .eyebrow { font-family: system-ui, sans-serif; font-size: .62rem; line-height: 1.5; letter-spacing: .18em; color: var(--muted); }
 .eyebrow p { margin-bottom: 1.4rem; }
 .hero-title > h1, h1.hero-title { font-size: clamp(2.8rem, 4.8vw, 4.1rem); line-height: 1.07; font-weight: 400; letter-spacing: -.045em; margin: 0 0 1.55rem; }
@@ -73,10 +75,26 @@ math[display="block"] { margin: 0; min-width: min-content; }
 .quarto-post .listing-title { font-size: 1.75rem; font-weight: 400; letter-spacing: -.025em; line-height: 1.27; max-width: 790px; }
 .quarto-post .listing-description { font-size: .95rem; color: #59675e; max-width: 780px; }
 .quarto-post .listing-categories { margin-block: .9rem !important; }
-.series-note { max-width: 1140px; margin: 2.8rem auto 0; padding: 2rem 2.25rem; background: #edf1e8; border-left: 2px solid #88a38b; }
-.series-note h3 { margin-top: 0; font-size: 1.65rem; }
-.series-note .eyebrow p { margin-bottom: .8rem; }
-.series-note > p { max-width: 710px; font-size: .97rem; margin-bottom: 1rem; }
+.series-note, .personal-note { max-width: 1140px; margin: 2.8rem auto 0; padding: 2rem 2.25rem; background: #edf1e8; border-left: 2px solid #88a38b; }
+.series-note h3, .personal-note h3 { margin-top: 0; font-size: 1.65rem; }
+.personal-note { margin-bottom: 2.8rem; }
+.personal-note h2 { margin: 0 0 1rem; padding: 0; border: 0; font-size: 1.65rem; }
+.series-note .eyebrow p, .personal-note .eyebrow p { margin-bottom: .8rem; }
+.series-note > p, .series-note > section > p, .personal-note > p, .personal-note > section > p { max-width: 710px; font-size: .97rem; margin-bottom: 1rem; }
+.topic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3.5rem; max-width: 1140px; margin: 0 auto; }
+.topic-card { min-width: 0; padding: 2rem 0; border-bottom: 1px solid var(--rule); }
+.topic-card .eyebrow p { margin-bottom: .8rem; }
+.topic-card h3 { margin: 0 0 .9rem; font-size: 1.65rem; }
+.topic-card h3 a { color: var(--ink); text-decoration: none; }
+.topic-card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.topic-card > p, .topic-card > section > p { max-width: 490px; font-size: .97rem; color: #59675e; }
+.topic-card p:last-child { margin-bottom: 0; }
+.page-breadcrumb { max-width: 1140px; margin: .8rem auto 1.5rem; font-family: system-ui, sans-serif; font-size: .72rem; line-height: 1.7; color: var(--muted); }
+.page-breadcrumb p { margin-bottom: 0; }
+.page-breadcrumb a { display: inline-block; padding-block: .3rem; }
+.empty-note { margin: 2rem 0; padding: 1.4rem 0; border-block: 1px solid var(--rule); color: var(--muted); }
+.empty-note p:last-child { margin-bottom: 0; }
+.article-mobile-toc { display: none; }
 .series-entry { margin-block: 2.5rem; padding: 2rem 0; border-block: 1px solid var(--rule); }
 .series-entry h2 { margin-top: 0; border: 0; font-size: 1.7rem; }
 .series-entry .eyebrow p { margin-bottom: 1rem; }
@@ -89,18 +107,52 @@ math[display="block"] { margin: 0; min-width: min-content; }
   .navbar .navbar-nav { margin: .8rem 0 0 !important; }
   #title-block-header { margin-top: 1.4rem; }
   .section-kicker { padding-top: 1rem; }
-  .series-note { padding: 1.5rem; }
+  .series-note, .personal-note { padding: 1.5rem; }
+}
+@media (max-width: 767.98px) {
+  body { font-size: 16px; }
+  // Keep Quarto's grid landmarks while giving small screens comfortable gutters.
+  #quarto-content.page-columns {
+    grid-template-columns: [screen-start] 18px [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] 18px [screen-end];
+  }
+  #quarto-document-content { width: 100%; }
+  main p { line-height: 1.8; margin-bottom: 1.1rem; }
+  #title-block-header { margin-bottom: 2rem; padding-bottom: 1.5rem; }
+  #title-block-header h1 { font-size: 1.6rem; line-height: 1.24; }
+  #title-block-header .subtitle { font-size: .95rem; }
+  main h2 { margin-top: 2.4rem; font-size: 1.25rem; }
+  main h3 { font-size: 1.15rem; }
+  .hero-title > h1, h1.hero-title { font-size: 1.9rem; line-height: 1.2; }
+  .hero-copy > p, .hero-copy > section > p { font-size: 1em; }
+  .topic-grid { grid-template-columns: minmax(0, 1fr); }
+  .topic-card { padding: 1.6rem 0; }
+  .topic-card h3, .series-note h3, .personal-note h3 { font-size: 1.4rem; }
+  .personal-note h2 { font-size: 1.4rem; }
+  .topic-card > p, .topic-card > section > p { max-width: none; font-size: 1em; }
+  .page-breadcrumb { margin-top: .2rem; }
+  .series-note, .personal-note { padding: 1.35rem 1rem; }
+  .series-note > p, .series-note > section > p, .personal-note > p, .personal-note > section > p, .quarto-post .listing-description { font-size: 1em; }
+  .math.display { padding-inline: .5rem; }
+  // Native MathML has no .math wrapper; scroll long equations inside their paragraph.
+  main p:has(> math[display="block"]) { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+  math[display="block"] { font-size: .95em; }
+  .article-mobile-toc { display: block; margin: 0 0 1.8rem; padding-bottom: .7rem; border-bottom: 1px solid var(--rule); font-family: system-ui, sans-serif; font-size: .8rem; }
+  .article-mobile-toc summary { min-height: 44px; padding-block: .55rem; cursor: pointer; color: var(--accent); }
+  .article-mobile-toc summary:focus-visible { outline: 3px solid #a88235; outline-offset: 3px; }
+  .article-mobile-toc ul { margin: .4rem 0 .7rem; padding-left: 1.15rem; }
+  .article-mobile-toc a { display: inline-block; padding-block: .45rem; }
 }
 @media (max-width: 520px) {
-  body { font-size: 1.04rem; }
-  .hero-title > h1, h1.hero-title { font-size: 2.8rem; }
+  body { font-size: 15.5px; }
+  #title-block-header h1 { font-size: clamp(1.35rem, 6.25vw, 1.47rem); }
+  .hero-title > h1, h1.hero-title { font-size: 1.76rem; }
   .section-kicker { display: block; }
   .section-kicker > section { display: block; }
   .section-kicker p { margin-top: .5rem; }
-  .quarto-post .listing-title { font-size: 1.5rem; }
+  .quarto-post .listing-title { font-size: 1.32rem; }
   .quarto-listing-default .quarto-post { display: flex; flex-direction: column; gap: .8rem; }
   .quarto-post .metadata { order: -1; }
-  .math.display { font-size: .96em; padding-inline: .5rem; }
+  .math.display { font-size: .96em; }
   .nav-footer { align-items: flex-start; gap: .7rem; }
 }
 @media print {

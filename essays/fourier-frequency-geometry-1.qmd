@@ -3,9 +3,25 @@ title: "The Basic Geometric Meaning of Frequency in Fourier Analysis (1)"
 author: "Tian"
 date: 2026-10-10
 categories: [Mathematics, Harmonic Analysis]
+notebook-topic: harmonic-analysis
+lang: en
+toc-title: "On this page"
 subtitle: "Fourier geometry · Part I"
 description: "Fourier atoms, directional variation, and the reciprocal relationship between spatial scale and frequency."
 ---
+
+::: {.page-breadcrumb}
+[首页](../index.qmd) / [调和分析](../harmonic-analysis.qmd) / [频率的几何意义](../series.qmd)
+:::
+
+<details class="article-mobile-toc">
+<summary>On this page · 文章目录</summary>
+
+- [Fourier atoms and frequency](#fourier-atoms-and-frequency)
+- [Directional smoothness and frequency localization](#directional-smoothness-and-frequency-localization)
+- [Spatial scale versus frequency scale](#spatial-scale-versus-frequency-scale)
+
+</details>
 
 When I first encountered the concept of frequency in harmonic analysis, I had only a rough understanding of it.
 
