@@ -1,9 +1,9 @@
 ---
-title: "Page not found"
+title: "没有找到这个页面"
 toc: false
 search: false
 ---
 
-This page may have moved, or the address may be incomplete.
+页面可能已经移动，或者网址不完整。
 
-[Return to the essays](index.qmd)
+[返回首页](index.qmd)
