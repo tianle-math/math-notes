@@ -40,8 +40,11 @@ website:
       - href: personal.qmd
         text: Reflections & Essays
   page-footer:
-    left: "Mathematical Notes · Reflections & Essays"
-    right: "Written by Tian"
+    center: |
+      <div class="copyright-notice">
+      <p class="copyright-line">© 2026 <strong>Tian</strong>. All rights reserved.</p>
+      <p>Unless otherwise indicated, copyright-protected articles and illustrations may not be reproduced or redistributed without prior permission, except as permitted by applicable law. For quotations and citations, please credit Tian and link to the original page.</p>
+      </div>
   open-graph: true
   twitter-card: false
   draft-mode: gone
