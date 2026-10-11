@@ -1,6 +1,6 @@
 ---
-pagetitle: "Tian · 数学笔记、杂谈与随笔"
-description: "一个公开的个人笔记本，记录数学中的理解，也容纳阅读、思考与日常随笔。"
+pagetitle: "Tian · Mathematical Notes, Reflections & Essays"
+description: "An open personal notebook for mathematical understanding, reading, reflection, and everyday essays."
 toc: false
 page-layout: full
 listing:
@@ -22,22 +22,22 @@ listing:
 AN OPEN NOTEBOOK · BY TIAN
 :::
 
-# 从数学出发，<br>把思考写下来。 {.hero-title}
+# Starting with mathematics,<br>writing thoughts down. {.hero-title}
 
-这里收录我的数学笔记、杂谈与随笔。从一个概念的直觉，到一段证明的细节；从书页间的问题，到数学之外的思考。慢慢理解，也慢慢记录。
+Here I share my mathematical notes, reflections, and essays: from the intuition behind a concept to the details of a proof, from questions found in books to thoughts beyond mathematics. Understanding and writing, a little at a time.
 
-[浏览数学笔记 ↓](#mathematical-notes){.reading-link}
+[Browse mathematical notes ↓](#mathematical-notes){.reading-link}
 :::
 
 ::: {.hero-figure}
-![平面波的等相位线，以及与它们垂直的频率向量。](assets/phase-geometry.svg){width=560 height=400}
+<img src="assets/noncommutative-harmonic-analysis.webp" alt="Noncommutative Fourier transform: a group, its matrix-valued Fourier coefficients, and reconstruction." width="1448" height="1086" loading="eager" decoding="async">
 :::
 :::
 
 ::: {.section-kicker}
-## 数学笔记 {#mathematical-notes}
+## Mathematical Notes {#mathematical-notes}
 
-沿着不同的方向，理解彼此相连的数学。
+Exploring the connections between different branches of mathematics.
 :::
 
 ::: {.topic-grid}
@@ -46,11 +46,15 @@ AN OPEN NOTEBOOK · BY TIAN
 01 · HARMONIC ANALYSIS
 :::
 
-### [调和分析](harmonic-analysis.qmd)
+### [Harmonic Analysis](harmonic-analysis.qmd)
 
-从频率、振荡与尺度出发，理解函数的结构，以及傅里叶分析中的几何直觉。
+<div class="topic-artwork">
+<a href="harmonic-analysis.html"><img src="assets/harmonic-analysis.webp" alt="A wave decomposed into Fourier modes and a frequency spectrum." width="1448" height="1086" loading="lazy" decoding="async"></a>
+</div>
 
-[进入调和分析 →](harmonic-analysis.qmd){.reading-link}
+Exploring the structure of functions and the geometric intuition of Fourier analysis through frequency, oscillation, and scale.
+
+[Explore harmonic analysis →](harmonic-analysis.qmd){.reading-link}
 :::
 
 ::: {.topic-card}
@@ -58,11 +62,15 @@ AN OPEN NOTEBOOK · BY TIAN
 02 · MARTINGALE THEORY
 :::
 
-### [鞅论](martingales.qmd)
+### [Martingale Theory](martingales.qmd)
 
-围绕条件期望、鞅与停时，记录随机过程中的基本概念、收敛与不等式。
+<div class="topic-artwork">
+<a href="martingales.html"><img src="assets/martingales.webp" alt="Conditional expectation along a martingale path through an increasing filtration." width="1448" height="1086" loading="lazy" decoding="async"></a>
+</div>
 
-[进入鞅论 →](martingales.qmd){.reading-link}
+Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.
+
+[Explore martingale theory →](martingales.qmd){.reading-link}
 :::
 
 ::: {.topic-card}
@@ -70,11 +78,15 @@ AN OPEN NOTEBOOK · BY TIAN
 03 · OPERATOR ALGEBRAS
 :::
 
-### [算子代数](operator-algebras.qmd)
+### [Operator Algebras](operator-algebras.qmd)
 
-从 Hilbert 空间上的算子出发，梳理 C* 代数与 von Neumann 代数的语言和例子。
+<div class="topic-artwork">
+<a href="operator-algebras.html"><img src="assets/operator-algebras.webp" alt="Spectral projections and the spectral decomposition of an operator." width="1448" height="1086" loading="lazy" decoding="async"></a>
+</div>
 
-[进入算子代数 →](operator-algebras.qmd){.reading-link}
+Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.
+
+[Explore operator algebras →](operator-algebras.qmd){.reading-link}
 :::
 
 ::: {.topic-card}
@@ -82,11 +94,15 @@ AN OPEN NOTEBOOK · BY TIAN
 04 · FUNCTIONAL ANALYSIS
 :::
 
-### [泛函分析](functional-analysis.qmd)
+### [Functional Analysis](functional-analysis.qmd)
 
-关于赋范空间、线性算子与对偶性的笔记，关注抽象结构背后的具体理解。
+<div class="topic-artwork">
+<a href="functional-analysis.html"><img src="assets/functional-analysis.webp" alt="A normed space and its dual, with unit balls and supporting functionals." width="1448" height="1086" loading="lazy" decoding="async"></a>
+</div>
 
-[进入泛函分析 →](functional-analysis.qmd){.reading-link}
+Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.
+
+[Explore functional analysis →](functional-analysis.qmd){.reading-link}
 :::
 
 :::
@@ -96,17 +112,21 @@ AN OPEN NOTEBOOK · BY TIAN
 BEYOND MATHEMATICS
 :::
 
-## 杂谈与随笔
+## Reflections & Essays
 
-给不必写成定理的想法留一个地方：阅读中的感受、日常的观察，以及尚未成形的问题。
+<div class="personal-artwork">
+<a href="personal.html"><img src="assets/reflections.webp" alt="An open notebook with mathematical ideas and a path from questions to understanding." width="1448" height="1086" loading="lazy" decoding="async"></a>
+</div>
 
-[走进杂谈与随笔 →](personal.qmd){.reading-link}
+A place for thoughts that need not become theorems: reflections on reading, everyday observations, and questions still taking shape.
+
+[Explore reflections and essays →](personal.qmd){.reading-link}
 :::
 
 ::: {.section-kicker}
-## 最近更新 {#latest-writing}
+## Latest Updates {#latest-writing}
 
-每次记下一点理解。
+A little understanding, one entry at a time.
 :::
 
 ::: {#essays}

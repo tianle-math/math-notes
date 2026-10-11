@@ -13,33 +13,34 @@ project:
     - essays/*.qmd
   resources:
     - assets/*.svg
+    - assets/*.webp
 
 website:
-  title: "Tian · 数学与随笔"
-  description: "Tian 的公开笔记：调和分析、鞅论、算子代数、泛函分析，以及杂谈与随笔。"
+  title: "Tian · Mathematics & Essays"
+  description: "An open notebook by Tian: harmonic analysis, martingale theory, operator algebras, functional analysis, reflections, and essays."
   favicon: assets/favicon.svg
   search: false
   navbar:
     background: light
     pinned: false
-    title: "Tian · 数学与随笔"
+    title: "Tian · Mathematics & Essays"
     left:
       - href: index.qmd
-        text: 首页
-      - text: 数学笔记
+        text: Home
+      - text: Mathematical Notes
         menu:
           - href: harmonic-analysis.qmd
-            text: 调和分析
+            text: Harmonic Analysis
           - href: martingales.qmd
-            text: 鞅论
+            text: Martingale Theory
           - href: operator-algebras.qmd
-            text: 算子代数
+            text: Operator Algebras
           - href: functional-analysis.qmd
-            text: 泛函分析
+            text: Functional Analysis
       - href: personal.qmd
-        text: 杂谈与随笔
+        text: Reflections & Essays
   page-footer:
-    left: "数学笔记 · 杂谈与随笔"
+    left: "Mathematical Notes · Reflections & Essays"
     right: "Written by Tian"
   open-graph: true
   twitter-card: false
@@ -50,9 +51,9 @@ format:
     theme:
       - default
       - assets/styles.scss
-    lang: zh-CN
+    lang: en
     toc: true
-    toc-title: "本页目录"
+    toc-title: "On this page"
     toc-depth: 2
     number-sections: false
     anchor-sections: true

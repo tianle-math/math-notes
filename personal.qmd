@@ -1,7 +1,7 @@
 ---
-title: "杂谈与随笔"
+title: "Reflections & Essays"
 subtitle: "REFLECTIONS & ESSAYS"
-description: "给不必写成定理的想法留一个地方。这里收录阅读中的感受、日常的观察，以及数学之外的随笔。"
+description: "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics."
 toc: false
 listing:
   id: essays
@@ -19,18 +19,22 @@ listing:
 ---
 
 ::: {.page-breadcrumb}
-[首页](index.qmd) / 杂谈与随笔
+[Home](index.qmd) / Reflections & Essays
 :::
 
-给不必写成定理的想法留一个地方。这里收录阅读中的感受、日常的观察，以及数学之外的随笔。
+A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.
+
+<div class="category-artwork">
+<img src="assets/reflections.webp" alt="An open notebook with mathematical ideas and a path from questions to understanding." width="1448" height="1086" loading="eager" decoding="async">
+</div>
 
 ::: {.empty-note}
-笔记会陆续整理在这里。
+Notes will be added here over time.
 :::
 
-## 文章与笔记
+## Articles & Notes
 
 ::: {#essays}
 :::
 
-[返回首页，浏览其他主题 →](index.qmd#mathematical-notes){.reading-link}
+[Return home to explore other topics →](index.qmd#mathematical-notes){.reading-link}

@@ -1,7 +1,7 @@
 ---
-title: "泛函分析"
+title: "Functional Analysis"
 subtitle: "FUNCTIONAL ANALYSIS"
-description: "关于赋范空间、线性算子与对偶性的笔记，关注抽象结构背后的具体理解。"
+description: "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures."
 toc: false
 listing:
   id: essays
@@ -19,18 +19,22 @@ listing:
 ---
 
 ::: {.page-breadcrumb}
-[首页](index.qmd) / 数学笔记 / 泛函分析
+[Home](index.qmd) / Mathematical Notes / Functional Analysis
 :::
 
-关于赋范空间、线性算子与对偶性的笔记，关注抽象结构背后的具体理解。
+Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.
+
+<div class="category-artwork">
+<img src="assets/functional-analysis.webp" alt="A normed space and its dual, with unit balls and supporting functionals." width="1448" height="1086" loading="eager" decoding="async">
+</div>
 
 ::: {.empty-note}
-笔记会陆续整理在这里。
+Notes will be added here over time.
 :::
 
-## 文章与笔记
+## Articles & Notes
 
 ::: {#essays}
 :::
 
-[返回首页，浏览其他主题 →](index.qmd#mathematical-notes){.reading-link}
+[Return home to explore other topics →](index.qmd#mathematical-notes){.reading-link}
