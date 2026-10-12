@@ -89,11 +89,11 @@ GitHub Pages must use **GitHub Actions** as its build source. Pushing to `main`,
 
 ## Shared article discussions
 
-Embedded comments are prepared for Giscus backed by GitHub Discussions but are **not yet enabled**: the Giscus App still needs authorization and the discussion category ID is not configured. Article panels currently show a setup notice and an ordinary link to GitHub Discussions, without a nonfunctional **Load comments** button.
+Embedded comments use Giscus backed by GitHub Discussions in the **Announcements** category. The Giscus App is installed for this website repository only, with metadata read access and Discussions read/write access. Each article has a **Load comments** button and an ordinary GitHub Discussions link. A discussion is created when someone first comments or reacts; an empty discussion is a valid initial state.
 
-Once configured, the browser loads only local page code until a reader selects **Load comments**. That click connects to Giscus and GitHub; posting requires a GitHub account. Readers can also open the discussion on GitHub. The comment panel uses the service's mathematical-notation support.
+The browser loads only local page code until a reader selects **Load comments**. That click connects to Giscus and GitHub; posting requires a GitHub account. Readers can also open the discussion on GitHub. The comment panel uses the service's mathematical-notation support.
 
-The repository must be public, Discussions must be enabled, and the Giscus GitHub App must have access to this repository. To complete setup, authorize that app for the intended repository, choose its discussion category, and enter the verified category ID in `_i18n/giscus.json`. That file contains public repository and category names and IDs; these identifiers are configuration, not credentials. If those settings change, update the file and rebuild. The publication check permits the explicit pending state but rejects an enabled loader with incomplete configuration.
+The repository must be public, Discussions must be enabled, and the Giscus GitHub App must have access to this repository. The verified repository and category identifiers are recorded in `_i18n/giscus.json`. That file contains public repository and category names and IDs; these identifiers are configuration, not credentials. If those settings change, update the file and rebuild. The publication check permits the explicit pending state but rejects an enabled loader with incomplete configuration.
 
 Each article uses `article:<filename-without-extension>` as its stable discussion key. All three editions use that same key and point back to the canonical English URL, so changing languages does not create three separate discussions. Keep an article's filename unchanged to keep its existing thread. Discussion owners and moderators manage comments, deletion, locking, and moderation through GitHub. The website does not store commenter passwords or a private moderation token.
 
@@ -101,7 +101,7 @@ Each article uses `article:<filename-without-extension>` as its stable discussio
 
 The site uses the public byline **Tian**, a link to **X · @tianmathmath**, and a copyright notice. It does not add a school, private email address, home address, or an expanded personal biography. The public GitHub username remains visible in the Pages and repository URLs.
 
-Images, styling, fonts supplied by the site, and MathML rendering do not require a remote tracking or formula service. There is no analytics integration. The embedded comment service is currently disabled. Once enabled, its connection begins only when the reader opens the loader; the GitHub Discussions and X profile links are ordinary outbound links. Pages include a `no-referrer` policy. Hosting and comment services can still process their own access data.
+Images, styling, fonts supplied by the site, and MathML rendering do not require a remote tracking or formula service. There is no analytics integration. The embedded comment service connects only when the reader selects **Load comments**; the GitHub Discussions and X profile links are ordinary outbound links. Pages include a `no-referrer` policy. Hosting and comment services can still process their own access data.
 
 Do not commit API credentials, personal addresses, local user paths, or private drafts. The checks catch common patterns but cannot determine whether every sentence is appropriate for public release. Git author identity is separate from page content: use GitHub's privacy settings and a `noreply` author address for public commits. Never put the private address in the site configuration.
 
