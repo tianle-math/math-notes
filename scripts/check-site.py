@@ -76,6 +76,7 @@ class Page(HTMLParser):
         self.lang = ""
         self.language_links = []
         self.language_navs = 0
+        self.navbar_items = 0
         self.in_language_nav = False
         self.comments = []
         self.comment_buttons = 0
@@ -101,6 +102,8 @@ class Page(HTMLParser):
         if self.math_capture is not None:
             self.math_capture.append(("start", tag, tuple(sorted(attrs.items()))))
         classes = attrs.get("class", "").split()
+        if tag == "li" and "nav-item" in classes:
+            self.navbar_items += 1
         if tag == "nav" and "language-switch" in classes:
             self.language_navs += 1
             self.in_language_nav = True
@@ -207,6 +210,9 @@ def check_multilingual(pages, public_url):
             valid_langs = {hreflang, "zh"} if locale == "zh" else {hreflang}
             if page.lang not in valid_langs:
                 fail(path, "incorrect document language")
+            expected_navbar = json.loads((ROOT / "_i18n/ui.json").read_text(encoding="utf-8"))[locale]["website"]["navbar"]["left"]
+            if page.navbar_items != len(expected_navbar):
+                fail(path, "navigation entries were duplicated or omitted during profile merge")
             links = {a.get("hreflang"): a for a in page.language_links}
             if page.language_navs != 1 or len(page.language_links) != 3 or set(links) != set(LANGUAGES.values()):
                 fail(path, "expected one complete three-language switch")
@@ -223,7 +229,9 @@ def check_multilingual(pages, public_url):
             if original_page and not original_page.empty:
                 if page.math_blocks != original_page.math_blocks:
                     fail(path, "mathematical expressions differ from the English page")
-                missing = original_page.ids - page.ids
+                # Quarto derives dropdown IDs from localized navigation labels.
+                # Content anchors must remain stable; those UI IDs need not.
+                missing = {item for item in original_page.ids - page.ids if not item.startswith("nav-menu-")}
                 if missing:
                     fail(path, "translated page is missing original heading or element IDs")
             is_article = relative.parts[0] == "essays"

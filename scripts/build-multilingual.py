@@ -6,9 +6,11 @@ reviewed translation caches are never rewritten by this build.
 from __future__ import annotations
 
 import argparse
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -18,6 +20,84 @@ from i18n import ROOT, TranslationError, documents, ensure_caches, write_json
 
 ASSET_SUFFIXES = {".svg", ".webp", ".png", ".jpg", ".jpeg", ".gif", ".avif", ".ico",
                   ".css", ".scss", ".js", ".html", ".woff", ".woff2", ".ttf", ".otf", ".pdf"}
+
+
+def remove_yaml_block(source: str, path: tuple[str, ...]) -> str:
+    """Remove a block-mapping key only from a staged, indentation-based config.
+
+    Quarto concatenates profile arrays. A locale's navbar list must therefore
+    replace the base list before profile merging, rather than append to it.
+    The committed config remains intact for ordinary English-only previews.
+    """
+    result, stack, skipping = [], [], None
+    key_pattern = re.compile(r"^( *)([A-Za-z][\w-]*):(?:\s|$)")
+    for line in source.splitlines(keepends=True):
+        content = line.strip()
+        indent = len(line) - len(line.lstrip(" "))
+        if skipping is not None:
+            if not content or content.startswith("#") or indent > skipping:
+                continue
+            skipping = None
+        match = key_pattern.match(line)
+        if match:
+            while stack and stack[-1][0] >= indent:
+                stack.pop()
+            stack.append((indent, match.group(2)))
+            if tuple(key for _, key in stack) == path:
+                skipping = indent
+                continue
+        result.append(line)
+    return "".join(result)
+
+
+class Navigation(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.nav_depth = 0
+        self.label_depth = 0
+        self.current = []
+        self.labels = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "nav":
+            self.nav_depth += 1
+        if self.nav_depth and tag == "span" and "menu-text" in attrs.get("class", "").split():
+            self.label_depth = 1
+            self.current = []
+        elif self.label_depth and tag == "span":
+            self.label_depth += 1
+
+    def handle_endtag(self, tag):
+        if tag == "span" and self.label_depth:
+            self.label_depth -= 1
+            if self.label_depth == 0:
+                self.labels.append(" ".join("".join(self.current).split()))
+        if tag == "nav":
+            self.nav_depth = max(0, self.nav_depth - 1)
+
+    def handle_data(self, text):
+        if self.label_depth:
+            self.current.append(text)
+
+
+def verify_navigation(root: Path, locale: str, stage: Path) -> None:
+    """Catch profile-array concatenation in the actual rendered pages."""
+    ui = json.loads((root / "_i18n" / "ui.json").read_text(encoding="utf-8"))[locale]
+    navbar = ui.get("website", {}).get("navbar", {})
+    if "left" not in navbar:
+        return
+    expected = [item["text"] for side in ("left", "right") for item in navbar.get(side, []) if "text" in item]
+    output = root / "_site" if locale == "en" else root / "_site" / locale
+    for source in [*stage.glob("*.qmd"), *(stage / "essays").glob("*.qmd")]:
+        rendered = output / source.relative_to(stage).with_suffix(".html")
+        text = rendered.read_text(encoding="utf-8")
+        if "<body" not in text:  # Quarto's unpublished-draft placeholder.
+            continue
+        navigation = Navigation()
+        navigation.feed(text)
+        if navigation.labels != expected:
+            raise TranslationError(f"{locale}/{rendered.relative_to(output)}: navbar must contain exactly the locale's {len(expected)} labels")
 
 
 def configured_url(root: Path) -> str:
@@ -57,7 +137,12 @@ def prepare(root: Path, base_url: str) -> dict[str, Path]:
         if stage.exists():
             shutil.rmtree(stage)
         stage.mkdir(parents=True)
-        shutil.copy2(root / "_quarto.yml", stage / "_quarto.yml")
+        base_config = (root / "_quarto.yml").read_text(encoding="utf-8")
+        locale_navbar = ui[locale].get("website", {}).get("navbar", {})
+        for side in ("left", "right"):
+            if side in locale_navbar:
+                base_config = remove_yaml_block(base_config, ("website", "navbar", side))
+        (stage / "_quarto.yml").write_text(base_config, encoding="utf-8")
         publish = root / "_quarto-publish.yml"
         if publish.exists():
             shutil.copy2(publish, stage / publish.name)
@@ -96,6 +181,7 @@ def main() -> None:
     for locale, stage in stages.items():
         print(f"Rendering {locale}…", flush=True)
         subprocess.run([args.quarto, "render", "--profile", "publish,i18n"], cwd=stage, check=True)
+        verify_navigation(root, locale, stage)
     if not args.skip_finish:
         finish = root / "scripts" / "finish-site.py"
         if not finish.exists():

@@ -190,23 +190,44 @@ class BuildTests(unittest.TestCase):
             root = Path(tmp)
             source = "---\ntitle: Sample\n---\n\nA paragraph.\n"
             (root / "index.qmd").write_text(source, encoding="utf-8")
-            (root / "_quarto.yml").write_text("project:\n  type: website\n", encoding="utf-8")
+            base_config = ("project:\n  type: website\nwebsite:\n  navbar:\n    title: Tian\n"
+                           "    left:\n      - text: Home\n        href: index.qmd\n"
+                           "      - text: Notes\n        menu:\n          - text: Harmonic\n"
+                           "    right:\n      - text: Contact\n  page-footer: Footer\n")
+            (root / "_quarto.yml").write_text(base_config, encoding="utf-8")
             (root / "assets").mkdir()
             (root / "assets" / "main.css").write_text("body{}", encoding="utf-8")
             (root / "assets" / "private.key").write_text("not copied", encoding="utf-8")
             doc = i18n.Document(source, "index.qmd")
             for locale in i18n.LOCALES:
                 i18n.write_json(root / "_i18n" / f"{locale}.json", cache_for(doc, lambda x: x.replace("A paragraph.", "段落。")))
-            i18n.write_json(root / "_i18n" / "ui.json", {k: {} for k in ("en", "zh", "ja")})
+            navigation = {"left": [{"text": "Home"}, {"text": "Notes"}, {"text": "Essays"}], "right": []}
+            i18n.write_json(root / "_i18n" / "ui.json", {k: {"website": {"navbar": navigation}} for k in ("en", "zh", "ja")})
             stages = build.prepare(root, "https://example.test/math-notes/")
             self.assertEqual(list(stages), ["en", "zh", "ja"])
             self.assertEqual((root / "index.qmd").read_text(), source)
+            self.assertEqual((root / "_quarto.yml").read_text(), base_config)
             self.assertEqual((stages["en"] / "index.qmd").read_text(), source)
+            staged_config = (stages["zh"] / "_quarto.yml").read_text()
+            self.assertNotIn("left:", staged_config)
+            self.assertNotIn("right:", staged_config)
+            self.assertNotIn("- text:", staged_config)
+            self.assertIn("title: Tian", staged_config)
+            self.assertIn("page-footer: Footer", staged_config)
             self.assertFalse((stages["en"] / "assets" / "private.key").exists())
             self.assertTrue((stages["zh"] / "assets" / "main.css").exists())
             profile = json.loads((stages["ja"] / "_quarto-i18n.yml").read_text())
             self.assertEqual(profile["website"]["site-url"], "https://example.test/math-notes/ja/")
             self.assertEqual(Path(profile["project"]["output-dir"]), root / "_site" / "ja")
+            self.assertEqual(len(profile["website"]["navbar"]["left"]), 3)
+            rendered = root / "_site" / "ja" / "index.html"
+            rendered.parent.mkdir(parents=True)
+            three_labels = ''.join(f'<span class="menu-text">{v}</span>' for v in ["Home", "Notes", "Essays"])
+            rendered.write_text(f"<html><body><nav>{three_labels}</nav></body></html>")
+            build.verify_navigation(root, "ja", stages["ja"])
+            rendered.write_text(f"<html><body><nav>{three_labels}{three_labels}</nav></body></html>")
+            with self.assertRaisesRegex(i18n.TranslationError, "exactly.*3 labels"):
+                build.verify_navigation(root, "ja", stages["ja"])
 
 
 if __name__ == "__main__":
