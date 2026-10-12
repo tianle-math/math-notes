@@ -1,0 +1,810 @@
+{
+  "version": 1,
+  "segments": {
+    "404.qmd::metadata:a469ab4ca4e55bf54756": {
+      "source": "Page not found",
+      "text": "ページが見つかりません",
+      "locked": true
+    },
+    "404.qmd::body:a5f563c8870a6d15559c": {
+      "source": "This page may have moved, or the address may be incomplete.",
+      "text": "ページが移動したか、アドレスが途中で切れている可能性があります。",
+      "locked": true
+    },
+    "404.qmd::body:6caee639a3d64debae01": {
+      "source": "[Return home]⟦P0000⟧",
+      "text": "[ホームに戻る]⟦P0000⟧",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:99173ec7a0c331a9879b": {
+      "source": "Functional Analysis",
+      "text": "関数解析",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:7c494b10046ac187299d": {
+      "source": "FUNCTIONAL ANALYSIS",
+      "text": "関数解析",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "ノルム空間、線形作用素、双対性についてのノート。抽象的な構造の背後にある具体的な理解を大切にしています。",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:ca61f780eb53070846fd": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Functional Analysis",
+      "text": "[ホーム]⟦P0000⟧ / 数学ノート / 関数解析",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "ノルム空間、線形作用素、双対性についてのノート。抽象的な構造の背後にある具体的な理解を大切にしています。",
+      "locked": true
+    },
+    "functional-analysis.qmd::attribute:4537c108baea1844029a": {
+      "source": "A normed space and its dual, with unit balls and supporting functionals.",
+      "text": "ノルム空間とその双対空間。単位球と支持汎関数を示しています。",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "ここには少しずつノートを追加していきます。",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 記事とノート ⟦P0000⟧",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[ホームに戻ってほかの分野を読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::metadata:e686f471e346fbe596e9": {
+      "source": "Harmonic Analysis",
+      "text": "調和解析",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::metadata:db7b7579cd0ecc96bcf4": {
+      "source": "Notes on frequency, oscillation, scale, and the structure of functions, starting with the basic intuitions of Fourier analysis.",
+      "text": "フーリエ解析の基本的な直観から出発し、周波数、振動、スケール、関数の構造を考えるノート。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:fdd7a4df43c62875322e": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Harmonic Analysis",
+      "text": "[ホーム]⟦P0000⟧ / 数学ノート / 調和解析",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:76fe84331d303e4b459d": {
+      "source": "MATHEMATICAL NOTES · HARMONIC ANALYSIS",
+      "text": "数学ノート · 調和解析",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:7bdb8206af10291372e2": {
+      "source": "# Harmonic Analysis ⟦P0000⟧",
+      "text": "# 調和解析 ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:62fe8d7d08bb2b93bbcc": {
+      "source": "Exploring different ways to understand functions through frequency, oscillation, and scale. These notes on Fourier analysis and related topics begin with the intuition behind basic concepts and develop toward more detailed arguments.",
+      "text": "周波数、振動、スケールを通して、関数を理解するさまざまな見方を探ります。フーリエ解析とその周辺についてのこれらのノートでは、基本概念の背後にある直観から始めて、より詳しい議論へと進んでいきます。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:1d11ed9760d2b1441292": {
+      "source": "[Start with the geometry of frequency →]⟦P0000⟧⟦P0001⟧",
+      "text": "[周波数の幾何から読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::attribute:5c3df1a7e0c785815762": {
+      "source": "A wave decomposed into Fourier modes and a frequency spectrum.",
+      "text": "波をフーリエモードに分解した様子と周波数スペクトル。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 記事とノート ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:f34415c833a043513399": {
+      "source": "From an intuition to a clear explanation.",
+      "text": "直観から、筋道の通った説明へ。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:866d82c8228f1dade492": {
+      "source": "READING SERIES",
+      "text": "連載",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:63c9a4883b762e77b554": {
+      "source": "### The Geometry of Frequency ⟦P0000⟧",
+      "text": "### 周波数の幾何 ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:83ed235d7d5dc45ecd15": {
+      "source": "Starting with a single Fourier atom, explore how frequency describes direction, variation, and spatial scale.",
+      "text": "ひとつのフーリエ原子から出発し、周波数が方向、変化、空間スケールをどのように表すのかを探ります。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:df098e727cbf39c46118": {
+      "source": "[Read the series →]⟦P0000⟧⟦P0001⟧",
+      "text": "[連載を読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::metadata:74dd29b56c5a1fa0e59b": {
+      "source": "Tian · Mathematical Notes, Reflections & Essays",
+      "text": "Tian · 数学ノート、思索とエッセイ",
+      "locked": true
+    },
+    "index.qmd::metadata:0923134ea36778ac083f": {
+      "source": "An open personal notebook for mathematical understanding, reading, reflection, and everyday essays.",
+      "text": "数学の理解、読書、思索、日々のエッセイを綴る、公開の個人ノート。",
+      "locked": true
+    },
+    "index.qmd::body:af4cece9b50072967278": {
+      "source": "Here I share my mathematical notes, reflections, and essays: from the intuition behind a concept to the details of a proof, from questions found in books to thoughts beyond mathematics. Understanding and writing, a little at a time.",
+      "text": "ここでは、数学のノートや思索、エッセイを公開しています。概念の背後にある直観から証明の細部へ、本の中で見つけた問いから数学の外に広がる思いへ。少しずつ理解し、少しずつ書いていきます。",
+      "locked": true
+    },
+    "index.qmd::body:82597f70271c5cafd9a3": {
+      "source": "[Browse mathematical notes ↓]⟦P0000⟧⟦P0001⟧",
+      "text": "[数学ノートを読む ↓]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::attribute:e66b6af29616b13a9906": {
+      "source": "Noncommutative Fourier transform: a group, its matrix-valued Fourier coefficients, and reconstruction.",
+      "text": "非可換フーリエ変換：群、その行列値フーリエ係数、そして再構成。",
+      "locked": true
+    },
+    "index.qmd::body:01b8c5cb9058afef410f": {
+      "source": "## Mathematical Notes ⟦P0000⟧",
+      "text": "## 数学ノート ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:2fcdd02928319a09b1ba": {
+      "source": "Exploring the connections between different branches of mathematics.",
+      "text": "数学のさまざまな分野のつながりを探ります。",
+      "locked": true
+    },
+    "index.qmd::body:fba8e830a124912d0b0f": {
+      "source": "01 · HARMONIC ANALYSIS",
+      "text": "01 · 調和解析",
+      "locked": true
+    },
+    "index.qmd::body:5d5ca8fa2a3119d1ae53": {
+      "source": "### [Harmonic Analysis]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [調和解析]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:e1332b4a48eb311e8c5a": {
+      "source": "Exploring the structure of functions and the geometric intuition of Fourier analysis through frequency, oscillation, and scale.",
+      "text": "周波数、振動、スケールを通して、関数の構造とフーリエ解析の幾何的な直観を探ります。",
+      "locked": true
+    },
+    "index.qmd::body:143d2002f444356f3230": {
+      "source": "[Explore harmonic analysis →]⟦P0000⟧⟦P0001⟧",
+      "text": "[調和解析のノートへ →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:bbc1c8e8e2fcf3d2aa29": {
+      "source": "02 · MARTINGALE THEORY",
+      "text": "02 · マルチンゲール理論",
+      "locked": true
+    },
+    "index.qmd::body:822621d9906525502c0c": {
+      "source": "### [Martingale Theory]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [マルチンゲール理論]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "条件付き期待値、マルチンゲール、停止時刻についてのノート。確率過程の基本概念から収束、不等式までを扱います。",
+      "locked": true
+    },
+    "index.qmd::body:7106dfa2e6b808fc136c": {
+      "source": "[Explore martingale theory →]⟦P0000⟧⟦P0001⟧",
+      "text": "[マルチンゲール理論のノートへ →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:d2154c959a41ddfc41e2": {
+      "source": "03 · OPERATOR ALGEBRAS",
+      "text": "03 · 作用素環",
+      "locked": true
+    },
+    "index.qmd::body:e5a6ad3f704b845b90b7": {
+      "source": "### [Operator Algebras]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [作用素環]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "ヒルベルト空間上の作用素から出発し、C*環とフォン・ノイマン環の言葉と具体例を探ります。",
+      "locked": true
+    },
+    "index.qmd::body:df20eb16742be0b3dd14": {
+      "source": "[Explore operator algebras →]⟦P0000⟧⟦P0001⟧",
+      "text": "[作用素環のノートへ →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:3f5c8943df2ddc721615": {
+      "source": "04 · FUNCTIONAL ANALYSIS",
+      "text": "04 · 関数解析",
+      "locked": true
+    },
+    "index.qmd::body:f68db266ec8eb439aacd": {
+      "source": "### [Functional Analysis]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [関数解析]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "ノルム空間、線形作用素、双対性についてのノート。抽象的な構造の背後にある具体的な理解を大切にしています。",
+      "locked": true
+    },
+    "index.qmd::body:145ded02e04daa80615d": {
+      "source": "[Explore functional analysis →]⟦P0000⟧⟦P0001⟧",
+      "text": "[関数解析のノートへ →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:7f4bdf4914e6988c6fa2": {
+      "source": "BEYOND MATHEMATICS",
+      "text": "数学の外へ",
+      "locked": true
+    },
+    "index.qmd::body:4dcef8f4ee1c30f836c8": {
+      "source": "## Reflections & Essays ⟦P0000⟧",
+      "text": "## 思索とエッセイ ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:b92ea9f1ecd9745ce9aa": {
+      "source": "A place for thoughts that need not become theorems: reflections on reading, everyday observations, and questions still taking shape.",
+      "text": "定理にしなくてもよい考えを置いておく場所。読書から生まれた思い、日々の観察、まだ形になりきらない問いを綴ります。",
+      "locked": true
+    },
+    "index.qmd::body:bab92a80154962e9f531": {
+      "source": "[Explore reflections and essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[思索とエッセイを読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::attribute:d663ac9f69ebef433f6a": {
+      "source": "An open notebook with mathematical ideas and a path from questions to understanding.",
+      "text": "数学のアイデアと、問いから理解へと続く道を描いた、開かれたノート。",
+      "locked": true
+    },
+    "index.qmd::body:89882d48532633a62650": {
+      "source": "## Latest Updates ⟦P0000⟧",
+      "text": "## 最新の更新 ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:38c08fed5bca9bf808b1": {
+      "source": "A little understanding, one entry at a time.",
+      "text": "ひとつ書くたびに、少しずつ理解を深めて。",
+      "locked": true
+    },
+    "martingales.qmd::metadata:6200656c83843f9b70d0": {
+      "source": "Martingale Theory",
+      "text": "マルチンゲール理論",
+      "locked": true
+    },
+    "martingales.qmd::metadata:41669b2cfe06b1016684": {
+      "source": "MARTINGALE THEORY",
+      "text": "マルチンゲール理論",
+      "locked": true
+    },
+    "martingales.qmd::metadata:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "条件付き期待値、マルチンゲール、停止時刻についてのノート。確率過程の基本概念から収束、不等式までを扱います。",
+      "locked": true
+    },
+    "martingales.qmd::body:4cfccfc82d763c0e7f22": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Martingale Theory",
+      "text": "[ホーム]⟦P0000⟧ / 数学ノート / マルチンゲール理論",
+      "locked": true
+    },
+    "martingales.qmd::body:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "条件付き期待値、マルチンゲール、停止時刻についてのノート。確率過程の基本概念から収束、不等式までを扱います。",
+      "locked": true
+    },
+    "martingales.qmd::attribute:1b174854ff7c425ed1d7": {
+      "source": "Conditional expectation along a martingale path through an increasing filtration.",
+      "text": "増大するフィルトレーションに沿った、マルチンゲールの経路と条件付き期待値。",
+      "locked": true
+    },
+    "martingales.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "ここには少しずつノートを追加していきます。",
+      "locked": true
+    },
+    "martingales.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 記事とノート ⟦P0000⟧",
+      "locked": true
+    },
+    "martingales.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[ホームに戻ってほかの分野を読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:ff5ee4973118da5fae59": {
+      "source": "Operator Algebras",
+      "text": "作用素環",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:51cebc5ac13099058623": {
+      "source": "OPERATOR ALGEBRAS",
+      "text": "作用素環",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "ヒルベルト空間上の作用素から出発し、C*環とフォン・ノイマン環の言葉と具体例を探ります。",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:c9e92451eee1c9644403": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Operator Algebras",
+      "text": "[ホーム]⟦P0000⟧ / 数学ノート / 作用素環",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "ヒルベルト空間上の作用素から出発し、C*環とフォン・ノイマン環の言葉と具体例を探ります。",
+      "locked": true
+    },
+    "operator-algebras.qmd::attribute:75caa4c4575b265b12b9": {
+      "source": "Spectral projections and the spectral decomposition of an operator.",
+      "text": "スペクトル射影と作用素のスペクトル分解。",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "ここには少しずつノートを追加していきます。",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 記事とノート ⟦P0000⟧",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[ホームに戻ってほかの分野を読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "personal.qmd::metadata:43db4908d13b710293a0": {
+      "source": "Reflections & Essays",
+      "text": "思索とエッセイ",
+      "locked": true
+    },
+    "personal.qmd::metadata:ed75ecb068ffc5f105e0": {
+      "source": "REFLECTIONS & ESSAYS",
+      "text": "思索とエッセイ",
+      "locked": true
+    },
+    "personal.qmd::metadata:4d340493034b4b0d6da3": {
+      "source": "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.",
+      "text": "定理にしなくてもよい考えを置いておく場所。読書から生まれた思い、日々の観察、数学の外のエッセイをここに集めます。",
+      "locked": true
+    },
+    "personal.qmd::body:8104617fb9899748fbab": {
+      "source": "[Home]⟦P0000⟧ / Reflections & Essays",
+      "text": "[ホーム]⟦P0000⟧ / 思索とエッセイ",
+      "locked": true
+    },
+    "personal.qmd::body:4d340493034b4b0d6da3": {
+      "source": "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.",
+      "text": "定理にしなくてもよい考えを置いておく場所。読書から生まれた思い、日々の観察、数学の外のエッセイをここに集めます。",
+      "locked": true
+    },
+    "personal.qmd::attribute:d663ac9f69ebef433f6a": {
+      "source": "An open notebook with mathematical ideas and a path from questions to understanding.",
+      "text": "数学のアイデアと、問いから理解へと続く道を描いた、開かれたノート。",
+      "locked": true
+    },
+    "personal.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "ここには少しずつノートを追加していきます。",
+      "locked": true
+    },
+    "personal.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 記事とノート ⟦P0000⟧",
+      "locked": true
+    },
+    "personal.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[ホームに戻ってほかの分野を読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::metadata:06d05b8b71aed138d2a0": {
+      "source": "The Geometry of Frequency",
+      "text": "周波数の幾何",
+      "locked": true
+    },
+    "series.qmd::metadata:b04444a86d7a6d0a1915": {
+      "source": "Harmonic Analysis · Reading Series",
+      "text": "調和解析 · 連載",
+      "locked": true
+    },
+    "series.qmd::metadata:5f449ce7d3ce38121bf3": {
+      "source": "Starting with Fourier atoms, explore frequency direction, surfaces of constant phase, and spatial scale.",
+      "text": "フーリエ原子から出発し、周波数の方向、等位相面、空間スケールを探ります。",
+      "locked": true
+    },
+    "series.qmd::body:a1b7f2f99cf11075a50e": {
+      "source": "[Home]⟦P0000⟧ / [Harmonic Analysis]⟦P0001⟧ / The Geometry of Frequency",
+      "text": "[ホーム]⟦P0000⟧ / [調和解析]⟦P0001⟧ / 周波数の幾何",
+      "locked": true
+    },
+    "series.qmd::body:d4d0fceee02d13ba55c7": {
+      "source": "Frequency is more than a number describing how fast something changes. This series starts with a single Fourier atom and explores how the frequency vector encodes the direction of variation, surfaces of constant phase, and spatial scale.",
+      "text": "周波数は、変化の速さを表すだけの数ではありません。この連載では、ひとつのフーリエ原子から出発して、周波数ベクトルが変化の方向、等位相面、空間スケールをどのように表すのかを探っていきます。",
+      "locked": true
+    },
+    "series.qmd::body:8a80caf6ba523bb62133": {
+      "source": "PART I · 2026-10-10",
+      "text": "第1回 · 2026-10-10",
+      "locked": true
+    },
+    "series.qmd::body:443faf9381fc2f12b4cf": {
+      "source": "## [The Basic Geometric Meaning of Frequency in Fourier Analysis (1)]⟦P0000⟧ ⟦P0001⟧",
+      "text": "## [フーリエ解析における周波数の基本的な幾何的意味（1）]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::body:1e7380bba0de83dc6c79": {
+      "source": "Fourier atoms and frequency · Directional smoothness and frequency localization · Spatial scale versus frequency scale.",
+      "text": "フーリエ原子と周波数 · 方向の滑らかさと周波数局在 · 空間スケールと周波数スケール。",
+      "locked": true
+    },
+    "series.qmd::body:caefafb0047941e524b4": {
+      "source": "[Read the full article →]⟦P0000⟧⟦P0001⟧",
+      "text": "[記事の全文を読む →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::body:67a7661db9419a75e2db": {
+      "source": "Further articles will appear here as they are published.",
+      "text": "続きの記事は、公開するたびにここに追加していきます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:1fa899e039548e047aa5": {
+      "source": "The Basic Geometric Meaning of Frequency in Fourier Analysis (1)",
+      "text": "フーリエ解析における周波数の基本的な幾何的意味（1）",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:b5658fc8edda24f9c94e": {
+      "source": "On this page",
+      "text": "このページの内容",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:5c545b59ac65461ecb9d": {
+      "source": "Fourier geometry · Part I",
+      "text": "フーリエ解析の幾何 · 第1回",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:ce35dd45ee6beaefe315": {
+      "source": "Fourier atoms, directional variation, and the reciprocal relationship between spatial scale and frequency.",
+      "text": "フーリエ原子、方向による変化、そして空間スケールと周波数の反比例の関係。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:442b482f771b0f2c0dc4": {
+      "source": "[Home]⟦P0000⟧ / [Harmonic Analysis]⟦P0001⟧ / [The Geometry of Frequency]⟦P0002⟧",
+      "text": "[ホーム]⟦P0000⟧ / [調和解析]⟦P0001⟧ / [周波数の幾何]⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:23e4ee66e20518518f99": {
+      "source": "⟦P0000⟧\n⟦P0001⟧On this page⟦P0002⟧",
+      "text": "⟦P0000⟧\n⟦P0001⟧このページの内容⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0b4cdf634efc2022cba9": {
+      "source": "- [Fourier atoms and frequency]⟦P0000⟧\n- [Directional smoothness and frequency localization]⟦P0001⟧\n- [Spatial scale versus frequency scale]⟦P0002⟧",
+      "text": "- [フーリエ原子と周波数]⟦P0000⟧\n- [方向の滑らかさと周波数局在]⟦P0001⟧\n- [空間スケールと周波数スケール]⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:d8f094e6ae067a6b1ad1": {
+      "source": "When I first encountered the concept of frequency in harmonic analysis, I had only a rough understanding of it.",
+      "text": "調和解析で初めて周波数という概念に触れたとき、私の理解はまだ大まかなものでした。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b5d2cf60dcc0b0ac35eb": {
+      "source": "It wasn't until I studied Littlewood–Paley theory that I began to appreciate the geometric structure underlying the notion of frequency. Even then, I hadn't really thought deeply about what frequency meant from a geometric perspective.",
+      "text": "Littlewood–Paley理論を学んで初めて、周波数という概念の背後にある幾何的な構造が見えてきました。それでも、周波数が幾何的に何を意味するのかについては、まだ深く考えていませんでした。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0c79dcd5bf61fbc46018": {
+      "source": "Recently, I've been studying some of Seeger's work on singular integrals. Certain techniques used in his proofs have pushed me to revisit these fundamental ideas and think more carefully about the geometry of frequency.",
+      "text": "最近、Seegerによる特異積分の研究をいくつか読んでいます。その証明で使われている手法に促されて、こうした基本的な考えに立ち返り、周波数の幾何をもっと丁寧に考えるようになりました。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:19f84dd7369394349a40": {
+      "source": "In fact, it is due to the need for my recent research that I've begun to explore these geometric ideas in greater depth.",
+      "text": "実際、これらの幾何的な考えをより深く掘り下げ始めたのは、最近の自分の研究でそれが必要になったからです。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:1fa29205cfa44f07a83f": {
+      "source": "The reason I chose the word \"basic\" in the title of my article is that the ideas themselves are simple, yet profound.",
+      "text": "記事の題名に「基本的な」という言葉を選んだのは、考え方そのものは単純でありながら、奥深いものだからです。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:923acb83ce083ec538e0": {
+      "source": "I'm planning a series of about three articles, through which I'll gradually build up from these fundamental ideas to Seeger's work on singular integrals.",
+      "text": "全3回ほどの連載を予定しています。これらの基本的な考えから少しずつ積み重ねて、Seegerの特異積分に関する研究へとつなげていくつもりです。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:c65efa3de45872d97be0": {
+      "source": "Although the ideas can be quite deep, I'll do my best to explain them in a clear, intuitive, and accessible way, so that even readers without a background in mathematics can follow along.",
+      "text": "内容にはかなり深いところもありますが、数学を専門に学んでいない方にも読み進めてもらえるように、できるだけ明快で直観的に、わかりやすく説明していきたいと思います。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0d27d0ba37a39797a059": {
+      "source": "So, if you're not a mathematics major but still have an interest in the subject, don't worry! I'll try to make these ideas approachable without requiring much advanced mathematical knowledge. Just bring your curiosity and enjoy the journey!",
+      "text": "ですから、数学を専攻していなくても、この話題に興味があれば心配はいりません。高度な数学の知識をあまり前提とせず、親しみやすく伝えられるように工夫していきます。好奇心を持って、一緒に楽しんでもらえたらうれしいです。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:10bb2a22fbfa9c3eb522": {
+      "source": "## Fourier atoms and frequency ⟦P0000⟧",
+      "text": "## フーリエ原子と周波数 ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:38c3da7cf0a808995490": {
+      "source": "We begin with the simplest Fourier atom:",
+      "text": "まず、最も単純なフーリエ原子から始めましょう。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:988adc1ea2563a4dfeaf": {
+      "source": "Its “frequency” is ⟦P0000⟧. Why? Differentiation in an arbitrary direction ⟦P0001⟧ yields",
+      "text": "この「周波数」は⟦P0000⟧です。なぜでしょうか。任意の方向⟦P0001⟧に微分すると、次のようになります。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:5825249f3370c540907a": {
+      "source": "Thus ⟦P0000⟧ tells you directly in which directions the function varies rapidly, and how small the corresponding scale of variation is. More precisely, if ⟦P0001⟧ is a unit vector and ⟦P0002⟧, the oscillation along ⟦P0003⟧ has spatial period ⟦P0004⟧.",
+      "text": "つまり、⟦P0000⟧は、関数がどの方向に速く変化するのか、また、その変化に対応するスケールがどれほど小さいのかを直接教えてくれます。より正確には、⟦P0001⟧が単位ベクトルで、⟦P0002⟧ならば、⟦P0003⟧に沿った振動の空間周期は⟦P0004⟧です。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:29c80f917f330eae7925": {
+      "source": "In particular, if",
+      "text": "特に、",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:21af6f1260f927f5b9b3": {
+      "source": "then",
+      "text": "が成り立つなら、次が得られます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:c5e42c31402fc957ee05": {
+      "source": "In other words, the wave is completely invariant in the direction ⟦P0000⟧.",
+      "text": "言い換えると、この波は方向⟦P0000⟧に沿ってまったく変化しません。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:570eba65c4decda297db": {
+      "source": "Consequently, the geometric meaning of ⟦P0000⟧ is not simply that “the wave travels in the direction of ⟦P0001⟧” (there is no time variable here), but rather the following: ⟦P0002⟧ is the gradient of the phase ⟦P0003⟧ and, when ⟦P0004⟧, a normal vector to the surfaces of constant phase. The equiphase surfaces",
+      "text": "したがって、⟦P0000⟧の幾何的な意味は、単に「波が⟦P0001⟧の方向に進む」ということではありません（ここには時間変数がありません）。むしろ、次のように捉えるべきです。⟦P0002⟧は位相⟦P0003⟧の勾配であり、⟦P0004⟧のときには等位相面の法線ベクトルです。等位相面",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:fc92a20433c87863bac3": {
+      "source": "are hyperplanes orthogonal to ⟦P0000⟧.",
+      "text": "は、⟦P0000⟧に直交する超平面です。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0f93fe4fe011b1f264ca": {
+      "source": "## Directional smoothness and frequency localization ⟦P0000⟧",
+      "text": "## 方向の滑らかさと周波数局在 ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:79e48304cc5b75b17d81": {
+      "source": "This immediately explains an important phenomenon. Suppose a function is nearly invariant along a unit direction ⟦P0000⟧:",
+      "text": "ここから、ある重要な現象がすぐに説明できます。単位ベクトル⟦P0000⟧の方向に沿って、ほとんど変化しない関数を考えます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:415f4cd238e188405e04": {
+      "source": "Here ⟦P0000⟧ denotes the Fourier transform of ⟦P0001⟧, defined for sufficiently nice functions by",
+      "text": "ここで、⟦P0000⟧は⟦P0001⟧のフーリエ変換を表します。十分に性質のよい関数に対しては、次のように定義されます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b168e77b0827dc6abca4": {
+      "source": "After Fourier transformation,",
+      "text": "フーリエ変換を施すと、次を得ます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:a03583c9c679a28e8d10": {
+      "source": "If the left-hand side is small in ⟦P0000⟧, the right-hand side is also small in ⟦P0001⟧. More precisely, for any ⟦P0002⟧, the ⟦P0003⟧ mass of ⟦P0004⟧ in the region ⟦P0005⟧ is controlled by ⟦P0006⟧. Hence the Fourier mass tends to concentrate where",
+      "text": "左辺が⟦P0000⟧ノルムで小さければ、右辺も⟦P0001⟧ノルムで小さくなります。より正確には、任意の⟦P0002⟧について、⟦P0003⟧質量は、⟦P0004⟧を領域⟦P0005⟧に制限したとき、⟦P0006⟧で上から評価されます。したがって、フーリエ側の質量は次を満たす領域に集中する傾向があります。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b3c64ff187ca96cbf9dd": {
+      "source": "that is, near the hyperplane",
+      "text": "すなわち、次の超平面の近くです。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:aa67611cbe64dbfc8dce": {
+      "source": "This is a statement about concentration of Fourier mass, not necessarily about the exact support of ⟦P0000⟧.",
+      "text": "これはフーリエ側の質量の集中についての主張であり、⟦P0000⟧の正確な台について述べているとは限りません。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:51e0522dbeef69c3eb4e": {
+      "source": "## Spatial scale versus frequency scale ⟦P0000⟧",
+      "text": "## 空間スケールと周波数スケール ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:d8087b6c019276987445": {
+      "source": "Another intuition worth fixing at this stage is that “large scale” in space corresponds to “small scale” in frequency. For example, for a one-dimensional function",
+      "text": "ここでもうひとつ押さえておきたい直観は、空間での「大きなスケール」が周波数での「小さなスケール」に対応するということです。たとえば、次の1変数関数を考えます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:37eecd16d7fdb874f32e": {
+      "source": "where ⟦P0000⟧ and ⟦P0001⟧ is a fixed, sufficiently regular function describing the original shape of ⟦P0002⟧. If ⟦P0003⟧ varies on a spatial scale of order one, then the spatial scale of variation of ⟦P0004⟧ is of order ⟦P0005⟧. Its Fourier transform satisfies the exact identity",
+      "text": "ここで、⟦P0000⟧であり、⟦P0001⟧は、⟦P0002⟧の元の形を表す、固定された十分に性質のよい関数です。⟦P0003⟧の空間的な変化のスケールが1程度なら、⟦P0004⟧の空間的な変化のスケールは⟦P0005⟧程度になります。そのフーリエ変換については、次の等式が厳密に成り立ちます。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:2085f39c0dde3268a76a": {
+      "source": "Thus, if ⟦P0000⟧ is mainly concentrated where ⟦P0001⟧, then the Fourier transform of ⟦P0002⟧ is mainly concentrated where",
+      "text": "したがって、⟦P0000⟧が主に⟦P0001⟧を満たす領域に集中しているなら、⟦P0002⟧のフーリエ変換は主に次の領域に集中しています。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:4dc14bc3866f9f6f8167": {
+      "source": "Therefore: slow variation corresponds to low frequency, and rapid variation corresponds to high frequency.",
+      "text": "つまり、ゆっくりした変化は低い周波数に、速い変化は高い周波数に対応します。",
+      "locked": true
+    },
+    "index.qmd::body:6e26f6cdc745ab624bb5": {
+      "source": "# Starting with mathematics,⟦P0000⟧writing thoughts down. ⟦P0001⟧",
+      "text": "# 数学から始めて、⟦P0000⟧考えたことを書き留める。 ⟦P0001⟧",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::metadata:9333fb0373b5bc5a1964": {
+      "source": "Finding My Way Back to Mathematics",
+      "text": "数学への初心を取り戻す",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::metadata:b88626e55d97b3473bcb": {
+      "source": "On AI, the joy of doing mathematics, and finding a way to hold on to both a vocation and an inner life.",
+      "text": "AI、数学をする喜び、そして仕事と内面の世界をどちらも手放さずにいる道について。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:d060e21d11abc44c3c61": {
+      "source": "[Home]⟦P0000⟧ / [Reflections & Essays]⟦P0001⟧",
+      "text": "[ホーム]⟦P0000⟧ / [思索とエッセイ]⟦P0001⟧",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:839fffabdadb15864f7d": {
+      "source": "I remember when I first chose to do mathematical research. I thought it would be a good life to do work that might not be all that important, but that I could feel satisfied with. To devote my career to mathematics.",
+      "text": "数学の研究をしようと初めて決めたころを思い返すと、そのときは、これから先、それほど重要ではないかもしれなくても、自分が満足できる研究ができれば、それも十分にいいと思っていました。生涯を数学に捧げる。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:554d5e212de2296f3853": {
+      "source": "For a while around the middle of this year, I started asking AI to help me work through a problem that had little to do with my own research.",
+      "text": "今年の半ば、自分の研究とはあまり関係のない問題を、AIに手伝ってもらいながら考え始めた時期がありました。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:bf045c381fb8dcd647cd": {
+      "source": "AI was so powerful. Gradually, I noticed that my attitude toward mathematics was changing. Papers I had once seen as works of art began to look like industrial products, things that could be manufactured in bulk.",
+      "text": "AIの能力は、あまりにも強大でした。少しずつ、あの時期に数学に対する自分の態度が変わっていたことに気づきました。以前は芸術作品のように感じていた論文が、工業製品のように見え始めたのです。生産して、まとめて売り出せるもののように。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:90e3089e61d67454deec": {
+      "source": "During that period, I had more or less lost control over what AI was generating. I wasn't looking closely at what results it had produced or what proofs it had completed. It worked too fast. My understanding of what it was doing went no further than the log it submitted each time—which arguments it had completed in that round, and what remained unresolved. Beyond that, I knew nothing about its work. I had no way to stay in control or judge what it was producing, and I wouldn't post any of it. I think the minimum responsibility of a mathematical researcher should be to stand behind what they produce.",
+      "text": "あのころ、私はAIが生成する内容を、ほとんど把握できなくなっていました。どんな結果を出し、どの証明を完成させたのか、詳しく調べようともしませんでした。AIはあまりに速かったのです。AIが問題にどう取り組んでいるかについて私が知っていたのは、毎回提出されるログの報告だけでした。今回はどの導出が完結したのか、何がまだ解決していないのか。それ以外、私はAIの仕事について何も知りませんでした。自分で把握することも、正しいかどうかを見極めることもできず、それらを公開するつもりもありません。数学の研究者が最低限守るべきなのは、自分が生み出したものに責任を持つことだと思います。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:cb61134b7eabe4c2b5fd": {
+      "source": "I wasn't getting much joy out of mathematics then. Every day, I'd excitedly follow which model had just been updated, which model had come out on top on FrontierMath, and then off I'd eagerly go to try it out and see how it performed.",
+      "text": "あのころ、数学そのものからは、ほとんど楽しさを得ていませんでした。毎日わくわくしながら、どのモデルがまた更新されたとか、どのモデルがFrontierMathで勝ったとかを追いかけては、いそいそと試しに行って、その出来を確かめていました。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:b937a5c4d26cb7111ba4": {
+      "source": "Later, I realized that I no longer loved mathematics the way I used to. I was becoming more and more focused on results. So I made up my mind to change:",
+      "text": "その後、以前のようには数学を愛していない自分に気づきました。ますます結果ばかりを重視するようになっていたのです。そして、変わろうと決心しました。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:316a7c327c3392a074a6": {
+      "source": "If I had started learning mathematics in the first place to find joy, why should I let anxiety make me willingly give up this hard-won ability to feel it?",
+      "text": "もともと数学を学ぶ目的が楽しさを得ることだったのなら、なぜ不安のせいで、せっかく手に入れた、楽しいと感じる心を自分から手放さなければならないのでしょうか。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:87c08f478cba717b653b": {
+      "source": "I began to rethink my relationship with AI. When reading papers, I stopped asking it to generate companion notes and went back to slowly working through the originals. I also stopped asking AI to solve problems, and instead began exploring research outside my own field that interested me. When I came across something I didn't understand, I still asked AI, but my mindset was different. I wouldn't just ask it to solve the problem for me. Instead, I treated it as a search engine, going back to my caveman ways.",
+      "text": "私は、自分とAIの関係や、それぞれの役割を見直し始めました。論文を読むときは、もうAIに補助資料を作らせず、原文とじっくり向き合う。AIに問題を解かせることもやめ、自分の専門外にある、興味を持ったテーマを研究するようになりました。わからないことに出会えば、今でもAIに尋ねます。でも、向き合う気持ちはもう違いますし、直接問題を解かせることもしません。検索エンジンとして使うのです。原始人に逆戻り、というわけです。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:3409398ee8022389734e": {
+      "source": "Slowing down makes the pressure of the times a little less suffocating.",
+      "text": "歩みを緩めると、時代から受ける圧迫感も、そこまで息苦しいものではなくなります。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:9faa84e35e0fab8e2f48": {
+      "source": "Whether we like it or not, we have all been forced into an extraordinarily brutal upheaval, unable to see what lies ahead. That includes the figures in mathematics who were once celebrated as the pinnacle of human intelligence. The mathematical beauty and ideals we once held dear have been mercilessly crushed by the steamroller of the times. I can work slowly on mathematics and enjoy the process, but the times will not wait for me.",
+      "text": "望むと望まないとにかかわらず、私たちはみな、ひどく残酷な激動の中に巻き込まれ、先が見えなくなっています。かつて最高の知性と称された数学界の人たちも、例外ではありません。心の中にあった数学の美意識も、追い求めてきた理想も、時代というロードローラーに容赦なく踏みつぶされていく。私は、自分が過程を楽しめる数学をゆっくりやっていくことはできます。でも、時代は私を待ってはくれません。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:2e3cdab6ba643027eda5": {
+      "source": "My own advice is not to be too much of a purist, but not to abandon your inner world altogether either. We can work on a problem that interests us, making progress slowly, and we can also use technology to help produce high-quality papers. The two do not conflict. But for now, I still believe that the minimum responsibility of a mathematical researcher should be to stand behind what they produce. Even if most of a piece of work was done by AI, you need to know the details at every point and be able to stand up and vouch for it.",
+      "text": "個人的に勧めたいのは、精神面で潔癖になりすぎないこと、でも、内面の世界を完全に手放してしまわないことです。自分が興味を持った問題を少しずつ進めてもいいし、技術の助けを借りて水準の高い論文を生み出してもいい。この二つは矛盾しません。ただ、今の私はやはり、数学の研究者が最低限守るべきなのは、自分が生み出したものに責任を持つことだと考えています。たとえその仕事の大部分をAIが担ったとしても、どの箇所についても細部まで把握し、胸を張って保証できなくてはいけません。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:3c44da49eea0bd806cc7": {
+      "source": "Separate your interests from your profession. We can be mathematical researchers professionally, while also doing traditional mathematical research as a hobby—taking it one step at a time and enjoying the process. Work is work. Life is life.",
+      "text": "興味と職業を分けて考える。数学の研究を仕事にしながら、余暇の趣味として昔ながらの数学研究をすることもできます。一歩ずつ着実に進み、数学に取り組む過程を楽しむ。仕事は仕事、生活は生活です。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:c9a5470c3ccba6d352ff": {
+      "source": "The older generation of mathematicians may be able to weather the impact with the resources, social standing, and titles they have accumulated. What are we supposed to do? Young people who are only just setting out must be at the forefront of productivity.",
+      "text": "上の世代の数学者なら、積み上げてきたリソースや社会的地位、肩書によって、この衝撃をかわすことができるのかもしれません。では、私たちはどうすればいいのでしょうか。歩み始めたばかりの若い人たちは、トップクラスの生産性を持たなければなりません。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:7eedfd3effc83d05f3a9": {
+      "source": "The truth is, I've felt lost all this time. But I don't want to lose my ideals again. Using AI to do mathematics is where things are headed. Still, setting aside time every day for my own old-school research can be a side pursuit that makes life richer.",
+      "text": "本当のところ、私はずっと迷っています。でも、もう一度理想を失いたくはありません。AIで数学をすることは時代の大きな流れです。その一方で、毎日時間を取って、自分なりの昔ながらの研究をすることも、日々を豊かにしてくれるサブクエストになりえます。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:36f4c32e055a9dfdbdc0": {
+      "source": "Returning to what drew me here in the first place makes me feel younger. It brings back a childlike sense of wonder, that feeling from my student days when I'd see a beautiful proof, clap in delight, and stay excited all day. That's what I want.",
+      "text": "初心に戻ると、自分が若返ったように感じます。子どものころの純粋な気持ちが戻ってきて、学生時代、美しい証明を見て思わず手をたたき、一日中興奮していたあの感覚を取り戻せる。私が欲しいのは、それです。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:91ff6f69d2ee58fb8a41": {
+      "source": "[Back to Reflections & Essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[思索とエッセイに戻る →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::metadata:f20e057f9257c641c15e": {
+      "source": "We Should Stand Together",
+      "text": "私たちは力を合わせるべきだ",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::metadata:cf9697941fedd8138b5b": {
+      "source": "On the disruption of mathematics by AI, what it may mean for other fields, and why people should stand together.",
+      "text": "AIが数学にもたらす激変と、それがほかの分野にとって何を意味するのか、そして人々が力を合わせるべき理由について。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:d060e21d11abc44c3c61": {
+      "source": "[Home]⟦P0000⟧ / [Reflections & Essays]⟦P0001⟧",
+      "text": "[ホーム]⟦P0000⟧ / [思索とエッセイ]⟦P0001⟧",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:85dcf692638b89ac3118": {
+      "source": "People from outside mathematics come swarming in, throw stones down the well, and walk away laughing.",
+      "text": "数学の外にいる人たちが大勢押し寄せ、井戸に石を投げ込み、どっと笑って立ち去っていきます。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:5b9a560f6ba1f1a251df": {
+      "source": "Few people outside mathematics have stopped to consider this: if mathematics, a field at the forefront of this disruption, cannot establish new, workable norms that allow humans and AI to coexist harmoniously, then when other fields face the same disruption and need to build a new order, what useful example will they have to learn from? Chaos will sweep through other industries, again and again.",
+      "text": "数学の外にいる人で、こんなことを考えた人はほとんどいません。数学という、真っ先に衝撃を受けている分野で、新しく適切な業界の規範を築き、人間とAIが調和して共存することができなければ、これからほかの分野が衝撃を受け、新たな秩序を築かなければならなくなったとき、いったいどこに、参考にして経験を学べるよい例があるのでしょうか。混乱は、何度も何度も、ほかの業界を襲うことになります。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:69a5b542c6579f1a7edb": {
+      "source": "Every time AI “breaks through” a field, the increase in its power is far more than a matter of 1 + 1 = 2. Coding gives it frightening engineering capabilities, while surpassing humans in mathematics means having formidable abilities in modeling and making breakthroughs on extremely difficult problems. And these two reinforce each other. In other words, with every industry it conquers, AI's capabilities multiply. Different fields strengthen one another, until it becomes too formidable to face and impossible to defeat.",
+      "text": "AIがある分野を「攻略」するたびに、その力の伸びは、1+1=2という単純な足し算では到底測れません。コードを書く能力は、AIに恐るべき実装能力を与えます。そして数学の能力が人間を超えるということは、きわめて強力なモデル化能力と、難問を突破する力を備えることを意味します。この二つの力は、互いを増幅します。つまり、AIがある業界の城を落とすたび、その能力は何倍にも膨らむのです。異なる分野が互いを強め合い、やがて、まともに向き合うことさえできず、誰にも打ち勝てないほどの強さになるまで。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:f9e08bb8566f5cc57954": {
+      "source": "When AI moves into other industries in the future, the sheer force of its problem modeling, coding, and breakthroughs in core theory will let it easily overrun other fields of science and engineering. Multimodal breakthroughs are also coming at an increasingly staggering pace, and AI is gaining more and more interfaces with the real world. Perhaps even experimental science will not be a secure moat in the future.",
+      "text": "これからAIがほかの業界に入り込めば、圧倒的な力による問題のモデル化、コーディング、理論の核心部分での突破によって、ほかの理工系分野もあっさり陥落するでしょう。マルチモーダル分野での突破の速さも、ますますとんでもないものになっています。AIは現実世界につながるインターフェースを次々と手に入れている。もしかすると、将来は実験科学さえも、堅固な堀であり続けるとは限らないのかもしれません。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:5f630e2bc2cf6e90d1be": {
+      "source": "Some people think researching AI itself might offer more security. But today's top models have already begun to iterate on themselves. If, in the future, model training, model releases, and so on no longer need humans to carry them out, will we really need this many people working in AI?",
+      "text": "AIという分野そのものを研究していれば、比較的安全かもしれないと考える人もいます。でも、最先端のモデルはすでに自己改良を始めています。将来、モデルの訓練や公開といったこと自体を人間が行う必要がなくなったとき、本当にこれほど大勢のAI研究者や技術者が必要なのでしょうか。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:fed2857d882459060f61": {
+      "source": "Embodied intelligence is also beginning to produce results, and AI's ability to act in the real world is growing. Physical labor, hands-on experiments, real-world feedback—all of these will fall too. The threat AI poses to people's ability to survive in most fields is no longer something imagined in science fiction.",
+      "text": "身体性を備えたAIの開発でも、次々と成果が出始め、現実世界で行動するAIの能力が高まり始めています。労働の現場、実験操作、現実世界からのフィードバック。これらもすべて陥落します。AIが大半の分野で人間の生きる道を脅かすという状況は、もはやSFの中だけの空想ではありません。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:a15904cd8de1c5bee4b2": {
+      "source": "Since OpenAI published its series of mathematics papers, I've seen a great many posts in the past few days attacking mathematical researchers. Tao has borne the brunt of the criticism, turned into fodder for public opinion.",
+      "text": "OpenAIが一連の数学論文を公開してから、ここ数日、数学研究者を攻撃する投稿を本当にたくさん目にしました。Taoは真っ先に批判の矢面に立たされ、世間の話題のネタとして消費される対象になりました。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:cf01481bec88eef31425": {
+      "source": "We should stand together.",
+      "text": "私たちは、力を合わせるべきです。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:91ff6f69d2ee58fb8a41": {
+      "source": "[Back to Reflections & Essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[思索とエッセイに戻る →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    }
+  }
+}

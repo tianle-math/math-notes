@@ -1,0 +1,48 @@
+{
+  "terms": {
+    "Fourier atom": {
+      "zh": "傅里叶原子",
+      "ja": "フーリエ原子"
+    },
+    "directional smoothness": {
+      "zh": "方向光滑性",
+      "ja": "方向の滑らかさ"
+    },
+    "harmonic analysis": {
+      "zh": "调和分析",
+      "ja": "調和解析"
+    },
+    "martingale": {
+      "zh": "鞅",
+      "ja": "マルチンゲール"
+    },
+    "operator algebra": {
+      "zh": "算子代数",
+      "ja": "作用素環"
+    },
+    "functional analysis": {
+      "zh": "泛函分析",
+      "ja": "関数解析"
+    },
+    "singular integral": {
+      "zh": "奇异积分",
+      "ja": "特異積分"
+    },
+    "weak type": {
+      "zh": "弱型",
+      "ja": "弱型"
+    },
+    "spatial scale": {
+      "zh": "空间尺度",
+      "ja": "空間スケール"
+    },
+    "frequency scale": {
+      "zh": "频率尺度",
+      "ja": "周波数スケール"
+    }
+  },
+  "style": {
+    "zh": "保留作者探索、思考和自我修正的语气，数学表述准确，中文自然。",
+    "ja": "思索を重ねる著者の率直な語り口を保ち、数学的に正確で自然な日本語にする。"
+  }
+}

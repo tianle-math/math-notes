@@ -1,0 +1,215 @@
+{
+  "en": {
+    "website": {
+      "title": "Tian · Mathematics & Essays",
+      "description": "An open notebook by Tian: harmonic analysis, martingale theory, operator algebras, functional analysis, reflections, and essays.",
+      "navbar": {
+        "title": "Tian · Mathematics & Essays",
+        "left": [
+          {
+            "href": "index.qmd",
+            "text": "Home"
+          },
+          {
+            "text": "Mathematical Notes",
+            "menu": [
+              {
+                "href": "harmonic-analysis.qmd",
+                "text": "Harmonic Analysis"
+              },
+              {
+                "href": "martingales.qmd",
+                "text": "Martingale Theory"
+              },
+              {
+                "href": "operator-algebras.qmd",
+                "text": "Operator Algebras"
+              },
+              {
+                "href": "functional-analysis.qmd",
+                "text": "Functional Analysis"
+              }
+            ]
+          },
+          {
+            "href": "personal.qmd",
+            "text": "Reflections & Essays"
+          }
+        ]
+      },
+      "page-footer": {
+        "center": "<div class=\"copyright-notice\">\n<p class=\"copyright-line\">© 2026 <strong>Tian</strong>. All rights reserved.</p>\n<p>Unless otherwise indicated, copyright-protected articles and illustrations may not be reproduced or redistributed without prior permission, except as permitted by applicable law. For quotations and citations, please credit Tian and link to the original page.</p>\n</div>\n"
+      }
+    },
+    "format": {
+      "html": {
+        "lang": "en",
+        "toc-title": "On this page"
+      }
+    },
+    "raw-replacements": {
+      "AN OPEN NOTEBOOK BY": "AN OPEN NOTEBOOK BY",
+      "Tian on X, @tianmathmath (opens in a new tab)": "Tian on X, @tianmathmath (opens in a new tab)"
+    },
+    "category_names": {
+      "Mathematics": "Mathematics",
+      "Harmonic Analysis": "Harmonic Analysis",
+      "Martingale Theory": "Martingale Theory",
+      "Operator Algebras": "Operator Algebras",
+      "Functional Analysis": "Functional Analysis",
+      "Reflections & Essays": "Reflections & Essays"
+    },
+    "ui": {
+      "switch": "Reading language",
+      "comments": "Discussion",
+      "intro": "Questions, corrections, and further thoughts are welcome. All language editions share this discussion.",
+      "privacy": "Comments load only when you choose to open them. This connects to Giscus and GitHub. A GitHub account is needed to post.",
+      "load": "Load comments",
+      "github": "Open discussions on GitHub",
+      "original": "English original",
+      "translation": "Translated from English."
+    }
+  },
+  "zh": {
+    "website": {
+      "title": "Tian · 数学与随笔",
+      "description": "Tian 的开放笔记本：调和分析、鞅论、算子代数、泛函分析，以及随想与随笔。",
+      "navbar": {
+        "title": "Tian · 数学与随笔",
+        "left": [
+          {
+            "href": "index.qmd",
+            "text": "首页"
+          },
+          {
+            "text": "数学笔记",
+            "menu": [
+              {
+                "href": "harmonic-analysis.qmd",
+                "text": "调和分析"
+              },
+              {
+                "href": "martingales.qmd",
+                "text": "鞅论"
+              },
+              {
+                "href": "operator-algebras.qmd",
+                "text": "算子代数"
+              },
+              {
+                "href": "functional-analysis.qmd",
+                "text": "泛函分析"
+              }
+            ]
+          },
+          {
+            "href": "personal.qmd",
+            "text": "随想与随笔"
+          }
+        ]
+      },
+      "page-footer": {
+        "center": "<div class=\"copyright-notice\">\n<p class=\"copyright-line\">© 2026 <strong>Tian</strong>. 保留所有权利。</p>\n<p>除另有说明或适用法律允许外，受版权保护的文章与插图未经事先许可，不得复制或再分发。引用时请注明作者 Tian，并附上原页面链接。</p>\n</div>\n"
+      }
+    },
+    "format": {
+      "html": {
+        "lang": "zh-CN",
+        "toc-title": "本页目录"
+      }
+    },
+    "raw-replacements": {
+      "AN OPEN NOTEBOOK BY": "开放笔记本 · 作者",
+      "Tian on X, @tianmathmath (opens in a new tab)": "Tian 的 X 主页，@tianmathmath（在新标签页打开）"
+    },
+    "category_names": {
+      "Mathematics": "数学",
+      "Harmonic Analysis": "调和分析",
+      "Martingale Theory": "鞅论",
+      "Operator Algebras": "算子代数",
+      "Functional Analysis": "泛函分析",
+      "Reflections & Essays": "随想与随笔"
+    },
+    "ui": {
+      "switch": "阅读语言",
+      "comments": "交流与讨论",
+      "intro": "欢迎提问、指正，也欢迎分享进一步的思考。各语言版本共用此讨论区。",
+      "privacy": "评论仅在你点击后加载，届时将连接 Giscus 和 GitHub。发表评论需要 GitHub 账号。",
+      "load": "加载评论",
+      "github": "在 GitHub 上打开讨论区",
+      "original": "英文原文",
+      "translation": "本文译自英文。"
+    }
+  },
+  "ja": {
+    "website": {
+      "title": "Tian · 数学とエッセイ",
+      "description": "Tian の公開ノート。調和解析、マルチンゲール理論、作用素環、関数解析、そして日々の思索とエッセイ。",
+      "navbar": {
+        "title": "Tian · 数学とエッセイ",
+        "left": [
+          {
+            "href": "index.qmd",
+            "text": "ホーム"
+          },
+          {
+            "text": "数学ノート",
+            "menu": [
+              {
+                "href": "harmonic-analysis.qmd",
+                "text": "調和解析"
+              },
+              {
+                "href": "martingales.qmd",
+                "text": "マルチンゲール理論"
+              },
+              {
+                "href": "operator-algebras.qmd",
+                "text": "作用素環"
+              },
+              {
+                "href": "functional-analysis.qmd",
+                "text": "関数解析"
+              }
+            ]
+          },
+          {
+            "href": "personal.qmd",
+            "text": "思索とエッセイ"
+          }
+        ]
+      },
+      "page-footer": {
+        "center": "<div class=\"copyright-notice\">\n<p class=\"copyright-line\">© 2026 <strong>Tian</strong>. All rights reserved.</p>\n<p>別途明記されている場合、または適用法で認められる場合を除き、著作権で保護される記事やイラストを事前の許可なく複製・再配布することはできません。引用の際は著者 Tian を明記し、元のページへのリンクを添えてください。</p>\n</div>\n"
+      }
+    },
+    "format": {
+      "html": {
+        "lang": "ja",
+        "toc-title": "目次"
+      }
+    },
+    "raw-replacements": {
+      "AN OPEN NOTEBOOK BY": "公開ノート · 著者",
+      "Tian on X, @tianmathmath (opens in a new tab)": "Tian の X プロフィール、@tianmathmath（新しいタブで開きます）"
+    },
+    "category_names": {
+      "Mathematics": "数学",
+      "Harmonic Analysis": "調和解析",
+      "Martingale Theory": "マルチンゲール理論",
+      "Operator Algebras": "作用素環",
+      "Functional Analysis": "関数解析",
+      "Reflections & Essays": "思索とエッセイ"
+    },
+    "ui": {
+      "switch": "表示言語",
+      "comments": "コメントと議論",
+      "intro": "ご質問、ご指摘、さらに考えたことなどをお寄せください。すべての言語版で同じコメント欄を共有しています。",
+      "privacy": "コメントはボタンを押したときにのみ読み込まれ、Giscus と GitHub に接続します。投稿には GitHub アカウントが必要です。",
+      "load": "コメントを読み込む",
+      "github": "GitHub で議論を開く",
+      "original": "英語の原文",
+      "translation": "この記事は英語からの翻訳です。"
+    }
+  }
+}

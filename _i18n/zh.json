@@ -1,0 +1,810 @@
+{
+  "version": 1,
+  "segments": {
+    "404.qmd::metadata:a469ab4ca4e55bf54756": {
+      "source": "Page not found",
+      "text": "页面未找到",
+      "locked": true
+    },
+    "404.qmd::body:a5f563c8870a6d15559c": {
+      "source": "This page may have moved, or the address may be incomplete.",
+      "text": "此页面可能已移至其他位置，或网址不完整。",
+      "locked": true
+    },
+    "404.qmd::body:6caee639a3d64debae01": {
+      "source": "[Return home]⟦P0000⟧",
+      "text": "[返回首页]⟦P0000⟧",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:99173ec7a0c331a9879b": {
+      "source": "Functional Analysis",
+      "text": "泛函分析",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:7c494b10046ac187299d": {
+      "source": "FUNCTIONAL ANALYSIS",
+      "text": "泛函分析",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "关于赋范空间、线性算子与对偶性的笔记，着重理解抽象结构背后的具体含义。",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:ca61f780eb53070846fd": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Functional Analysis",
+      "text": "[首页]⟦P0000⟧ / 数学笔记 / 泛函分析",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "关于赋范空间、线性算子与对偶性的笔记，着重理解抽象结构背后的具体含义。",
+      "locked": true
+    },
+    "functional-analysis.qmd::attribute:4537c108baea1844029a": {
+      "source": "A normed space and its dual, with unit balls and supporting functionals.",
+      "text": "赋范空间及其对偶空间，以及单位球和支撑泛函。",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "这里会陆续添加新的笔记。",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 文章与笔记 ⟦P0000⟧",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[返回首页，探索其他专题 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::metadata:e686f471e346fbe596e9": {
+      "source": "Harmonic Analysis",
+      "text": "调和分析",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::metadata:db7b7579cd0ecc96bcf4": {
+      "source": "Notes on frequency, oscillation, scale, and the structure of functions, starting with the basic intuitions of Fourier analysis.",
+      "text": "从傅里叶分析的基本直觉出发，记录关于频率、振荡、尺度与函数结构的思考。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:fdd7a4df43c62875322e": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Harmonic Analysis",
+      "text": "[首页]⟦P0000⟧ / 数学笔记 / 调和分析",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:76fe84331d303e4b459d": {
+      "source": "MATHEMATICAL NOTES · HARMONIC ANALYSIS",
+      "text": "数学笔记 · 调和分析",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:7bdb8206af10291372e2": {
+      "source": "# Harmonic Analysis ⟦P0000⟧",
+      "text": "# 调和分析 ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:62fe8d7d08bb2b93bbcc": {
+      "source": "Exploring different ways to understand functions through frequency, oscillation, and scale. These notes on Fourier analysis and related topics begin with the intuition behind basic concepts and develop toward more detailed arguments.",
+      "text": "从频率、振荡与尺度出发，探索理解函数的不同方式。这些关于傅里叶分析及相关主题的笔记，从基本概念背后的直觉开始，逐步走向更细致的论证。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:1d11ed9760d2b1441292": {
+      "source": "[Start with the geometry of frequency →]⟦P0000⟧⟦P0001⟧",
+      "text": "[从频率的几何开始 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::attribute:5c3df1a7e0c785815762": {
+      "source": "A wave decomposed into Fourier modes and a frequency spectrum.",
+      "text": "一个波分解为傅里叶模态，并呈现相应的频谱。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 文章与笔记 ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:f34415c833a043513399": {
+      "source": "From an intuition to a clear explanation.",
+      "text": "从一点直觉，到清晰的解释。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:866d82c8228f1dade492": {
+      "source": "READING SERIES",
+      "text": "系列阅读",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:63c9a4883b762e77b554": {
+      "source": "### The Geometry of Frequency ⟦P0000⟧",
+      "text": "### 频率的几何 ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:83ed235d7d5dc45ecd15": {
+      "source": "Starting with a single Fourier atom, explore how frequency describes direction, variation, and spatial scale.",
+      "text": "从单个傅里叶原子出发，探索频率如何描述方向、变化与空间尺度。",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:df098e727cbf39c46118": {
+      "source": "[Read the series →]⟦P0000⟧⟦P0001⟧",
+      "text": "[阅读这一系列 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::metadata:74dd29b56c5a1fa0e59b": {
+      "source": "Tian · Mathematical Notes, Reflections & Essays",
+      "text": "Tian · 数学笔记、随想与随笔",
+      "locked": true
+    },
+    "index.qmd::metadata:0923134ea36778ac083f": {
+      "source": "An open personal notebook for mathematical understanding, reading, reflection, and everyday essays.",
+      "text": "一本公开的个人笔记，记录对数学的理解、阅读、思考与日常随笔。",
+      "locked": true
+    },
+    "index.qmd::body:af4cece9b50072967278": {
+      "source": "Here I share my mathematical notes, reflections, and essays: from the intuition behind a concept to the details of a proof, from questions found in books to thoughts beyond mathematics. Understanding and writing, a little at a time.",
+      "text": "这里分享我的数学笔记、随想与随笔：从概念背后的直觉，到证明中的细节；从书中遇到的问题，到数学之外的思考。一点点理解，一点点写下。",
+      "locked": true
+    },
+    "index.qmd::body:82597f70271c5cafd9a3": {
+      "source": "[Browse mathematical notes ↓]⟦P0000⟧⟦P0001⟧",
+      "text": "[浏览数学笔记 ↓]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::attribute:e66b6af29616b13a9906": {
+      "source": "Noncommutative Fourier transform: a group, its matrix-valued Fourier coefficients, and reconstruction.",
+      "text": "非交换傅里叶变换：一个群、它的矩阵值傅里叶系数，以及重构过程。",
+      "locked": true
+    },
+    "index.qmd::body:01b8c5cb9058afef410f": {
+      "source": "## Mathematical Notes ⟦P0000⟧",
+      "text": "## 数学笔记 ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:2fcdd02928319a09b1ba": {
+      "source": "Exploring the connections between different branches of mathematics.",
+      "text": "探索数学不同分支之间的联系。",
+      "locked": true
+    },
+    "index.qmd::body:fba8e830a124912d0b0f": {
+      "source": "01 · HARMONIC ANALYSIS",
+      "text": "01 · 调和分析",
+      "locked": true
+    },
+    "index.qmd::body:5d5ca8fa2a3119d1ae53": {
+      "source": "### [Harmonic Analysis]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [调和分析]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:e1332b4a48eb311e8c5a": {
+      "source": "Exploring the structure of functions and the geometric intuition of Fourier analysis through frequency, oscillation, and scale.",
+      "text": "从频率、振荡与尺度出发，探索函数的结构与傅里叶分析中的几何直觉。",
+      "locked": true
+    },
+    "index.qmd::body:143d2002f444356f3230": {
+      "source": "[Explore harmonic analysis →]⟦P0000⟧⟦P0001⟧",
+      "text": "[探索调和分析 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:bbc1c8e8e2fcf3d2aa29": {
+      "source": "02 · MARTINGALE THEORY",
+      "text": "02 · 鞅论",
+      "locked": true
+    },
+    "index.qmd::body:822621d9906525502c0c": {
+      "source": "### [Martingale Theory]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [鞅论]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "关于条件期望、鞅与停时的笔记，涵盖随机过程中的基本概念、收敛性与不等式。",
+      "locked": true
+    },
+    "index.qmd::body:7106dfa2e6b808fc136c": {
+      "source": "[Explore martingale theory →]⟦P0000⟧⟦P0001⟧",
+      "text": "[探索鞅论 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:d2154c959a41ddfc41e2": {
+      "source": "03 · OPERATOR ALGEBRAS",
+      "text": "03 · 算子代数",
+      "locked": true
+    },
+    "index.qmd::body:e5a6ad3f704b845b90b7": {
+      "source": "### [Operator Algebras]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [算子代数]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "从希尔伯特空间上的算子出发，探索 C* 代数与冯·诺伊曼代数的语言和例子。",
+      "locked": true
+    },
+    "index.qmd::body:df20eb16742be0b3dd14": {
+      "source": "[Explore operator algebras →]⟦P0000⟧⟦P0001⟧",
+      "text": "[探索算子代数 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:3f5c8943df2ddc721615": {
+      "source": "04 · FUNCTIONAL ANALYSIS",
+      "text": "04 · 泛函分析",
+      "locked": true
+    },
+    "index.qmd::body:f68db266ec8eb439aacd": {
+      "source": "### [Functional Analysis]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [泛函分析]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "关于赋范空间、线性算子与对偶性的笔记，着重理解抽象结构背后的具体含义。",
+      "locked": true
+    },
+    "index.qmd::body:145ded02e04daa80615d": {
+      "source": "[Explore functional analysis →]⟦P0000⟧⟦P0001⟧",
+      "text": "[探索泛函分析 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:7f4bdf4914e6988c6fa2": {
+      "source": "BEYOND MATHEMATICS",
+      "text": "数学之外",
+      "locked": true
+    },
+    "index.qmd::body:4dcef8f4ee1c30f836c8": {
+      "source": "## Reflections & Essays ⟦P0000⟧",
+      "text": "## 随想与随笔 ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:b92ea9f1ecd9745ce9aa": {
+      "source": "A place for thoughts that need not become theorems: reflections on reading, everyday observations, and questions still taking shape.",
+      "text": "留给那些不必成为定理的想法：阅读中的思考、日常的观察，以及仍在慢慢成形的问题。",
+      "locked": true
+    },
+    "index.qmd::body:bab92a80154962e9f531": {
+      "source": "[Explore reflections and essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[阅读随想与随笔 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::attribute:d663ac9f69ebef433f6a": {
+      "source": "An open notebook with mathematical ideas and a path from questions to understanding.",
+      "text": "一本展开的笔记本，记录数学想法，以及从问题走向理解的过程。",
+      "locked": true
+    },
+    "index.qmd::body:89882d48532633a62650": {
+      "source": "## Latest Updates ⟦P0000⟧",
+      "text": "## 最近更新 ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:38c08fed5bca9bf808b1": {
+      "source": "A little understanding, one entry at a time.",
+      "text": "每写下一篇，就多一点理解。",
+      "locked": true
+    },
+    "martingales.qmd::metadata:6200656c83843f9b70d0": {
+      "source": "Martingale Theory",
+      "text": "鞅论",
+      "locked": true
+    },
+    "martingales.qmd::metadata:41669b2cfe06b1016684": {
+      "source": "MARTINGALE THEORY",
+      "text": "鞅论",
+      "locked": true
+    },
+    "martingales.qmd::metadata:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "关于条件期望、鞅与停时的笔记，涵盖随机过程中的基本概念、收敛性与不等式。",
+      "locked": true
+    },
+    "martingales.qmd::body:4cfccfc82d763c0e7f22": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Martingale Theory",
+      "text": "[首页]⟦P0000⟧ / 数学笔记 / 鞅论",
+      "locked": true
+    },
+    "martingales.qmd::body:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "关于条件期望、鞅与停时的笔记，涵盖随机过程中的基本概念、收敛性与不等式。",
+      "locked": true
+    },
+    "martingales.qmd::attribute:1b174854ff7c425ed1d7": {
+      "source": "Conditional expectation along a martingale path through an increasing filtration.",
+      "text": "随滤过递增，鞅路径上的条件期望。",
+      "locked": true
+    },
+    "martingales.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "这里会陆续添加新的笔记。",
+      "locked": true
+    },
+    "martingales.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 文章与笔记 ⟦P0000⟧",
+      "locked": true
+    },
+    "martingales.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[返回首页，探索其他专题 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:ff5ee4973118da5fae59": {
+      "source": "Operator Algebras",
+      "text": "算子代数",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:51cebc5ac13099058623": {
+      "source": "OPERATOR ALGEBRAS",
+      "text": "算子代数",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "从希尔伯特空间上的算子出发，探索 C* 代数与冯·诺伊曼代数的语言和例子。",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:c9e92451eee1c9644403": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Operator Algebras",
+      "text": "[首页]⟦P0000⟧ / 数学笔记 / 算子代数",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "从希尔伯特空间上的算子出发，探索 C* 代数与冯·诺伊曼代数的语言和例子。",
+      "locked": true
+    },
+    "operator-algebras.qmd::attribute:75caa4c4575b265b12b9": {
+      "source": "Spectral projections and the spectral decomposition of an operator.",
+      "text": "谱投影与算子的谱分解。",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "这里会陆续添加新的笔记。",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 文章与笔记 ⟦P0000⟧",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[返回首页，探索其他专题 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "personal.qmd::metadata:43db4908d13b710293a0": {
+      "source": "Reflections & Essays",
+      "text": "随想与随笔",
+      "locked": true
+    },
+    "personal.qmd::metadata:ed75ecb068ffc5f105e0": {
+      "source": "REFLECTIONS & ESSAYS",
+      "text": "随想与随笔",
+      "locked": true
+    },
+    "personal.qmd::metadata:4d340493034b4b0d6da3": {
+      "source": "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.",
+      "text": "留给那些不必成为定理的想法。这里收集阅读中的思考、日常的观察，以及数学之外的随笔。",
+      "locked": true
+    },
+    "personal.qmd::body:8104617fb9899748fbab": {
+      "source": "[Home]⟦P0000⟧ / Reflections & Essays",
+      "text": "[首页]⟦P0000⟧ / 随想与随笔",
+      "locked": true
+    },
+    "personal.qmd::body:4d340493034b4b0d6da3": {
+      "source": "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.",
+      "text": "留给那些不必成为定理的想法。这里收集阅读中的思考、日常的观察，以及数学之外的随笔。",
+      "locked": true
+    },
+    "personal.qmd::attribute:d663ac9f69ebef433f6a": {
+      "source": "An open notebook with mathematical ideas and a path from questions to understanding.",
+      "text": "一本展开的笔记本，记录数学想法，以及从问题走向理解的过程。",
+      "locked": true
+    },
+    "personal.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "这里会陆续添加新的笔记。",
+      "locked": true
+    },
+    "personal.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## 文章与笔记 ⟦P0000⟧",
+      "locked": true
+    },
+    "personal.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[返回首页，探索其他专题 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::metadata:06d05b8b71aed138d2a0": {
+      "source": "The Geometry of Frequency",
+      "text": "频率的几何",
+      "locked": true
+    },
+    "series.qmd::metadata:b04444a86d7a6d0a1915": {
+      "source": "Harmonic Analysis · Reading Series",
+      "text": "调和分析 · 系列阅读",
+      "locked": true
+    },
+    "series.qmd::metadata:5f449ce7d3ce38121bf3": {
+      "source": "Starting with Fourier atoms, explore frequency direction, surfaces of constant phase, and spatial scale.",
+      "text": "从傅里叶原子出发，探索频率的方向、等相位面与空间尺度。",
+      "locked": true
+    },
+    "series.qmd::body:a1b7f2f99cf11075a50e": {
+      "source": "[Home]⟦P0000⟧ / [Harmonic Analysis]⟦P0001⟧ / The Geometry of Frequency",
+      "text": "[首页]⟦P0000⟧ / [调和分析]⟦P0001⟧ / 频率的几何",
+      "locked": true
+    },
+    "series.qmd::body:d4d0fceee02d13ba55c7": {
+      "source": "Frequency is more than a number describing how fast something changes. This series starts with a single Fourier atom and explores how the frequency vector encodes the direction of variation, surfaces of constant phase, and spatial scale.",
+      "text": "频率不只是一个描述变化快慢的数。这一系列从单个傅里叶原子出发，探索频率向量如何刻画变化的方向、等相位面与空间尺度。",
+      "locked": true
+    },
+    "series.qmd::body:8a80caf6ba523bb62133": {
+      "source": "PART I · 2026-10-10",
+      "text": "第一篇 · 2026-10-10",
+      "locked": true
+    },
+    "series.qmd::body:443faf9381fc2f12b4cf": {
+      "source": "## [The Basic Geometric Meaning of Frequency in Fourier Analysis (1)]⟦P0000⟧ ⟦P0001⟧",
+      "text": "## [傅里叶分析中频率的基本几何意义（1）]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::body:1e7380bba0de83dc6c79": {
+      "source": "Fourier atoms and frequency · Directional smoothness and frequency localization · Spatial scale versus frequency scale.",
+      "text": "傅里叶原子与频率 · 方向光滑性与频率局部化 · 空间尺度与频率尺度。",
+      "locked": true
+    },
+    "series.qmd::body:caefafb0047941e524b4": {
+      "source": "[Read the full article →]⟦P0000⟧⟦P0001⟧",
+      "text": "[阅读全文 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::body:67a7661db9419a75e2db": {
+      "source": "Further articles will appear here as they are published.",
+      "text": "后续文章发表后会陆续列在这里。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:1fa899e039548e047aa5": {
+      "source": "The Basic Geometric Meaning of Frequency in Fourier Analysis (1)",
+      "text": "傅里叶分析中频率的基本几何意义（1）",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:b5658fc8edda24f9c94e": {
+      "source": "On this page",
+      "text": "本页目录",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:5c545b59ac65461ecb9d": {
+      "source": "Fourier geometry · Part I",
+      "text": "傅里叶几何 · 第一篇",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:ce35dd45ee6beaefe315": {
+      "source": "Fourier atoms, directional variation, and the reciprocal relationship between spatial scale and frequency.",
+      "text": "傅里叶原子、沿不同方向的变化，以及空间尺度与频率之间的倒数关系。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:442b482f771b0f2c0dc4": {
+      "source": "[Home]⟦P0000⟧ / [Harmonic Analysis]⟦P0001⟧ / [The Geometry of Frequency]⟦P0002⟧",
+      "text": "[首页]⟦P0000⟧ / [调和分析]⟦P0001⟧ / [频率的几何]⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:23e4ee66e20518518f99": {
+      "source": "⟦P0000⟧\n⟦P0001⟧On this page⟦P0002⟧",
+      "text": "⟦P0000⟧\n⟦P0001⟧本页目录⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0b4cdf634efc2022cba9": {
+      "source": "- [Fourier atoms and frequency]⟦P0000⟧\n- [Directional smoothness and frequency localization]⟦P0001⟧\n- [Spatial scale versus frequency scale]⟦P0002⟧",
+      "text": "- [傅里叶原子与频率]⟦P0000⟧\n- [方向光滑性与频率局部化]⟦P0001⟧\n- [空间尺度与频率尺度]⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:d8f094e6ae067a6b1ad1": {
+      "source": "When I first encountered the concept of frequency in harmonic analysis, I had only a rough understanding of it.",
+      "text": "最初接触调和分析中的频率概念时，我对它只有一个粗浅的理解。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b5d2cf60dcc0b0ac35eb": {
+      "source": "It wasn't until I studied Littlewood–Paley theory that I began to appreciate the geometric structure underlying the notion of frequency. Even then, I hadn't really thought deeply about what frequency meant from a geometric perspective.",
+      "text": "直到学习 Littlewood–Paley 理论，我才开始体会到频率这一概念背后的几何结构。即便如此，那时我也没有真正深入思考过：从几何的角度看，频率究竟意味着什么。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0c79dcd5bf61fbc46018": {
+      "source": "Recently, I've been studying some of Seeger's work on singular integrals. Certain techniques used in his proofs have pushed me to revisit these fundamental ideas and think more carefully about the geometry of frequency.",
+      "text": "最近，我在学习 Seeger 关于奇异积分的一些工作。他的证明中用到的某些技巧，促使我重新审视这些基本想法，更仔细地思考频率的几何。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:19f84dd7369394349a40": {
+      "source": "In fact, it is due to the need for my recent research that I've begun to explore these geometric ideas in greater depth.",
+      "text": "事实上，正是出于近期研究的需要，我才开始更深入地探索这些几何想法。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:1fa29205cfa44f07a83f": {
+      "source": "The reason I chose the word \"basic\" in the title of my article is that the ideas themselves are simple, yet profound.",
+      "text": "我在文章标题中选用“基本”这个词，是因为这些想法本身简单，却又深刻。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:923acb83ce083ec538e0": {
+      "source": "I'm planning a series of about three articles, through which I'll gradually build up from these fundamental ideas to Seeger's work on singular integrals.",
+      "text": "我计划写一个大约三篇文章的系列，从这些基本想法出发，逐步讲到 Seeger 关于奇异积分的工作。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:c65efa3de45872d97be0": {
+      "source": "Although the ideas can be quite deep, I'll do my best to explain them in a clear, intuitive, and accessible way, so that even readers without a background in mathematics can follow along.",
+      "text": "尽管这些想法可能相当深刻，我还是会尽量把它们讲得清楚、直观、容易理解，让没有数学背景的读者也能跟上。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0d27d0ba37a39797a059": {
+      "source": "So, if you're not a mathematics major but still have an interest in the subject, don't worry! I'll try to make these ideas approachable without requiring much advanced mathematical knowledge. Just bring your curiosity and enjoy the journey!",
+      "text": "所以，如果你不是数学专业，但对数学仍有兴趣，也不用担心！我会尽量让这些想法容易亲近，不需要太多高深的数学知识。带上你的好奇心，享受这段探索就好！",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:10bb2a22fbfa9c3eb522": {
+      "source": "## Fourier atoms and frequency ⟦P0000⟧",
+      "text": "## 傅里叶原子与频率 ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:38c3da7cf0a808995490": {
+      "source": "We begin with the simplest Fourier atom:",
+      "text": "我们从最简单的傅里叶原子开始：",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:988adc1ea2563a4dfeaf": {
+      "source": "Its “frequency” is ⟦P0000⟧. Why? Differentiation in an arbitrary direction ⟦P0001⟧ yields",
+      "text": "它的“频率”是 ⟦P0000⟧。为什么？沿任意方向 ⟦P0001⟧ 求导，得到",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:5825249f3370c540907a": {
+      "source": "Thus ⟦P0000⟧ tells you directly in which directions the function varies rapidly, and how small the corresponding scale of variation is. More precisely, if ⟦P0001⟧ is a unit vector and ⟦P0002⟧, the oscillation along ⟦P0003⟧ has spatial period ⟦P0004⟧.",
+      "text": "因此，⟦P0000⟧ 直接告诉我们：函数沿哪些方向变化得快，以及相应的变化尺度有多小。更准确地说，若 ⟦P0001⟧ 是单位向量，且 ⟦P0002⟧，那么沿 ⟦P0003⟧ 方向的振荡，其空间周期为 ⟦P0004⟧。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:29c80f917f330eae7925": {
+      "source": "In particular, if",
+      "text": "特别地，若",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:21af6f1260f927f5b9b3": {
+      "source": "then",
+      "text": "则",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:c5e42c31402fc957ee05": {
+      "source": "In other words, the wave is completely invariant in the direction ⟦P0000⟧.",
+      "text": "换句话说，这个波沿 ⟦P0000⟧ 方向完全不变。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:570eba65c4decda297db": {
+      "source": "Consequently, the geometric meaning of ⟦P0000⟧ is not simply that “the wave travels in the direction of ⟦P0001⟧” (there is no time variable here), but rather the following: ⟦P0002⟧ is the gradient of the phase ⟦P0003⟧ and, when ⟦P0004⟧, a normal vector to the surfaces of constant phase. The equiphase surfaces",
+      "text": "因此，⟦P0000⟧ 的几何意义，并不只是“波沿 ⟦P0001⟧ 的方向传播”（这里并没有时间变量），而是：⟦P0002⟧ 是相位 ⟦P0003⟧ 的梯度；当 ⟦P0004⟧ 时，它也是等相位面的一个法向量。这些等相位面",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:fc92a20433c87863bac3": {
+      "source": "are hyperplanes orthogonal to ⟦P0000⟧.",
+      "text": "是与 ⟦P0000⟧ 正交的超平面。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0f93fe4fe011b1f264ca": {
+      "source": "## Directional smoothness and frequency localization ⟦P0000⟧",
+      "text": "## 方向光滑性与频率局部化 ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:79e48304cc5b75b17d81": {
+      "source": "This immediately explains an important phenomenon. Suppose a function is nearly invariant along a unit direction ⟦P0000⟧:",
+      "text": "这立即解释了一个重要现象。假设一个函数沿某个单位方向 ⟦P0000⟧ 几乎不变：",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:415f4cd238e188405e04": {
+      "source": "Here ⟦P0000⟧ denotes the Fourier transform of ⟦P0001⟧, defined for sufficiently nice functions by",
+      "text": "这里，⟦P0000⟧ 表示 ⟦P0001⟧ 的傅里叶变换；对性质足够好的函数，它定义为",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b168e77b0827dc6abca4": {
+      "source": "After Fourier transformation,",
+      "text": "作傅里叶变换后，",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:a03583c9c679a28e8d10": {
+      "source": "If the left-hand side is small in ⟦P0000⟧, the right-hand side is also small in ⟦P0001⟧. More precisely, for any ⟦P0002⟧, the ⟦P0003⟧ mass of ⟦P0004⟧ in the region ⟦P0005⟧ is controlled by ⟦P0006⟧. Hence the Fourier mass tends to concentrate where",
+      "text": "如果左边在 ⟦P0000⟧ 范数下很小，那么右边在 ⟦P0001⟧ 范数下也很小。更准确地说，对任意 ⟦P0002⟧，就 ⟦P0003⟧ 质量而言，⟦P0004⟧ 在区域 ⟦P0005⟧ 内的质量由 ⟦P0006⟧ 控制。因此，傅里叶质量倾向于集中在满足下式的区域：",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b3c64ff187ca96cbf9dd": {
+      "source": "that is, near the hyperplane",
+      "text": "也就是以下超平面附近：",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:aa67611cbe64dbfc8dce": {
+      "source": "This is a statement about concentration of Fourier mass, not necessarily about the exact support of ⟦P0000⟧.",
+      "text": "这里说的是傅里叶质量的集中，并不一定是在描述 ⟦P0000⟧ 的精确支集。",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:51e0522dbeef69c3eb4e": {
+      "source": "## Spatial scale versus frequency scale ⟦P0000⟧",
+      "text": "## 空间尺度与频率尺度 ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:d8087b6c019276987445": {
+      "source": "Another intuition worth fixing at this stage is that “large scale” in space corresponds to “small scale” in frequency. For example, for a one-dimensional function",
+      "text": "在这里，另一个值得明确的直觉是：空间中的“大尺度”对应频率中的“小尺度”。例如，考虑一维函数",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:37eecd16d7fdb874f32e": {
+      "source": "where ⟦P0000⟧ and ⟦P0001⟧ is a fixed, sufficiently regular function describing the original shape of ⟦P0002⟧. If ⟦P0003⟧ varies on a spatial scale of order one, then the spatial scale of variation of ⟦P0004⟧ is of order ⟦P0005⟧. Its Fourier transform satisfies the exact identity",
+      "text": "其中 ⟦P0000⟧，而 ⟦P0001⟧ 是一个固定且充分正则的函数，用来描述 ⟦P0002⟧ 的原始形状。如果 ⟦P0003⟧ 在量级为一的空间尺度上变化，那么 ⟦P0004⟧ 的空间变化尺度的量级就是 ⟦P0005⟧。其傅里叶变换满足如下精确恒等式：",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:2085f39c0dde3268a76a": {
+      "source": "Thus, if ⟦P0000⟧ is mainly concentrated where ⟦P0001⟧, then the Fourier transform of ⟦P0002⟧ is mainly concentrated where",
+      "text": "因此，如果 ⟦P0000⟧ 主要集中在 ⟦P0001⟧ 的区域，那么 ⟦P0002⟧ 的傅里叶变换就主要集中在满足下式的区域：",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:4dc14bc3866f9f6f8167": {
+      "source": "Therefore: slow variation corresponds to low frequency, and rapid variation corresponds to high frequency.",
+      "text": "所以，变化缓慢对应低频，变化迅速对应高频。",
+      "locked": true
+    },
+    "index.qmd::body:6e26f6cdc745ab624bb5": {
+      "source": "# Starting with mathematics,⟦P0000⟧writing thoughts down. ⟦P0001⟧",
+      "text": "# 从数学出发，⟦P0000⟧把思考写下来。 ⟦P0001⟧",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::metadata:9333fb0373b5bc5a1964": {
+      "source": "Finding My Way Back to Mathematics",
+      "text": "重新找回做数学的初心",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::metadata:b88626e55d97b3473bcb": {
+      "source": "On AI, the joy of doing mathematics, and finding a way to hold on to both a vocation and an inner life.",
+      "text": "关于 AI、做数学的快乐，以及如何兼顾职业与精神生活的思考。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:d060e21d11abc44c3c61": {
+      "source": "[Home]⟦P0000⟧ / [Reflections & Essays]⟦P0001⟧",
+      "text": "[首页]⟦P0000⟧ / [随想与随笔]⟦P0001⟧",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:839fffabdadb15864f7d": {
+      "source": "I remember when I first chose to do mathematical research. I thought it would be a good life to do work that might not be all that important, but that I could feel satisfied with. To devote my career to mathematics.",
+      "text": "想起当年一开始选择做数学科研的那会，就觉得以后如果做些可能没那么重要但是让自己满意的工作，也很不错。把生涯奉献给数学。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:554d5e212de2296f3853": {
+      "source": "For a while around the middle of this year, I started asking AI to help me work through a problem that had little to do with my own research.",
+      "text": "今年年中有段时间，开始让AI帮我推导一个与自己研究不怎么沾边的问题。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:bf045c381fb8dcd647cd": {
+      "source": "AI was so powerful. Gradually, I noticed that my attitude toward mathematics was changing. Papers I had once seen as works of art began to look like industrial products, things that could be manufactured in bulk.",
+      "text": "ai的能力太强大了。慢慢地我发现，在那段时间，我看待数学的态度发生了改变。以前觉得是艺术品的论文，开始觉得像工业品一样，是可以生产批发的。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:90e3089e61d67454deec": {
+      "source": "During that period, I had more or less lost control over what AI was generating. I wasn't looking closely at what results it had produced or what proofs it had completed. It worked too fast. My understanding of what it was doing went no further than the log it submitted each time—which arguments it had completed in that round, and what remained unresolved. Beyond that, I knew nothing about its work. I had no way to stay in control or judge what it was producing, and I wouldn't post any of it. I think the minimum responsibility of a mathematical researcher should be to stand behind what they produce.",
+      "text": "那段时间我基本对ai生成的内容失去了掌控，我不会去细究它生产了什么样的结果，闭合了什么证明。它做的太快了。我对它在做问题的了解仅仅止步于每次提交的日志报告——本轮闭合了什么推导，还有什么没有解决，除此之外，我对它的工作一无所知。我没有办法掌控和辨别，也不会把它们挂出来。我觉得数学科研者的底线应该是对自己产出的内容负责。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:cb61134b7eabe4c2b5fd": {
+      "source": "I wasn't getting much joy out of mathematics then. Every day, I'd excitedly follow which model had just been updated, which model had come out on top on FrontierMath, and then off I'd eagerly go to try it out and see how it performed.",
+      "text": "我那会并没数学中得到多少乐趣，每天很兴奋地去跟进什么什么模型又更新了，什么模型又在FrontierMath上面胜出了，然后屁颠屁颠去试用，看看效果。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:b937a5c4d26cb7111ba4": {
+      "source": "Later, I realized that I no longer loved mathematics the way I used to. I was becoming more and more focused on results. So I made up my mind to change:",
+      "text": "再后来，我意识到我没有像以前那样热爱数学了，变得越来越结果导向。然后下定决心改变:",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:316a7c327c3392a074a6": {
+      "source": "If I had started learning mathematics in the first place to find joy, why should I let anxiety make me willingly give up this hard-won ability to feel it?",
+      "text": "如果我本来学数学的意图就是为了收获快乐，为什么要因为焦虑而主动放弃这来之不易的快乐感知呢？",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:87c08f478cba717b653b": {
+      "source": "I began to rethink my relationship with AI. When reading papers, I stopped asking it to generate companion notes and went back to slowly working through the originals. I also stopped asking AI to solve problems, and instead began exploring research outside my own field that interested me. When I came across something I didn't understand, I still asked AI, but my mindset was different. I wouldn't just ask it to solve the problem for me. Instead, I treated it as a search engine, going back to my caveman ways.",
+      "text": "我开始重新调整自己与ai的身份关系，读论文时不再让ai生成一份辅助资料，对着原文慢慢啃。我也不再让ai去解问题，而是去做一些非我领域的且我感兴趣的研究。遇到不懂的东西，我仍然会问AI，但心态已经不同了，也不会直接让ai解题。而是作为一个搜索引擎，回归原始人状态。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:3409398ee8022389734e": {
+      "source": "Slowing down makes the pressure of the times a little less suffocating.",
+      "text": "放慢脚步，会让时代的压迫感没那么令人窒息。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:9faa84e35e0fab8e2f48": {
+      "source": "Whether we like it or not, we have all been forced into an extraordinarily brutal upheaval, unable to see what lies ahead. That includes the figures in mathematics who were once celebrated as the pinnacle of human intelligence. The mathematical beauty and ideals we once held dear have been mercilessly crushed by the steamroller of the times. I can work slowly on mathematics and enjoy the process, but the times will not wait for me.",
+      "text": "不管喜欢与否，我们都被迫卷入了一场极其残酷的动荡，看不清未来，包括数学界那些曾经被诩为最高智慧的人物。心中曾经的数学审美与理想追求，被时代的压路机无情碾过。我可以慢慢做让我享受过程的数学，但是时代不会等我。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:2e3cdab6ba643027eda5": {
+      "source": "My own advice is not to be too much of a purist, but not to abandon your inner world altogether either. We can work on a problem that interests us, making progress slowly, and we can also use technology to help produce high-quality papers. The two do not conflict. But for now, I still believe that the minimum responsibility of a mathematical researcher should be to stand behind what they produce. Even if most of a piece of work was done by AI, you need to know the details at every point and be able to stand up and vouch for it.",
+      "text": "我个人的建议就是，不要有过高的精神洁癖，但也不要完全放弃精神世界，我们可以做一个自己感兴趣的问题，慢慢推进，也可以使用技术辅助产出高水平的文章，这两者不冲突。但是我当前还是坚持认为数学科研者的底线应该是对自己产出的内容负责，即使你的作品大部分都是ai的工作，你也要知道任何位置的细节是什么样的，能够拍着胸脯担保。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:3c44da49eea0bd806cc7": {
+      "source": "Separate your interests from your profession. We can be mathematical researchers professionally, while also doing traditional mathematical research as a hobby—taking it one step at a time and enjoying the process. Work is work. Life is life.",
+      "text": "把兴趣和职业分开，我们可以是数学研究人员，但业余兴趣也可以是做传统的数学研究，一步一个脚印享受数学的过程。工作是工作，生活是生活。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:c9a5470c3ccba6d352ff": {
+      "source": "The older generation of mathematicians may be able to weather the impact with the resources, social standing, and titles they have accumulated. What are we supposed to do? Young people who are only just setting out must be at the forefront of productivity.",
+      "text": "老一辈做数学的可能可以靠着积累的资源、社会地位与头衔避过冲击。我们应该怎么办呢？刚刚上路的年轻人必须拥有前列的生产力。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:7eedfd3effc83d05f3a9": {
+      "source": "The truth is, I've felt lost all this time. But I don't want to lose my ideals again. Using AI to do mathematics is where things are headed. Still, setting aside time every day for my own old-school research can be a side pursuit that makes life richer.",
+      "text": "其实我一直很迷茫，但是我不想再一次失去理想。用ai做数学是大势所趋，而每天抽时间做自己的传统派科研，也可以是一个丰富生活的支线。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:36f4c32e055a9dfdbdc0": {
+      "source": "Returning to what drew me here in the first place makes me feel younger. It brings back a childlike sense of wonder, that feeling from my student days when I'd see a beautiful proof, clap in delight, and stay excited all day. That's what I want.",
+      "text": "回归初心的时候会感觉自己变年轻，会找回童真，会找到学生时代看到一个漂亮证明拍手叫绝兴奋一天的感觉。那是我想要的。",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:91ff6f69d2ee58fb8a41": {
+      "source": "[Back to Reflections & Essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[返回随想与随笔 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::metadata:f20e057f9257c641c15e": {
+      "source": "We Should Stand Together",
+      "text": "我们应该团结起来",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::metadata:cf9697941fedd8138b5b": {
+      "source": "On the disruption of mathematics by AI, what it may mean for other fields, and why people should stand together.",
+      "text": "关于 AI 对数学的冲击、其他领域可能面临的变化，以及人们为何应该团结起来的思考。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:d060e21d11abc44c3c61": {
+      "source": "[Home]⟦P0000⟧ / [Reflections & Essays]⟦P0001⟧",
+      "text": "[首页]⟦P0000⟧ / [随想与随笔]⟦P0001⟧",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:85dcf692638b89ac3118": {
+      "source": "People from outside mathematics come swarming in, throw stones down the well, and walk away laughing.",
+      "text": "大量数学之外的人蜂拥而至，向井里投下石子，哄笑着走开。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:5b9a560f6ba1f1a251df": {
+      "source": "Few people outside mathematics have stopped to consider this: if mathematics, a field at the forefront of this disruption, cannot establish new, workable norms that allow humans and AI to coexist harmoniously, then when other fields face the same disruption and need to build a new order, what useful example will they have to learn from? Chaos will sweep through other industries, again and again.",
+      "text": "很少有数学外的人思考过，如果在数学这个受到冲击的先锋领域无法做到建立起新的、合适的行业规范，做到人与AI和谐共生，那么未来其他领域受到冲击的时候，需要建立起新的秩序的时候，又如何拥有一个适合参考的例子来借鉴经验呢？混乱又会一次又一次的席卷其他行业。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:69a5b542c6579f1a7edb": {
+      "source": "Every time AI “breaks through” a field, the increase in its power is far more than a matter of 1 + 1 = 2. Coding gives it frightening engineering capabilities, while surpassing humans in mathematics means having formidable abilities in modeling and making breakthroughs on extremely difficult problems. And these two reinforce each other. In other words, with every industry it conquers, AI's capabilities multiply. Different fields strengthen one another, until it becomes too formidable to face and impossible to defeat.",
+      "text": "每当AI“攻破”一个领域的时候，它的力量增长远不能1+1=2来测算。代码能力能够让它具有恐怖的工程实现能力，而数学能力超越人类则意味着其拥有极强悍的建模、高难问题突破能力。而这两者是会互相增幅的。也就是说，每当AI攻下一个行业的城池，它的能力会成倍的增加。不同领域之间会互相增益，直到强到不可逼视、不可战胜。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:f9e08bb8566f5cc57954": {
+      "source": "When AI moves into other industries in the future, the sheer force of its problem modeling, coding, and breakthroughs in core theory will let it easily overrun other fields of science and engineering. Multimodal breakthroughs are also coming at an increasingly staggering pace, and AI is gaining more and more interfaces with the real world. Perhaps even experimental science will not be a secure moat in the future.",
+      "text": "未来AI介入其他行业，暴力的问题建模、编码、核心理论突破，会让其他理工行业轻松失守。多模态的突破速度也越来越夸张，AI得到越来越多真实世界的接口，或许实验科学在以后也未必是稳固的护城河",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:5f630e2bc2cf6e90d1be": {
+      "source": "Some people think researching AI itself might offer more security. But today's top models have already begun to iterate on themselves. If, in the future, model training, model releases, and so on no longer need humans to carry them out, will we really need this many people working in AI?",
+      "text": "有些人觉得研究ai领域本身可能会比较安全，但是现在顶级模型已经开始自迭代了，当未来模型训练、模型发布等内容本身不需要人类完成的时候，未来真的需要这么多做ai方向的人吗？",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:fed2857d882459060f61": {
+      "source": "Embodied intelligence is also beginning to produce results, and AI's ability to act in the real world is growing. Physical labor, hands-on experiments, real-world feedback—all of these will fall too. The threat AI poses to people's ability to survive in most fields is no longer something imagined in science fiction.",
+      "text": "包括具身智能的发展也开始陆续取得成果，AI在真实世界的行动能力开始提升。劳动行业、实验操作、真实反馈，这些都会失守。AI威胁人类在大部分领域的生存情况已经不是科幻写作的想象了",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:a15904cd8de1c5bee4b2": {
+      "source": "Since OpenAI published its series of mathematics papers, I've seen a great many posts in the past few days attacking mathematical researchers. Tao has borne the brunt of the criticism, turned into fodder for public opinion.",
+      "text": "自从OpenAI发布一系列数学论文之后，这几天看到非常多攻击数学研究者的帖子，Tao首当其冲受到批评，成为了被舆论消费的对象。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:cf01481bec88eef31425": {
+      "source": "We should stand together.",
+      "text": "人们应该团结起来。",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:91ff6f69d2ee58fb8a41": {
+      "source": "[Back to Reflections & Essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[返回随想与随笔 →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    }
+  }
+}
