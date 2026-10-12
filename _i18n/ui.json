@@ -115,7 +115,8 @@
     "format": {
       "html": {
         "lang": "zh-CN",
-        "toc-title": "本页目录"
+        "toc-title": "本页目录",
+        "date-format": "YYYY年M月D日"
       }
     },
     "raw-replacements": {
@@ -186,7 +187,8 @@
     "format": {
       "html": {
         "lang": "ja",
-        "toc-title": "目次"
+        "toc-title": "目次",
+        "date-format": "YYYY年M月D日"
       }
     },
     "raw-replacements": {
