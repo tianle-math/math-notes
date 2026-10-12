@@ -1,0 +1,33 @@
+---
+title: "We Should Stand Together"
+author: Tian
+date: 2026-10-12
+categories: [Reflections & Essays]
+notebook-topic: personal
+lang: en
+original-language: zh-CN
+toc: false
+description: "On the disruption of mathematics by AI, what it may mean for other fields, and why people should stand together."
+---
+
+::: {.page-breadcrumb}
+[Home](../index.qmd) / [Reflections & Essays](../personal.qmd)
+:::
+
+People from outside mathematics come swarming in, throw stones down the well, and walk away laughing.
+
+Few people outside mathematics have stopped to consider this: if mathematics, a field at the forefront of this disruption, cannot establish new, workable norms that allow humans and AI to coexist harmoniously, then when other fields face the same disruption and need to build a new order, what useful example will they have to learn from? Chaos will sweep through other industries, again and again.
+
+Every time AI “breaks through” a field, the increase in its power is far more than a matter of 1 + 1 = 2. Coding gives it frightening engineering capabilities, while surpassing humans in mathematics means having formidable abilities in modeling and making breakthroughs on extremely difficult problems. And these two reinforce each other. In other words, with every industry it conquers, AI's capabilities multiply. Different fields strengthen one another, until it becomes too formidable to face and impossible to defeat.
+
+When AI moves into other industries in the future, the sheer force of its problem modeling, coding, and breakthroughs in core theory will let it easily overrun other fields of science and engineering. Multimodal breakthroughs are also coming at an increasingly staggering pace, and AI is gaining more and more interfaces with the real world. Perhaps even experimental science will not be a secure moat in the future.
+
+Some people think researching AI itself might offer more security. But today's top models have already begun to iterate on themselves. If, in the future, model training, model releases, and so on no longer need humans to carry them out, will we really need this many people working in AI?
+
+Embodied intelligence is also beginning to produce results, and AI's ability to act in the real world is growing. Physical labor, hands-on experiments, real-world feedback—all of these will fall too. The threat AI poses to people's ability to survive in most fields is no longer something imagined in science fiction.
+
+Since OpenAI published its series of mathematics papers, I've seen a great many posts in the past few days attacking mathematical researchers. Tao has borne the brunt of the criticism, turned into fodder for public opinion.
+
+We should stand together.
+
+[Back to Reflections & Essays →](../personal.qmd){.reading-link}

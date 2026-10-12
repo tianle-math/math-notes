@@ -1,0 +1,47 @@
+---
+title: "Finding My Way Back to Mathematics"
+author: Tian
+date: 2026-10-12
+categories: [Reflections & Essays]
+notebook-topic: personal
+lang: en
+original-language: zh-CN
+toc: false
+description: "On AI, the joy of doing mathematics, and finding a way to hold on to both a vocation and an inner life."
+---
+
+::: {.page-breadcrumb}
+[Home](../index.qmd) / [Reflections & Essays](../personal.qmd)
+:::
+
+I remember when I first chose to do mathematical research. I thought it would be a good life to do work that might not be all that important, but that I could feel satisfied with. To devote my career to mathematics.
+
+For a while around the middle of this year, I started asking AI to help me work through a problem that had little to do with my own research.
+
+AI was so powerful. Gradually, I noticed that my attitude toward mathematics was changing. Papers I had once seen as works of art began to look like industrial products, things that could be manufactured in bulk.
+
+During that period, I had more or less lost control over what AI was generating. I wasn't looking closely at what results it had produced or what proofs it had completed. It worked too fast. My understanding of what it was doing went no further than the log it submitted each time—which arguments it had completed in that round, and what remained unresolved. Beyond that, I knew nothing about its work. I had no way to stay in control or judge what it was producing, and I wouldn't post any of it. I think the minimum responsibility of a mathematical researcher should be to stand behind what they produce.
+
+I wasn't getting much joy out of mathematics then. Every day, I'd excitedly follow which model had just been updated, which model had come out on top on FrontierMath, and then off I'd eagerly go to try it out and see how it performed.
+
+Later, I realized that I no longer loved mathematics the way I used to. I was becoming more and more focused on results. So I made up my mind to change:
+
+If I had started learning mathematics in the first place to find joy, why should I let anxiety make me willingly give up this hard-won ability to feel it?
+
+I began to rethink my relationship with AI. When reading papers, I stopped asking it to generate companion notes and went back to slowly working through the originals. I also stopped asking AI to solve problems, and instead began exploring research outside my own field that interested me. When I came across something I didn't understand, I still asked AI, but my mindset was different. I wouldn't just ask it to solve the problem for me. Instead, I treated it as a search engine, going back to my caveman ways.
+
+Slowing down makes the pressure of the times a little less suffocating.
+
+Whether we like it or not, we have all been forced into an extraordinarily brutal upheaval, unable to see what lies ahead. That includes the figures in mathematics who were once celebrated as the pinnacle of human intelligence. The mathematical beauty and ideals we once held dear have been mercilessly crushed by the steamroller of the times. I can work slowly on mathematics and enjoy the process, but the times will not wait for me.
+
+My own advice is not to be too much of a purist, but not to abandon your inner world altogether either. We can work on a problem that interests us, making progress slowly, and we can also use technology to help produce high-quality papers. The two do not conflict. But for now, I still believe that the minimum responsibility of a mathematical researcher should be to stand behind what they produce. Even if most of a piece of work was done by AI, you need to know the details at every point and be able to stand up and vouch for it.
+
+Separate your interests from your profession. We can be mathematical researchers professionally, while also doing traditional mathematical research as a hobby—taking it one step at a time and enjoying the process. Work is work. Life is life.
+
+The older generation of mathematicians may be able to weather the impact with the resources, social standing, and titles they have accumulated. What are we supposed to do? Young people who are only just setting out must be at the forefront of productivity.
+
+The truth is, I've felt lost all this time. But I don't want to lose my ideals again. Using AI to do mathematics is where things are headed. Still, setting aside time every day for my own old-school research can be a side pursuit that makes life richer.
+
+Returning to what drew me here in the first place makes me feel younger. It brings back a childlike sense of wonder, that feeling from my student days when I'd see a beautiful proof, clap in delight, and stay excited all day. That's what I want.
+
+[Back to Reflections & Essays →](../personal.qmd){.reading-link}
