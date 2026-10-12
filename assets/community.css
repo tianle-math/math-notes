@@ -1,0 +1,97 @@
+/* Keep language controls and comments within the site's quiet reading layout. */
+.language-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .2rem .3rem;
+  margin: .8rem 0 1.35rem;
+  font-family: system-ui, sans-serif;
+  font-size: .76rem;
+  line-height: 1.4;
+}
+.language-switch a,
+.language-switch [aria-current="page"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: .4rem .8rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.language-switch a:hover { background: #edf1e8; }
+.language-switch [aria-current="page"] {
+  color: var(--ink, #253731);
+  border-color: var(--rule, #dbddd3);
+  background: #edf1e8;
+  font-weight: 600;
+}
+.translation-note {
+  margin: 1rem 0 1.75rem;
+  padding: .75rem 1rem;
+  border-left: 2px solid #88a38b;
+  background: #f0f2eb;
+  color: #59675e;
+  font-size: .85rem;
+  line-height: 1.7;
+}
+.translation-note p:last-child { margin-bottom: 0; }
+.article-comments {
+  min-width: 0;
+  margin-top: 3.75rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--rule, #dbddd3);
+}
+.article-comments > h2 {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.65rem;
+}
+.article-comments > p,
+.article-comments .comments-intro,
+.article-comments .comments-help {
+  max-width: 48rem;
+  font-size: .9rem;
+  line-height: 1.7;
+  color: #59675e;
+}
+.article-comments [data-load-comments] {
+  min-height: 44px;
+  max-width: 100%;
+  padding: .55rem 1rem;
+  border: 1px solid #9baea0;
+  border-radius: 4px;
+  background: #edf1e8;
+  color: var(--accent, #28614e);
+  font-family: system-ui, sans-serif;
+  font-size: .8rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.article-comments [data-load-comments]:hover { background: #e2eadd; }
+.article-comments [data-load-comments]:disabled { cursor: progress; opacity: .72; }
+.article-comments [data-load-comments][hidden] { display: none; }
+.article-comments [role="status"] {
+  margin: .8rem 0;
+  color: var(--muted, #65716a);
+  font-family: system-ui, sans-serif;
+  font-size: .76rem;
+  line-height: 1.6;
+}
+.article-comments [role="status"]:empty { display: none; }
+.article-comments[data-comment-state="error"] [role="status"] { color: #865529; }
+.article-comments .giscus { min-width: 0; margin-top: 1rem; }
+.article-comments .giscus:empty { margin: 0; }
+.article-comments .giscus-frame { width: 100%; border: 0; }
+.article-comments [data-discussion-link] { display: inline-block; padding-block: .5rem; }
+@media (max-width: 767.98px) {
+  .language-switch a, .language-switch [aria-current="page"] { min-height: 44px; }
+  .article-comments { margin-top: 2.7rem; }
+  .article-comments > h2 { font-size: 1.3rem; }
+  .article-comments > p, .article-comments .comments-intro, .article-comments .comments-help { font-size: .92rem; }
+}
+@media print {
+  .language-switch, .article-comments { display: none !important; }
+}
