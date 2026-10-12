@@ -21,3 +21,7 @@
 /deliverables/
 
 **/*.quarto_ipynb
+/.i18n-build/
+/.translation-work/
+/_i18n/generated/
+__pycache__/

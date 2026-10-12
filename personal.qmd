@@ -28,10 +28,6 @@ A place for thoughts that need not become theorems. Here I collect reflections o
 <img src="assets/reflections.webp" alt="An open notebook with mathematical ideas and a path from questions to understanding." width="1448" height="1086" loading="eager" decoding="async">
 </div>
 
-::: {.empty-note}
-Notes will be added here over time.
-:::
-
 ## Articles & Notes
 
 ::: {#essays}

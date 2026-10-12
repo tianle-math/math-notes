@@ -1,79 +1,121 @@
-# Tian · 数学与随笔
+# Tian · Mathematics & Essays
 
-A Quarto website for mathematical notes, reflections, and essays. The first essay is **The Basic Geometric Meaning of Frequency in Fourier Analysis (1)**, credited to the byline **Tian** supplied in the manuscript.
+An open notebook for harmonic analysis, martingale theory, operator algebras, functional analysis, and reflections beyond mathematics. English QMD files are the canonical build source. The build produces matching English, Simplified Chinese, and Japanese editions without rewriting those source files.
 
-## 本地预览
+The public site is <https://tianle-math.github.io/math-notes/>. English pages retain their existing addresses; translations use the same filenames under `zh/` and `ja/`. The language switch keeps readers on the corresponding page and preserves section anchors. Article discussion keys are shared across all three languages.
 
-在包含 `_quarto.yml` 的这一层文件夹打开终端：
+## Write and preview
+
+Edit the English `.qmd` files in the repository. From the directory containing `_quarto.yml`, run:
 
 ```powershell
 quarto preview
 ```
 
-保持命令运行，在编辑器里修改并保存 `.qmd`，预览页面会更新。构建整个网站：
+This is a convenient English-only editing preview. It does not replace the complete multilingual publication build.
+
+For a new article, copy `templates/article.qmd` into `essays/`, choose a lowercase filename with hyphens, and fill in its title, date, description, and English text. Keep `lang: en`. Choose one stable `notebook-topic` value:
+
+| Value | Section |
+| --- | --- |
+| `harmonic-analysis` | Harmonic Analysis |
+| `martingales` | Martingale Theory |
+| `operator-algebras` | Operator Algebras |
+| `functional-analysis` | Functional Analysis |
+| `personal` | Reflections & Essays |
+
+The home page and matching section automatically list published articles. Keep filenames and existing heading anchors stable after publication, since links and discussions depend on them. Use `$...$` for inline mathematics and `$$...$$` for displayed mathematics. A mobile contents list must link to the same heading IDs as the desktop contents list.
+
+An article originally written in Chinese can declare `original-language: zh-CN`. Preserve its Chinese original in the reviewed Chinese entries and maintain its English QMD as the build source. The reading notice then identifies Chinese as the original and links back to that edition; it does not mislabel the English translation as the author's original prose.
+
+The template starts with `draft: true`. Change that only when the article is ready to publish. Production uses `draft-mode: gone`: a draft may have an empty placeholder URL, but its text must not appear in pages or indexes. Private drafts do not belong in this public repository, even if marked as drafts.
+
+## Translation files and review
+
+The translation engine splits English prose into page-local segments. Segment IDs include a source fingerprint, and each cache entry stores the exact source text. Mathematics, code, link destinations, HTML markup, and heading IDs are protected placeholders. The translated prose must keep every placeholder exactly once and in the same order.
+
+- `_i18n/zh.json` and `_i18n/ja.json` contain committed, reviewed translations.
+- Entries with `locked: true` are protected revisions and must not be automatically overwritten.
+- `_i18n/ui.json` contains navigation, footer, language controls, article notices, and comment-interface text.
+- `_i18n/glossary.json` records mathematical terminology and translation style.
+- `_i18n/generated/` contains optional machine-generated entries. It is ignored by Git, reused through GitHub Actions cache, and excluded from the published website.
+- `.translation-work/` and `.i18n-build/` contain disposable extraction, validation, and build files. They are also ignored and never published.
+
+Extract the current prose and check reviewed translations with:
 
 ```powershell
-quarto render
+python scripts/i18n.py extract
+python scripts/i18n.py check
 ```
 
-本项目已使用 Quarto 1.10.19 渲染。生产工作流固定使用同一版本。
+The extraction is written to `.translation-work/segments.json`. Add or correct entries in the reviewed language files using the exact current `id` and `source`, the translated `text`, and `locked: true` after review. Committed reviewed entries take precedence over generated entries. A change to English creates a new fingerprint; the old translation is not silently applied to the new text. Moving an unchanged paragraph within its page does not invalidate it.
 
-## GitHub Pages 首次发布
+Do not edit translated QMD files in `.i18n-build/`: the next build recreates them. Correct the translation cache or the English source instead. When the English interface changes, review the matching strings in `_i18n/ui.json` as well.
 
-1. 在准备公开使用的 GitHub 账号中创建网站仓库，建议名称 `math-notebook`。如果使用免费账号，GitHub Pages 需要公开仓库；确认仓库中只放本项目文件。
-2. 将本文件夹中的源码上传到仓库 `main` 分支，包括 `.github/workflows/publish.yml`。不要上传本机的其他目录、凭据、缓存或 `.git` 文件夹。
-3. 打开仓库 **Settings → Pages → Build and deployment → Source**，选择 **GitHub Actions**。
-4. 打开 **Actions → Publish mathematical notebook → Run workflow**。后续提交到 `main` 会自动构建并发布。
-5. 工作流成功后，到 **Settings → Pages** 查看真实发布网址。网页必须部署成功才算上线。
+## Optional automatic translation
 
-工作流从 GitHub Pages 自动获取公开基础网址，不需要手写账号名，不使用个人访问令牌，也不会将个人邮箱写入网页。它仅上传 `_site/`，不会将整个源码目录作为网页目录发布。
+The current reviewed pages can build without a translation API. No API key or model is supplied by this project. Automatic translation is optional and requires an explicit configuration by the repository owner:
 
-## 更新与新增文章
+| GitHub Actions setting | Purpose |
+| --- | --- |
+| Secret `TRANSLATION_API_KEY` | Server-side API credential; never place it in a file or webpage. |
+| Variable `TRANSLATION_MODEL` | The owner-selected model to use for translation. |
+| Variable `TRANSLATION_MAX_CHARS` | Maximum new source characters per build; default `20000`. |
 
-首篇文章位于 `essays/fourier-frequency-geometry-1.qmd`。修改它并保存即可更新本地预览；提交并推送后，线上网页自动更新。
+The implemented adapter uses the OpenAI Responses API during the build. It sends only translation segments and their mathematical context, uses `store: false`, and never runs in the reader's browser. No API request is made unless both the credential and model are configured. If translations are missing without that configuration, the build stops and reports the missing entries; the previously deployed website remains in place.
 
-新增文章时，将 `templates/article.qmd` 复制到 `essays/`，改成只含英文小写字母、数字和短横线的文件名，填写标题、日期、简介和正文。确认准备好发表后，把 `draft: true` 改成 `draft: false`。总首页与对应分类页会自动收录。
+The character cap counts new masked source text across the target-language requests. It limits a batch of work, not a currency amount. Cached segments are reused; only missing source fingerprints are translated. Invalid or incomplete responses fail validation rather than publishing partial text. Generated translations have `locked: false`; mathematical structure checks do not replace review of their meaning and tone. To retain a correction permanently, move the reviewed entry into the committed language file and mark it `locked: true`.
 
-文章的 `notebook-topic` 选择一个分类值：`harmonic-analysis`（调和分析）、`martingales`（鞅论）、`operator-algebras`（算子代数）、`functional-analysis`（泛函分析）或 `personal`（杂谈与随笔）。`categories` 是读者可见的标签；`lang` 按正文语言设为 `en` 或 `zh-CN`。新增文章应附上首页和所属分类页的返回链接。长文如需手机折叠目录，可参考首篇文章的 `article-mobile-toc`，并让目录链接与章节保持一致。
+## Build and publish
 
-生产构建使用 `draft-mode: gone`：`draft: true` 的文章只生成空白占位页，不发布正文，也不出现在文章目录、搜索索引或站点地图中；其网址可能仍存在。本地 `quarto preview` 仍会显示草稿。不要把私人草稿提交到公开仓库：这些设置只控制生成的网站，不保护公开仓库里的源码。
+Use Quarto **1.10.19**, matching the pinned publishing workflow, and Python 3.10 or newer. The project scripts use Python's standard library; no Python package installation is required.
 
-数学公式使用 `$...$` 和 `$$...$$`；元信息必须置于文件最开头的两行 `---` 之间。模板文件夹本身不会渲染成网页。
-
-## 隐私范围
-
-- 网站只使用稿件中已有的署名 Tian；没有个人简介、学校、真实姓名补全、邮箱、头像或社交账号。
-- 无第三方统计、评论、追踪像素、远程字体、外部公式服务。公式使用浏览器原生 MathML。
-- 没有个人访问令牌或其他凭据。部署使用 GitHub 提供的短期工作流权限。
-- 源码中没有账号专用网址；部署时自动设置 `site-url`。GitHub Pages 的默认公开网址和仓库会显示其所属账号名，这一平台关联并不会被主题隐藏。
-- Git 提交中的作者邮箱独立于网页。首次提交前，在 GitHub 的邮箱设置中启用隐藏私人邮箱，并使用 GitHub 提供的 `noreply` 地址；本地 Git 身份也应使用该地址。不要把私人邮箱填入本项目。
-- 自动检查能识别常见邮箱、凭据格式和本地用户路径，但无法代替对文章内容的人工判断。GitHub 作为托管服务仍可能保留服务访问日志。
-
-## 验证
+For a complete local build in PowerShell:
 
 ```powershell
+$env:SITE_URL = "https://tianle-math.github.io/math-notes/"
+python scripts/set-site-url.py
 python scripts/check-site.py source
-quarto render
+python -m unittest discover -s scripts -p "test_i18n.py"
+python scripts/build-multilingual.py
 python scripts/check-site.py output
 ```
 
-检查源码和输出中的常见隐私泄漏、输出文件范围、本地链接及公式是否生成。不依赖第三方 Python 包。
+If Quarto is not on `PATH`, pass its executable with `python scripts/build-multilingual.py --quarto "path-to-quarto"`. `--prepare-only` creates temporary language sources for inspection. `--skip-finish` is a development option that omits language controls and discussions; that output is not ready to publish.
 
-## 页面
+The builder renders English first, then the two language directories, and finally adds local language controls and article comment panels. The source check records English QMD hashes, and the output check confirms that the build has not changed those files. Translation checks preserve protected formulas and links. Publication checks cover page languages, shared discussion keys, local resources, language switches, section anchors, common private data, and draft boundaries. Page totals are derived from the authored sources and grow as articles are added. The frequency-geometry article retains its original 47 MathML expressions in each edition.
 
-- `index.qmd`：总首页、四个数学分类、杂谈入口与最近更新。
-- `harmonic-analysis.qmd`：调和分析分类与文章目录。
-- `martingales.qmd`、`operator-algebras.qmd`、`functional-analysis.qmd`：鞅论、算子代数、泛函分析分类。
-- `personal.qmd`：杂谈与随笔。
-- `series.qmd`：傅里叶频率几何系列索引。
-- `essays/`：正式文章。
-- `assets/styles.scss`：页面样式。
-- `.github/workflows/publish.yml`：自动构建与 GitHub Pages 发布。
+GitHub Pages must use **GitHub Actions** as its build source. Pushing to `main`, or manually running **Publish mathematical notebook**, performs the complete build and publishes only `_site/`. The workflow obtains the public base URL from Pages configuration, uses scoped short-lived workflow permissions, and does not require a personal access token. A failed build or failed publication check prevents deployment of that build.
 
-## 官方参考
+## Shared article discussions
 
-- [Quarto websites](https://quarto.org/docs/websites/)
-- [Quarto and GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
-- [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+Embedded comments are prepared for Giscus backed by GitHub Discussions but are **not yet enabled**: the Giscus App still needs authorization and the discussion category ID is not configured. Article panels currently show a setup notice and an ordinary link to GitHub Discussions, without a nonfunctional **Load comments** button.
 
-未替作者授予新的内容许可；发布在 GitHub 不等于把文章变成公有领域作品。
+Once configured, the browser loads only local page code until a reader selects **Load comments**. That click connects to Giscus and GitHub; posting requires a GitHub account. Readers can also open the discussion on GitHub. The comment panel uses the service's mathematical-notation support.
+
+The repository must be public, Discussions must be enabled, and the Giscus GitHub App must have access to this repository. To complete setup, authorize that app for the intended repository, choose its discussion category, and enter the verified category ID in `_i18n/giscus.json`. That file contains public repository and category names and IDs; these identifiers are configuration, not credentials. If those settings change, update the file and rebuild. The publication check permits the explicit pending state but rejects an enabled loader with incomplete configuration.
+
+Each article uses `article:<filename-without-extension>` as its stable discussion key. All three editions use that same key and point back to the canonical English URL, so changing languages does not create three separate discussions. Keep an article's filename unchanged to keep its existing thread. Discussion owners and moderators manage comments, deletion, locking, and moderation through GitHub. The website does not store commenter passwords or a private moderation token.
+
+## Public identity and privacy
+
+The site uses the public byline **Tian**, a link to **X · @tianmathmath**, and a copyright notice. It does not add a school, private email address, home address, or an expanded personal biography. The public GitHub username remains visible in the Pages and repository URLs.
+
+Images, styling, fonts supplied by the site, and MathML rendering do not require a remote tracking or formula service. There is no analytics integration. The embedded comment service is currently disabled. Once enabled, its connection begins only when the reader opens the loader; the GitHub Discussions and X profile links are ordinary outbound links. Pages include a `no-referrer` policy. Hosting and comment services can still process their own access data.
+
+Do not commit API credentials, personal addresses, local user paths, or private drafts. The checks catch common patterns but cannot determine whether every sentence is appropriate for public release. Git author identity is separate from page content: use GitHub's privacy settings and a `noreply` author address for public commits. Never put the private address in the site configuration.
+
+The footer preserves the author's copyright notice with applicable-law exceptions. Publishing source on GitHub does not by itself grant an additional license to the articles or illustrations.
+
+## Project map
+
+- `index.qmd`: notebook introduction, four subject links, reflections, and recent articles.
+- Subject `.qmd` files: section introductions, illustrations, and article lists.
+- `series.qmd`: the frequency-geometry reading series.
+- `essays/`: authored English articles.
+- `assets/styles.scss`: the desktop and mobile reading layout.
+- `assets/community.css` and `assets/community.js`: local language controls and click-to-load comments.
+- `scripts/i18n.py`: prose extraction, translation cache validation, and optional API adapter.
+- `scripts/build-multilingual.py` and `scripts/finish-site.py`: the complete multilingual build.
+- `scripts/check-site.py`: publication checks using the standard library.
+- `.github/workflows/publish.yml`: tested build and GitHub Pages deployment.
