@@ -36,8 +36,20 @@ jobs:
         run: python3 scripts/set-site-url.py
       - name: Check source for accidental private content
         run: python3 scripts/check-site.py source
-      - name: Render website
-        run: quarto render --profile publish
+      - name: Restore incremental translations
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: _i18n/generated
+          key: translations-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: translations-v1-
+      - name: Check translation safeguards
+        run: python3 -m unittest discover -s scripts -p 'test_i18n.py'
+      - name: Render all three languages
+        env:
+          TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
+          TRANSLATION_MODEL: ${{ vars.TRANSLATION_MODEL }}
+          TRANSLATION_MAX_CHARS: ${{ vars.TRANSLATION_MAX_CHARS || '20000' }}
+        run: python3 scripts/build-multilingual.py
       - name: Check generated website
         run: python3 scripts/check-site.py output
       - name: Upload website
