@@ -31,6 +31,15 @@
       retry: "コメントの読み込みを再試行",
       frame: "記事へのコメント — 投稿には GitHub へのログインが必要です",
     },
+    fr: {
+      loading: "Chargement des commentaires…",
+      ready: "Les commentaires sont prêts. Connectez-vous avec GitHub pour participer à la discussion.",
+      empty: "Soyez la première personne à commenter. Connectez-vous avec GitHub pour participer à la discussion.",
+      error: "Impossible de charger les commentaires. Réessayez ou ouvrez la discussion sur GitHub.",
+      config: "Les commentaires ne sont pas encore disponibles. Vous pouvez consulter les discussions sur GitHub.",
+      retry: "Réessayer de charger les commentaires",
+      frame: "Commentaires de l’article — connexion avec GitHub requise pour commenter",
+    },
   };
 
   function preserveLanguageAnchors() {
