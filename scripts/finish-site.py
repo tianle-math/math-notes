@@ -1,5 +1,6 @@
 """Add same-page language links and consent-gated shared article discussions."""
 from html import escape
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -13,6 +14,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
 UI = json.loads((ROOT / "_i18n/ui.json").read_text())
 CONFIG = json.loads((ROOT / "_i18n/giscus.json").read_text())
+ASSET_VERSIONS = {
+    name: hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()[:12]
+    for name in ("community.css", "community.js")
+}
 PROFILE = ROOT / "_quarto-publish.yml"
 BASE = os.environ.get("SITE_URL", "").rstrip("/")
 if not BASE and PROFILE.exists():
@@ -95,8 +100,8 @@ for path in sorted(OUT.rglob("*.html")):
         source = source.replace("</main>", comments(locale, relative) + "\n</main>", 1)
         alternatives.append(f'<meta name="giscus:backlink" content="{escape(url_for("en", relative))}">')
     # Reuse the English-root local assets; no third-party resource starts here.
-    css = relative_href(current, "assets/community.css")
-    js = relative_href(current, "assets/community.js")
+    css = relative_href(current, "assets/community.css") + "?v=" + ASSET_VERSIONS["community.css"]
+    js = relative_href(current, "assets/community.js") + "?v=" + ASSET_VERSIONS["community.js"]
     alternatives.extend([f'<link rel="stylesheet" href="{css}">', f'<script src="{js}" defer></script>'])
     source = source.replace("</head>", "\n".join(alternatives) + "\n</head>", 1)
     path.write_text(source, encoding="utf-8")

@@ -208,6 +208,11 @@ def check_multilingual(pages, public_url):
             if page.empty:
                 fail(path, "published source produced an empty page")
                 continue
+            for asset in ("community.css", "community.js"):
+                version = hashlib.sha256((ROOT / "assets" / asset).read_bytes()).hexdigest()[:12]
+                if not any(Path(urlsplit(raw).path).name == asset and urlsplit(raw).query == "v=" + version
+                           for _, _, raw in page.links):
+                    fail(path, "language and comment assets must use their current content version")
             valid_langs = {hreflang, "zh"} if locale == "zh" else {hreflang}
             if page.lang not in valid_langs:
                 fail(path, "incorrect document language")
