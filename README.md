@@ -1,8 +1,8 @@
 # Tian · Mathematics & Essays
 
-An open notebook for harmonic analysis, martingale theory, operator algebras, functional analysis, and reflections beyond mathematics. English QMD files are the canonical build source. The build produces matching English, Simplified Chinese, and Japanese editions without rewriting those source files.
+An open notebook for harmonic analysis, martingale theory, operator algebras, functional analysis, and reflections beyond mathematics. English QMD files are the canonical build source. The build produces matching English, Simplified Chinese, Japanese, and French editions without rewriting those source files.
 
-The public site is <https://tianle-math.github.io/math-notes/>. English pages retain their existing addresses; translations use the same filenames under `zh/` and `ja/`. The language switch keeps readers on the corresponding page and preserves section anchors. Article discussion keys are shared across all three languages.
+The public site is <https://tianle-math.github.io/math-notes/>. English pages retain their existing addresses; translations use the same filenames under `zh/`, `ja/`, and `fr/`. The language switch keeps readers on the corresponding page and preserves section anchors. Article discussion keys are shared across all language editions.
 
 ## Write and preview
 
@@ -34,7 +34,7 @@ The template starts with `draft: true`. Change that only when the article is rea
 
 The translation engine splits English prose into page-local segments. Segment IDs include a source fingerprint, and each cache entry stores the exact source text. Mathematics, code, link destinations, HTML markup, and heading IDs are protected placeholders. The translated prose must keep every placeholder exactly once and in the same order.
 
-- `_i18n/zh.json` and `_i18n/ja.json` contain committed, reviewed translations.
+- `_i18n/zh.json`, `_i18n/ja.json`, and `_i18n/fr.json` contain committed, reviewed translations.
 - Entries with `locked: true` are protected revisions and must not be automatically overwritten.
 - `_i18n/ui.json` contains navigation, footer, language controls, article notices, and comment-interface text.
 - `_i18n/glossary.json` records mathematical terminology and translation style.
@@ -83,7 +83,7 @@ python scripts/check-site.py output
 
 If Quarto is not on `PATH`, pass its executable with `python scripts/build-multilingual.py --quarto "path-to-quarto"`. `--prepare-only` creates temporary language sources for inspection. `--skip-finish` is a development option that omits language controls and discussions; that output is not ready to publish.
 
-The builder renders English first, then the two language directories, and finally adds local language controls and article comment panels. The source check records English QMD hashes, and the output check confirms that the build has not changed those files. Translation checks preserve protected formulas and links. Publication checks cover page languages, shared discussion keys, local resources, language switches, section anchors, common private data, and draft boundaries. Page totals are derived from the authored sources and grow as articles are added. The frequency-geometry article retains its original 47 MathML expressions in each edition.
+The builder renders English first, then the translated language directories, and finally adds local language controls and article comment panels. The source check records English QMD hashes, and the output check confirms that the build has not changed those files. Translation checks preserve protected formulas and links. Publication checks cover page languages, shared discussion keys, local resources, language switches, section anchors, common private data, and draft boundaries. Page totals are derived from the authored sources and grow as articles are added. The frequency-geometry article retains its original 47 MathML expressions in each edition.
 
 GitHub Pages must use **GitHub Actions** as its build source. Pushing to `main`, or manually running **Publish mathematical notebook**, performs the complete build and publishes only `_site/`. The workflow obtains the public base URL from Pages configuration, uses scoped short-lived workflow permissions, and does not require a personal access token. A failed build or failed publication check prevents deployment of that build.
 
@@ -95,7 +95,7 @@ The browser loads only local page code until a reader selects **Load comments**.
 
 The repository must be public, Discussions must be enabled, and the Giscus GitHub App must have access to this repository. The verified repository and category identifiers are recorded in `_i18n/giscus.json`. That file contains public repository and category names and IDs; these identifiers are configuration, not credentials. If those settings change, update the file and rebuild. The publication check permits the explicit pending state but rejects an enabled loader with incomplete configuration.
 
-Each article uses `article:<filename-without-extension>` as its stable discussion key. All three editions use that same key and point back to the canonical English URL, so changing languages does not create three separate discussions. Keep an article's filename unchanged to keep its existing thread. Discussion owners and moderators manage comments, deletion, locking, and moderation through GitHub. The website does not store commenter passwords or a private moderation token.
+Each article uses `article:<filename-without-extension>` as its stable discussion key. All editions use that same key and point back to the canonical English URL, so changing languages does not create separate discussions. Keep an article's filename unchanged to keep its existing thread. Discussion owners and moderators manage comments, deletion, locking, and moderation through GitHub. The website does not store commenter passwords or a private moderation token.
 
 ## Public identity and privacy
 
