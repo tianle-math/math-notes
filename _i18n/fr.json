@@ -1,0 +1,765 @@
+{
+  "version": 1,
+  "segments": {
+    "404.qmd::metadata:a469ab4ca4e55bf54756": {
+      "source": "Page not found",
+      "text": "Page introuvable",
+      "locked": true
+    },
+    "404.qmd::body:a5f563c8870a6d15559c": {
+      "source": "This page may have moved, or the address may be incomplete.",
+      "text": "Cette page a peut-être été déplacée, ou l’adresse est incomplète.",
+      "locked": true
+    },
+    "404.qmd::body:6caee639a3d64debae01": {
+      "source": "[Return home]⟦P0000⟧",
+      "text": "[Retour à l’accueil]⟦P0000⟧",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:99173ec7a0c331a9879b": {
+      "source": "Functional Analysis",
+      "text": "Analyse fonctionnelle",
+      "locked": true
+    },
+    "functional-analysis.qmd::metadata:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "Des notes sur les espaces normés, les opérateurs linéaires et la dualité, avec le souci de comprendre concrètement ce qui se cache derrière les structures abstraites.",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:ca61f780eb53070846fd": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Functional Analysis",
+      "text": "[Accueil]⟦P0000⟧ / Notes de mathématiques / Analyse fonctionnelle",
+      "locked": true
+    },
+    "functional-analysis.qmd::attribute:4537c108baea1844029a": {
+      "source": "A normed space and its dual, with unit balls and supporting functionals.",
+      "text": "Un espace normé et son dual, avec des boules unités et des formes linéaires d’appui.",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "Des notes seront ajoutées ici au fil du temps.",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## Articles et notes ⟦P0000⟧",
+      "locked": true
+    },
+    "functional-analysis.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Retour à l’accueil pour explorer d’autres thèmes →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::metadata:e686f471e346fbe596e9": {
+      "source": "Harmonic Analysis",
+      "text": "Analyse harmonique",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::metadata:db7b7579cd0ecc96bcf4": {
+      "source": "Notes on frequency, oscillation, scale, and the structure of functions, starting with the basic intuitions of Fourier analysis.",
+      "text": "Des notes sur la fréquence, les oscillations, les échelles et la structure des fonctions, en partant des intuitions fondamentales de l’analyse de Fourier.",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:fdd7a4df43c62875322e": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Harmonic Analysis",
+      "text": "[Accueil]⟦P0000⟧ / Notes de mathématiques / Analyse harmonique",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:76fe84331d303e4b459d": {
+      "source": "MATHEMATICAL NOTES · HARMONIC ANALYSIS",
+      "text": "NOTES DE MATHÉMATIQUES · ANALYSE HARMONIQUE",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:7bdb8206af10291372e2": {
+      "source": "# Harmonic Analysis ⟦P0000⟧",
+      "text": "# Analyse harmonique ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:62fe8d7d08bb2b93bbcc": {
+      "source": "Exploring different ways to understand functions through frequency, oscillation, and scale. These notes on Fourier analysis and related topics begin with the intuition behind basic concepts and develop toward more detailed arguments.",
+      "text": "Explorer différentes façons de comprendre les fonctions à travers la fréquence, les oscillations et les échelles. Ces notes sur l’analyse de Fourier et les sujets qui s’y rattachent partent de l’intuition derrière les notions de base pour aller vers des raisonnements plus détaillés.",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:1d11ed9760d2b1441292": {
+      "source": "[Start with the geometry of frequency →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Commencer par la géométrie de la fréquence →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::attribute:5c3df1a7e0c785815762": {
+      "source": "A wave decomposed into Fourier modes and a frequency spectrum.",
+      "text": "Une onde décomposée en modes de Fourier et un spectre de fréquences.",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## Articles et notes ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:f34415c833a043513399": {
+      "source": "From an intuition to a clear explanation.",
+      "text": "D’une intuition à une explication claire.",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:866d82c8228f1dade492": {
+      "source": "READING SERIES",
+      "text": "SÉRIE D’ARTICLES",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:63c9a4883b762e77b554": {
+      "source": "### The Geometry of Frequency ⟦P0000⟧",
+      "text": "### La géométrie de la fréquence ⟦P0000⟧",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:83ed235d7d5dc45ecd15": {
+      "source": "Starting with a single Fourier atom, explore how frequency describes direction, variation, and spatial scale.",
+      "text": "À partir d’un seul atome de Fourier, explorer comment la fréquence décrit une direction, des variations et une échelle spatiale.",
+      "locked": true
+    },
+    "harmonic-analysis.qmd::body:df098e727cbf39c46118": {
+      "source": "[Read the series →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Lire la série →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::metadata:74dd29b56c5a1fa0e59b": {
+      "source": "Tian · Mathematical Notes, Reflections & Essays",
+      "text": "Tian · Notes de mathématiques, réflexions et essais",
+      "locked": true
+    },
+    "index.qmd::metadata:0923134ea36778ac083f": {
+      "source": "An open personal notebook for mathematical understanding, reading, reflection, and everyday essays.",
+      "text": "Un carnet personnel ouvert, consacré à la compréhension des mathématiques, à la lecture, à la réflexion et aux essais du quotidien.",
+      "locked": true
+    },
+    "index.qmd::body:6e26f6cdc745ab624bb5": {
+      "source": "# Starting with mathematics,⟦P0000⟧writing thoughts down. ⟦P0001⟧",
+      "text": "# Partir des mathématiques,⟦P0000⟧mettre ses idées par écrit. ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:af4cece9b50072967278": {
+      "source": "Here I share my mathematical notes, reflections, and essays: from the intuition behind a concept to the details of a proof, from questions found in books to thoughts beyond mathematics. Understanding and writing, a little at a time.",
+      "text": "Je partage ici mes notes de mathématiques, mes réflexions et mes essais : de l’intuition derrière une notion aux détails d’une démonstration, des questions rencontrées dans les livres aux pensées qui vont au-delà des mathématiques. Comprendre et écrire, petit à petit.",
+      "locked": true
+    },
+    "index.qmd::body:82597f70271c5cafd9a3": {
+      "source": "[Browse mathematical notes ↓]⟦P0000⟧⟦P0001⟧",
+      "text": "[Parcourir les notes de mathématiques ↓]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::attribute:e66b6af29616b13a9906": {
+      "source": "Noncommutative Fourier transform: a group, its matrix-valued Fourier coefficients, and reconstruction.",
+      "text": "Transformée de Fourier non commutative : un groupe, ses coefficients de Fourier à valeurs matricielles et la reconstruction.",
+      "locked": true
+    },
+    "index.qmd::body:01b8c5cb9058afef410f": {
+      "source": "## Mathematical Notes ⟦P0000⟧",
+      "text": "## Notes de mathématiques ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:2fcdd02928319a09b1ba": {
+      "source": "Exploring the connections between different branches of mathematics.",
+      "text": "Explorer les liens entre les différentes branches des mathématiques.",
+      "locked": true
+    },
+    "index.qmd::body:fba8e830a124912d0b0f": {
+      "source": "01 · HARMONIC ANALYSIS",
+      "text": "01 · ANALYSE HARMONIQUE",
+      "locked": true
+    },
+    "index.qmd::body:5d5ca8fa2a3119d1ae53": {
+      "source": "### [Harmonic Analysis]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [Analyse harmonique]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:e1332b4a48eb311e8c5a": {
+      "source": "Exploring the structure of functions and the geometric intuition of Fourier analysis through frequency, oscillation, and scale.",
+      "text": "Explorer la structure des fonctions et l’intuition géométrique de l’analyse de Fourier à travers la fréquence, les oscillations et les échelles.",
+      "locked": true
+    },
+    "index.qmd::body:143d2002f444356f3230": {
+      "source": "[Explore harmonic analysis →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Explorer l’analyse harmonique →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:bbc1c8e8e2fcf3d2aa29": {
+      "source": "02 · MARTINGALE THEORY",
+      "text": "02 · THÉORIE DES MARTINGALES",
+      "locked": true
+    },
+    "index.qmd::body:822621d9906525502c0c": {
+      "source": "### [Martingale Theory]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [Théorie des martingales]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "Des notes sur l’espérance conditionnelle, les martingales et les temps d’arrêt, qui abordent les notions de base, la convergence et les inégalités en théorie des processus stochastiques.",
+      "locked": true
+    },
+    "index.qmd::body:7106dfa2e6b808fc136c": {
+      "source": "[Explore martingale theory →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Explorer la théorie des martingales →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:d2154c959a41ddfc41e2": {
+      "source": "03 · OPERATOR ALGEBRAS",
+      "text": "03 · ALGÈBRES D’OPÉRATEURS",
+      "locked": true
+    },
+    "index.qmd::body:e5a6ad3f704b845b90b7": {
+      "source": "### [Operator Algebras]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [Algèbres d’opérateurs]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "Explorer le langage et les exemples des C*-algèbres et des algèbres de von Neumann, en partant des opérateurs sur les espaces de Hilbert.",
+      "locked": true
+    },
+    "index.qmd::body:df20eb16742be0b3dd14": {
+      "source": "[Explore operator algebras →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Explorer les algèbres d’opérateurs →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:3f5c8943df2ddc721615": {
+      "source": "04 · FUNCTIONAL ANALYSIS",
+      "text": "04 · ANALYSE FONCTIONNELLE",
+      "locked": true
+    },
+    "index.qmd::body:f68db266ec8eb439aacd": {
+      "source": "### [Functional Analysis]⟦P0000⟧ ⟦P0001⟧",
+      "text": "### [Analyse fonctionnelle]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:0e03c4bb6d914d6c29bd": {
+      "source": "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.",
+      "text": "Des notes sur les espaces normés, les opérateurs linéaires et la dualité, avec le souci de comprendre concrètement ce qui se cache derrière les structures abstraites.",
+      "locked": true
+    },
+    "index.qmd::body:145ded02e04daa80615d": {
+      "source": "[Explore functional analysis →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Explorer l’analyse fonctionnelle →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::body:7f4bdf4914e6988c6fa2": {
+      "source": "BEYOND MATHEMATICS",
+      "text": "AU-DELÀ DES MATHÉMATIQUES",
+      "locked": true
+    },
+    "index.qmd::body:4dcef8f4ee1c30f836c8": {
+      "source": "## Reflections & Essays ⟦P0000⟧",
+      "text": "## Réflexions et essais ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:b92ea9f1ecd9745ce9aa": {
+      "source": "A place for thoughts that need not become theorems: reflections on reading, everyday observations, and questions still taking shape.",
+      "text": "Une place pour les pensées qui n’ont pas besoin de devenir des théorèmes : réflexions de lecture, observations du quotidien et questions encore en train de prendre forme.",
+      "locked": true
+    },
+    "index.qmd::body:bab92a80154962e9f531": {
+      "source": "[Explore reflections and essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Découvrir les réflexions et essais →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "index.qmd::attribute:d663ac9f69ebef433f6a": {
+      "source": "An open notebook with mathematical ideas and a path from questions to understanding.",
+      "text": "Un carnet ouvert sur des idées mathématiques et un chemin qui mène des questions à la compréhension.",
+      "locked": true
+    },
+    "index.qmd::body:89882d48532633a62650": {
+      "source": "## Latest Updates ⟦P0000⟧",
+      "text": "## Dernières publications ⟦P0000⟧",
+      "locked": true
+    },
+    "index.qmd::body:38c08fed5bca9bf808b1": {
+      "source": "A little understanding, one entry at a time.",
+      "text": "Un peu plus de compréhension, une note à la fois.",
+      "locked": true
+    },
+    "martingales.qmd::metadata:6200656c83843f9b70d0": {
+      "source": "Martingale Theory",
+      "text": "Théorie des martingales",
+      "locked": true
+    },
+    "martingales.qmd::metadata:9ba002a0c465b9a850e9": {
+      "source": "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.",
+      "text": "Des notes sur l’espérance conditionnelle, les martingales et les temps d’arrêt, qui abordent les notions de base, la convergence et les inégalités en théorie des processus stochastiques.",
+      "locked": true
+    },
+    "martingales.qmd::body:4cfccfc82d763c0e7f22": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Martingale Theory",
+      "text": "[Accueil]⟦P0000⟧ / Notes de mathématiques / Théorie des martingales",
+      "locked": true
+    },
+    "martingales.qmd::attribute:1b174854ff7c425ed1d7": {
+      "source": "Conditional expectation along a martingale path through an increasing filtration.",
+      "text": "L’espérance conditionnelle le long d’une trajectoire de martingale, au fil d’une filtration croissante.",
+      "locked": true
+    },
+    "martingales.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "Des notes seront ajoutées ici au fil du temps.",
+      "locked": true
+    },
+    "martingales.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## Articles et notes ⟦P0000⟧",
+      "locked": true
+    },
+    "martingales.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Retour à l’accueil pour explorer d’autres thèmes →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:ff5ee4973118da5fae59": {
+      "source": "Operator Algebras",
+      "text": "Algèbres d’opérateurs",
+      "locked": true
+    },
+    "operator-algebras.qmd::metadata:c5c1316684eace44b286": {
+      "source": "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.",
+      "text": "Explorer le langage et les exemples des C*-algèbres et des algèbres de von Neumann, en partant des opérateurs sur les espaces de Hilbert.",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:c9e92451eee1c9644403": {
+      "source": "[Home]⟦P0000⟧ / Mathematical Notes / Operator Algebras",
+      "text": "[Accueil]⟦P0000⟧ / Notes de mathématiques / Algèbres d’opérateurs",
+      "locked": true
+    },
+    "operator-algebras.qmd::attribute:75caa4c4575b265b12b9": {
+      "source": "Spectral projections and the spectral decomposition of an operator.",
+      "text": "Des projections spectrales et la décomposition spectrale d’un opérateur.",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:60aa94d10f9ee9870b79": {
+      "source": "Notes will be added here over time.",
+      "text": "Des notes seront ajoutées ici au fil du temps.",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## Articles et notes ⟦P0000⟧",
+      "locked": true
+    },
+    "operator-algebras.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Retour à l’accueil pour explorer d’autres thèmes →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "personal.qmd::metadata:43db4908d13b710293a0": {
+      "source": "Reflections & Essays",
+      "text": "Réflexions et essais",
+      "locked": true
+    },
+    "personal.qmd::metadata:4d340493034b4b0d6da3": {
+      "source": "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.",
+      "text": "Une place pour les pensées qui n’ont pas besoin de devenir des théorèmes. J’y rassemble des réflexions de lecture, des observations du quotidien et des essais qui vont au-delà des mathématiques.",
+      "locked": true
+    },
+    "personal.qmd::body:8104617fb9899748fbab": {
+      "source": "[Home]⟦P0000⟧ / Reflections & Essays",
+      "text": "[Accueil]⟦P0000⟧ / Réflexions et essais",
+      "locked": true
+    },
+    "personal.qmd::attribute:d663ac9f69ebef433f6a": {
+      "source": "An open notebook with mathematical ideas and a path from questions to understanding.",
+      "text": "Un carnet ouvert sur des idées mathématiques et un chemin qui mène des questions à la compréhension.",
+      "locked": true
+    },
+    "personal.qmd::body:930327297ca40567b29d": {
+      "source": "## Articles & Notes ⟦P0000⟧",
+      "text": "## Articles et notes ⟦P0000⟧",
+      "locked": true
+    },
+    "personal.qmd::body:db0e7442852d84901f58": {
+      "source": "[Return home to explore other topics →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Retour à l’accueil pour explorer d’autres thèmes →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::metadata:06d05b8b71aed138d2a0": {
+      "source": "The Geometry of Frequency",
+      "text": "La géométrie de la fréquence",
+      "locked": true
+    },
+    "series.qmd::metadata:b04444a86d7a6d0a1915": {
+      "source": "Harmonic Analysis · Reading Series",
+      "text": "Analyse harmonique · Série d’articles",
+      "locked": true
+    },
+    "series.qmd::metadata:5f449ce7d3ce38121bf3": {
+      "source": "Starting with Fourier atoms, explore frequency direction, surfaces of constant phase, and spatial scale.",
+      "text": "À partir des atomes de Fourier, explorer la direction de la fréquence, les surfaces de phase constante et l’échelle spatiale.",
+      "locked": true
+    },
+    "series.qmd::body:a1b7f2f99cf11075a50e": {
+      "source": "[Home]⟦P0000⟧ / [Harmonic Analysis]⟦P0001⟧ / The Geometry of Frequency",
+      "text": "[Accueil]⟦P0000⟧ / [Analyse harmonique]⟦P0001⟧ / La géométrie de la fréquence",
+      "locked": true
+    },
+    "series.qmd::body:d4d0fceee02d13ba55c7": {
+      "source": "Frequency is more than a number describing how fast something changes. This series starts with a single Fourier atom and explores how the frequency vector encodes the direction of variation, surfaces of constant phase, and spatial scale.",
+      "text": "La fréquence est bien plus qu’un nombre décrivant la rapidité d’un changement. Cette série part d’un seul atome de Fourier et explore comment le vecteur fréquence encode la direction de variation, les surfaces de phase constante et l’échelle spatiale.",
+      "locked": true
+    },
+    "series.qmd::body:8a80caf6ba523bb62133": {
+      "source": "PART I · 2026-10-10",
+      "text": "PARTIE I · 2026-10-10",
+      "locked": true
+    },
+    "series.qmd::body:443faf9381fc2f12b4cf": {
+      "source": "## [The Basic Geometric Meaning of Frequency in Fourier Analysis (1)]⟦P0000⟧ ⟦P0001⟧",
+      "text": "## [Le sens géométrique élémentaire de la fréquence en analyse de Fourier (1)]⟦P0000⟧ ⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::body:1e7380bba0de83dc6c79": {
+      "source": "Fourier atoms and frequency · Directional smoothness and frequency localization · Spatial scale versus frequency scale.",
+      "text": "Atomes de Fourier et fréquence · Régularité directionnelle et localisation fréquentielle · Échelle spatiale et échelle fréquentielle.",
+      "locked": true
+    },
+    "series.qmd::body:caefafb0047941e524b4": {
+      "source": "[Read the full article →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Lire l’article complet →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "series.qmd::body:67a7661db9419a75e2db": {
+      "source": "Further articles will appear here as they are published.",
+      "text": "Les prochains articles apparaîtront ici au fur et à mesure de leur publication.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:1fa899e039548e047aa5": {
+      "source": "The Basic Geometric Meaning of Frequency in Fourier Analysis (1)",
+      "text": "Le sens géométrique élémentaire de la fréquence en analyse de Fourier (1)",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:b5658fc8edda24f9c94e": {
+      "source": "On this page",
+      "text": "Sur cette page",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:5c545b59ac65461ecb9d": {
+      "source": "Fourier geometry · Part I",
+      "text": "Géométrie de Fourier · Partie I",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::metadata:ce35dd45ee6beaefe315": {
+      "source": "Fourier atoms, directional variation, and the reciprocal relationship between spatial scale and frequency.",
+      "text": "Atomes de Fourier, variation directionnelle et relation inverse entre échelle spatiale et fréquence.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:442b482f771b0f2c0dc4": {
+      "source": "[Home]⟦P0000⟧ / [Harmonic Analysis]⟦P0001⟧ / [The Geometry of Frequency]⟦P0002⟧",
+      "text": "[Accueil]⟦P0000⟧ / [Analyse harmonique]⟦P0001⟧ / [La géométrie de la fréquence]⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:23e4ee66e20518518f99": {
+      "source": "⟦P0000⟧\n⟦P0001⟧On this page⟦P0002⟧",
+      "text": "⟦P0000⟧\n⟦P0001⟧Sur cette page⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0b4cdf634efc2022cba9": {
+      "source": "- [Fourier atoms and frequency]⟦P0000⟧\n- [Directional smoothness and frequency localization]⟦P0001⟧\n- [Spatial scale versus frequency scale]⟦P0002⟧",
+      "text": "- [Atomes de Fourier et fréquence]⟦P0000⟧\n- [Régularité directionnelle et localisation fréquentielle]⟦P0001⟧\n- [Échelle spatiale et échelle fréquentielle]⟦P0002⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:d8f094e6ae067a6b1ad1": {
+      "source": "When I first encountered the concept of frequency in harmonic analysis, I had only a rough understanding of it.",
+      "text": "Lorsque j’ai rencontré pour la première fois la notion de fréquence en analyse harmonique, je n’en avais qu’une compréhension assez vague.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b5d2cf60dcc0b0ac35eb": {
+      "source": "It wasn't until I studied Littlewood–Paley theory that I began to appreciate the geometric structure underlying the notion of frequency. Even then, I hadn't really thought deeply about what frequency meant from a geometric perspective.",
+      "text": "Ce n’est qu’en étudiant la théorie de Littlewood–Paley que j’ai commencé à percevoir la structure géométrique qui sous-tend la notion de fréquence. Même alors, je n’avais pas vraiment réfléchi en profondeur à ce que la fréquence signifiait d’un point de vue géométrique.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0c79dcd5bf61fbc46018": {
+      "source": "Recently, I've been studying some of Seeger's work on singular integrals. Certain techniques used in his proofs have pushed me to revisit these fundamental ideas and think more carefully about the geometry of frequency.",
+      "text": "Récemment, j’ai étudié certains travaux de Seeger sur les intégrales singulières. Certaines techniques employées dans ses démonstrations m’ont poussé à revenir sur ces idées fondamentales et à réfléchir plus attentivement à la géométrie de la fréquence.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:19f84dd7369394349a40": {
+      "source": "In fact, it is due to the need for my recent research that I've begun to explore these geometric ideas in greater depth.",
+      "text": "En fait, ce sont les besoins de mes recherches récentes qui m’ont amené à approfondir ces idées géométriques.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:1fa29205cfa44f07a83f": {
+      "source": "The reason I chose the word \"basic\" in the title of my article is that the ideas themselves are simple, yet profound.",
+      "text": "Si j’ai choisi le mot « élémentaire » dans le titre de cet article, c’est que les idées elles-mêmes sont simples, tout en étant profondes.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:923acb83ce083ec538e0": {
+      "source": "I'm planning a series of about three articles, through which I'll gradually build up from these fundamental ideas to Seeger's work on singular integrals.",
+      "text": "Je prévois une série d’environ trois articles, dans lesquels je partirai progressivement de ces idées fondamentales pour arriver aux travaux de Seeger sur les intégrales singulières.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:c65efa3de45872d97be0": {
+      "source": "Although the ideas can be quite deep, I'll do my best to explain them in a clear, intuitive, and accessible way, so that even readers without a background in mathematics can follow along.",
+      "text": "Même si ces idées peuvent être assez profondes, je ferai de mon mieux pour les expliquer de façon claire, intuitive et accessible, afin que des lecteurs sans formation mathématique puissent aussi suivre.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0d27d0ba37a39797a059": {
+      "source": "So, if you're not a mathematics major but still have an interest in the subject, don't worry! I'll try to make these ideas approachable without requiring much advanced mathematical knowledge. Just bring your curiosity and enjoy the journey!",
+      "text": "Alors, si vous n’avez pas suivi d’études de mathématiques mais que le sujet vous intéresse, ne vous inquiétez pas ! Je tâcherai de rendre ces idées accessibles sans exiger beaucoup de connaissances mathématiques avancées. Venez simplement avec votre curiosité, et profitez du voyage !",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:10bb2a22fbfa9c3eb522": {
+      "source": "## Fourier atoms and frequency ⟦P0000⟧",
+      "text": "## Atomes de Fourier et fréquence ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:38c3da7cf0a808995490": {
+      "source": "We begin with the simplest Fourier atom:",
+      "text": "Commençons par l’atome de Fourier le plus simple :",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:988adc1ea2563a4dfeaf": {
+      "source": "Its “frequency” is ⟦P0000⟧. Why? Differentiation in an arbitrary direction ⟦P0001⟧ yields",
+      "text": "Sa « fréquence » est ⟦P0000⟧. Pourquoi ? En dérivant dans une direction arbitraire ⟦P0001⟧, on obtient",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:5825249f3370c540907a": {
+      "source": "Thus ⟦P0000⟧ tells you directly in which directions the function varies rapidly, and how small the corresponding scale of variation is. More precisely, if ⟦P0001⟧ is a unit vector and ⟦P0002⟧, the oscillation along ⟦P0003⟧ has spatial period ⟦P0004⟧.",
+      "text": "Ainsi, ⟦P0000⟧ indique directement dans quelles directions la fonction varie rapidement, et à quel point l’échelle de variation correspondante est petite. Plus précisément, si ⟦P0001⟧ est un vecteur unitaire et si ⟦P0002⟧, l’oscillation suivant ⟦P0003⟧ a pour période spatiale ⟦P0004⟧.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:29c80f917f330eae7925": {
+      "source": "In particular, if",
+      "text": "En particulier, si",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:21af6f1260f927f5b9b3": {
+      "source": "then",
+      "text": "alors",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:c5e42c31402fc957ee05": {
+      "source": "In other words, the wave is completely invariant in the direction ⟦P0000⟧.",
+      "text": "Autrement dit, l’onde est parfaitement invariante dans la direction ⟦P0000⟧.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:570eba65c4decda297db": {
+      "source": "Consequently, the geometric meaning of ⟦P0000⟧ is not simply that “the wave travels in the direction of ⟦P0001⟧” (there is no time variable here), but rather the following: ⟦P0002⟧ is the gradient of the phase ⟦P0003⟧ and, when ⟦P0004⟧, a normal vector to the surfaces of constant phase. The equiphase surfaces",
+      "text": "Par conséquent, le sens géométrique de ⟦P0000⟧ n’est pas simplement que « l’onde se propage dans la direction de ⟦P0001⟧ » (il n’y a pas ici de variable temporelle), mais plutôt ceci : ⟦P0002⟧ est le gradient de la phase ⟦P0003⟧ et, lorsque ⟦P0004⟧, un vecteur normal aux surfaces de phase constante. Les surfaces équiphases",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:fc92a20433c87863bac3": {
+      "source": "are hyperplanes orthogonal to ⟦P0000⟧.",
+      "text": "sont des hyperplans orthogonaux à ⟦P0000⟧.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:0f93fe4fe011b1f264ca": {
+      "source": "## Directional smoothness and frequency localization ⟦P0000⟧",
+      "text": "## Régularité directionnelle et localisation fréquentielle ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:79e48304cc5b75b17d81": {
+      "source": "This immediately explains an important phenomenon. Suppose a function is nearly invariant along a unit direction ⟦P0000⟧:",
+      "text": "Cela explique immédiatement un phénomène important. Supposons qu’une fonction soit presque invariante suivant une direction unitaire ⟦P0000⟧ :",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:415f4cd238e188405e04": {
+      "source": "Here ⟦P0000⟧ denotes the Fourier transform of ⟦P0001⟧, defined for sufficiently nice functions by",
+      "text": "Ici, ⟦P0000⟧ désigne la transformée de Fourier de ⟦P0001⟧, définie, pour des fonctions suffisamment bien comportées, par",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b168e77b0827dc6abca4": {
+      "source": "After Fourier transformation,",
+      "text": "Après transformation de Fourier,",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:a03583c9c679a28e8d10": {
+      "source": "If the left-hand side is small in ⟦P0000⟧, the right-hand side is also small in ⟦P0001⟧. More precisely, for any ⟦P0002⟧, the ⟦P0003⟧ mass of ⟦P0004⟧ in the region ⟦P0005⟧ is controlled by ⟦P0006⟧. Hence the Fourier mass tends to concentrate where",
+      "text": "Si le membre de gauche est petit dans ⟦P0000⟧, le membre de droite l’est aussi dans ⟦P0001⟧. Plus précisément, pour tout ⟦P0002⟧, la masse ⟦P0003⟧ de ⟦P0004⟧ dans la région ⟦P0005⟧ est contrôlée par ⟦P0006⟧. La masse de Fourier tend donc à se concentrer là où",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:b3c64ff187ca96cbf9dd": {
+      "source": "that is, near the hyperplane",
+      "text": "c’est-à-dire près de l’hyperplan",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:aa67611cbe64dbfc8dce": {
+      "source": "This is a statement about concentration of Fourier mass, not necessarily about the exact support of ⟦P0000⟧.",
+      "text": "Il s’agit ici de la concentration de la masse de Fourier, et pas nécessairement du support exact de ⟦P0000⟧.",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:51e0522dbeef69c3eb4e": {
+      "source": "## Spatial scale versus frequency scale ⟦P0000⟧",
+      "text": "## Échelle spatiale et échelle fréquentielle ⟦P0000⟧",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:d8087b6c019276987445": {
+      "source": "Another intuition worth fixing at this stage is that “large scale” in space corresponds to “small scale” in frequency. For example, for a one-dimensional function",
+      "text": "Une autre intuition à bien fixer à ce stade est qu’une « grande échelle » dans l’espace correspond à une « petite échelle » en fréquence. Par exemple, considérons une fonction d’une variable",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:37eecd16d7fdb874f32e": {
+      "source": "where ⟦P0000⟧ and ⟦P0001⟧ is a fixed, sufficiently regular function describing the original shape of ⟦P0002⟧. If ⟦P0003⟧ varies on a spatial scale of order one, then the spatial scale of variation of ⟦P0004⟧ is of order ⟦P0005⟧. Its Fourier transform satisfies the exact identity",
+      "text": "où ⟦P0000⟧ et où ⟦P0001⟧ est une fonction fixée, suffisamment régulière, qui décrit la forme initiale de ⟦P0002⟧. Si ⟦P0003⟧ varie à une échelle spatiale d’ordre un, alors l’échelle spatiale de variation de ⟦P0004⟧ est de l’ordre de ⟦P0005⟧. Sa transformée de Fourier vérifie l’identité exacte",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:2085f39c0dde3268a76a": {
+      "source": "Thus, if ⟦P0000⟧ is mainly concentrated where ⟦P0001⟧, then the Fourier transform of ⟦P0002⟧ is mainly concentrated where",
+      "text": "Ainsi, si ⟦P0000⟧ est principalement concentrée là où ⟦P0001⟧, alors la transformée de Fourier de ⟦P0002⟧ est principalement concentrée là où",
+      "locked": true
+    },
+    "essays/fourier-frequency-geometry-1.qmd::body:4dc14bc3866f9f6f8167": {
+      "source": "Therefore: slow variation corresponds to low frequency, and rapid variation corresponds to high frequency.",
+      "text": "Ainsi : une variation lente correspond à une basse fréquence, et une variation rapide à une haute fréquence.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::metadata:9333fb0373b5bc5a1964": {
+      "source": "Finding My Way Back to Mathematics",
+      "text": "Retrouver ce qui m’a conduit aux mathématiques",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::metadata:b88626e55d97b3473bcb": {
+      "source": "On AI, the joy of doing mathematics, and finding a way to hold on to both a vocation and an inner life.",
+      "text": "À propos de l’IA, du plaisir de faire des mathématiques et de la recherche d’un équilibre entre vocation et vie intérieure.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:d060e21d11abc44c3c61": {
+      "source": "[Home]⟦P0000⟧ / [Reflections & Essays]⟦P0001⟧",
+      "text": "[Accueil]⟦P0000⟧ / [Réflexions et essais]⟦P0001⟧",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:839fffabdadb15864f7d": {
+      "source": "I remember when I first chose to do mathematical research. I thought it would be a good life to do work that might not be all that important, but that I could feel satisfied with. To devote my career to mathematics.",
+      "text": "Je repense au moment où j’ai choisi de faire de la recherche en mathématiques. Je me disais que ce serait déjà une belle vie de faire un travail qui ne serait peut-être pas si important, mais dont je pourrais être satisfait. Consacrer ma carrière aux mathématiques.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:554d5e212de2296f3853": {
+      "source": "For a while around the middle of this year, I started asking AI to help me work through a problem that had little to do with my own research.",
+      "text": "Pendant quelque temps, vers le milieu de cette année, j’ai commencé à demander à l’IA de m’aider à avancer sur un problème qui n’avait pas grand-chose à voir avec mes propres recherches.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:bf045c381fb8dcd647cd": {
+      "source": "AI was so powerful. Gradually, I noticed that my attitude toward mathematics was changing. Papers I had once seen as works of art began to look like industrial products, things that could be manufactured in bulk.",
+      "text": "L’IA était tellement puissante. Peu à peu, j’ai remarqué que mon regard sur les mathématiques changeait. Les articles que je voyais autrefois comme des œuvres d’art se sont mis à ressembler à des produits industriels, à des choses qu’on pouvait fabriquer en série.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:90e3089e61d67454deec": {
+      "source": "During that period, I had more or less lost control over what AI was generating. I wasn't looking closely at what results it had produced or what proofs it had completed. It worked too fast. My understanding of what it was doing went no further than the log it submitted each time—which arguments it had completed in that round, and what remained unresolved. Beyond that, I knew nothing about its work. I had no way to stay in control or judge what it was producing, and I wouldn't post any of it. I think the minimum responsibility of a mathematical researcher should be to stand behind what they produce.",
+      "text": "À cette époque, je n’avais pratiquement plus aucune maîtrise de ce que l’IA générait. Je ne regardais pas en détail quels résultats elle avait obtenus ni quelles démonstrations elle avait menées à leur terme. Elle allait trop vite. Tout ce que je comprenais de son travail se limitait au compte rendu qu’elle me remettait chaque fois : quels raisonnements elle avait achevés lors de cette étape, et ce qui restait à résoudre. Au-delà de cela, je ne savais rien de son travail. Je n’avais aucun moyen de le maîtriser ni de l’évaluer, et il n’était pas question pour moi de le publier. Je pense que la responsabilité minimale d’une personne qui fait de la recherche en mathématiques est de répondre de ce qu’elle produit.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:cb61134b7eabe4c2b5fd": {
+      "source": "I wasn't getting much joy out of mathematics then. Every day, I'd excitedly follow which model had just been updated, which model had come out on top on FrontierMath, and then off I'd eagerly go to try it out and see how it performed.",
+      "text": "À ce moment-là, je ne tirais plus beaucoup de plaisir des mathématiques. Chaque jour, je suivais avec excitation la mise à jour de tel ou tel modèle, la victoire de tel autre sur FrontierMath, puis je me précipitais pour l’essayer et voir ce qu’il donnait.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:b937a5c4d26cb7111ba4": {
+      "source": "Later, I realized that I no longer loved mathematics the way I used to. I was becoming more and more focused on results. So I made up my mind to change:",
+      "text": "Plus tard, je me suis rendu compte que je n’aimais plus les mathématiques comme avant. Je me focalisais de plus en plus sur les résultats. Alors, j’ai décidé de changer :",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:316a7c327c3392a074a6": {
+      "source": "If I had started learning mathematics in the first place to find joy, why should I let anxiety make me willingly give up this hard-won ability to feel it?",
+      "text": "Si j’avais commencé à apprendre les mathématiques pour y trouver de la joie, pourquoi laisser l’anxiété me faire renoncer de mon plein gré à cette capacité si difficilement acquise de la ressentir ?",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:87c08f478cba717b653b": {
+      "source": "I began to rethink my relationship with AI. When reading papers, I stopped asking it to generate companion notes and went back to slowly working through the originals. I also stopped asking AI to solve problems, and instead began exploring research outside my own field that interested me. When I came across something I didn't understand, I still asked AI, but my mindset was different. I wouldn't just ask it to solve the problem for me. Instead, I treated it as a search engine, going back to my caveman ways.",
+      "text": "J’ai commencé à repenser ma relation à l’IA. Lorsque je lisais des articles, j’ai cessé de lui demander de produire des notes d’accompagnement et je suis revenu aux textes originaux, que je travaillais lentement. J’ai aussi cessé de lui demander de résoudre des problèmes, pour me tourner vers des recherches hors de mon domaine qui m’intéressaient. Quand je rencontrais quelque chose que je ne comprenais pas, je continuais à interroger l’IA, mais mon état d’esprit avait changé. Je ne lui demandais plus simplement de résoudre le problème à ma place. Je l’utilisais comme un moteur de recherche, en revenant à mes méthodes d’homme des cavernes.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:3409398ee8022389734e": {
+      "source": "Slowing down makes the pressure of the times a little less suffocating.",
+      "text": "Ralentir rend la pression de l’époque un peu moins étouffante.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:9faa84e35e0fab8e2f48": {
+      "source": "Whether we like it or not, we have all been forced into an extraordinarily brutal upheaval, unable to see what lies ahead. That includes the figures in mathematics who were once celebrated as the pinnacle of human intelligence. The mathematical beauty and ideals we once held dear have been mercilessly crushed by the steamroller of the times. I can work slowly on mathematics and enjoy the process, but the times will not wait for me.",
+      "text": "Que cela nous plaise ou non, nous sommes tous entraînés de force dans un bouleversement d’une brutalité extrême, sans pouvoir discerner l’avenir. Cela vaut aussi pour ces figures des mathématiques que l’on présentait autrefois comme le sommet de l’intelligence humaine. La beauté mathématique et les idéaux auxquels nous tenions ont été impitoyablement écrasés par le rouleau compresseur de l’époque. Je peux faire lentement des mathématiques et prendre plaisir au cheminement, mais l’époque ne m’attendra pas.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:2e3cdab6ba643027eda5": {
+      "source": "My own advice is not to be too much of a purist, but not to abandon your inner world altogether either. We can work on a problem that interests us, making progress slowly, and we can also use technology to help produce high-quality papers. The two do not conflict. But for now, I still believe that the minimum responsibility of a mathematical researcher should be to stand behind what they produce. Even if most of a piece of work was done by AI, you need to know the details at every point and be able to stand up and vouch for it.",
+      "text": "Mon conseil personnel serait de ne pas pousser trop loin l’exigence de pureté, sans pour autant renoncer entièrement à sa vie intérieure. Nous pouvons travailler sur un problème qui nous intéresse et avancer lentement, tout en recourant à la technologie pour produire des articles de grande qualité. Les deux ne sont pas incompatibles. Mais, pour l’instant, je continue de penser que la responsabilité minimale d’une personne qui fait de la recherche en mathématiques est de répondre de ce qu’elle produit. Même si l’essentiel de votre travail a été fait par l’IA, vous devez en connaître tous les détails et être capable de vous en porter garant.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:3c44da49eea0bd806cc7": {
+      "source": "Separate your interests from your profession. We can be mathematical researchers professionally, while also doing traditional mathematical research as a hobby—taking it one step at a time and enjoying the process. Work is work. Life is life.",
+      "text": "Séparer ses centres d’intérêt de son métier. Nous pouvons exercer la recherche en mathématiques comme profession, tout en pratiquant aussi la recherche mathématique traditionnelle comme loisir, en avançant pas à pas et en prenant plaisir au processus. Le travail, c’est le travail. La vie, c’est la vie.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:c9a5470c3ccba6d352ff": {
+      "source": "The older generation of mathematicians may be able to weather the impact with the resources, social standing, and titles they have accumulated. What are we supposed to do? Young people who are only just setting out must be at the forefront of productivity.",
+      "text": "Les mathématiciens de la génération précédente pourront peut-être amortir le choc grâce aux ressources, à la position sociale et aux titres qu’ils ont accumulés. Mais nous, que devons-nous faire ? Les jeunes qui commencent à peine leur chemin doivent avoir une productivité de premier plan.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:7eedfd3effc83d05f3a9": {
+      "source": "The truth is, I've felt lost all this time. But I don't want to lose my ideals again. Using AI to do mathematics is where things are headed. Still, setting aside time every day for my own old-school research can be a side pursuit that makes life richer.",
+      "text": "À vrai dire, depuis tout ce temps, je ne sais pas très bien où j’en suis. Mais je ne veux pas perdre une nouvelle fois mes idéaux. Faire des mathématiques avec l’IA est la direction que prend notre époque. Cela n’empêche pas de réserver chaque jour du temps à mes propres recherches à l’ancienne, comme une activité parallèle qui enrichit la vie.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:36f4c32e055a9dfdbdc0": {
+      "source": "Returning to what drew me here in the first place makes me feel younger. It brings back a childlike sense of wonder, that feeling from my student days when I'd see a beautiful proof, clap in delight, and stay excited all day. That's what I want.",
+      "text": "Revenir à ce qui m’a conduit ici me donne l’impression de rajeunir. Je retrouve une forme d’émerveillement enfantin, cette sensation de mes années d’études où une belle démonstration me faisait applaudir de joie et me laissait enthousiaste toute la journée. C’est cela que je veux.",
+      "locked": true
+    },
+    "essays/returning-to-mathematics.qmd::body:91ff6f69d2ee58fb8a41": {
+      "source": "[Back to Reflections & Essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Retour aux réflexions et essais →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::metadata:f20e057f9257c641c15e": {
+      "source": "We Should Stand Together",
+      "text": "Nous devrions nous serrer les coudes",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::metadata:cf9697941fedd8138b5b": {
+      "source": "On the disruption of mathematics by AI, what it may mean for other fields, and why people should stand together.",
+      "text": "À propos du bouleversement des mathématiques par l’IA, de ce qu’il pourrait signifier pour d’autres domaines et des raisons de nous serrer les coudes.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:d060e21d11abc44c3c61": {
+      "source": "[Home]⟦P0000⟧ / [Reflections & Essays]⟦P0001⟧",
+      "text": "[Accueil]⟦P0000⟧ / [Réflexions et essais]⟦P0001⟧",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:85dcf692638b89ac3118": {
+      "source": "People from outside mathematics come swarming in, throw stones down the well, and walk away laughing.",
+      "text": "Des foules de gens extérieurs aux mathématiques affluent, jettent des pierres dans le puits, puis s’en vont en éclatant de rire.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:5b9a560f6ba1f1a251df": {
+      "source": "Few people outside mathematics have stopped to consider this: if mathematics, a field at the forefront of this disruption, cannot establish new, workable norms that allow humans and AI to coexist harmoniously, then when other fields face the same disruption and need to build a new order, what useful example will they have to learn from? Chaos will sweep through other industries, again and again.",
+      "text": "Peu de gens extérieurs aux mathématiques se sont arrêtés sur cette question : si les mathématiques, l’un des premiers domaines frappés par ce bouleversement, ne parviennent pas à établir de nouvelles règles professionnelles adaptées, permettant aux humains et à l’IA de coexister harmonieusement, alors, lorsque d’autres domaines subiront le même choc et devront construire un nouvel ordre, sur quel exemple utile pourront-ils s’appuyer pour en tirer des leçons ? Le chaos déferlera encore et encore sur d’autres secteurs.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:69a5b542c6579f1a7edb": {
+      "source": "Every time AI “breaks through” a field, the increase in its power is far more than a matter of 1 + 1 = 2. Coding gives it frightening engineering capabilities, while surpassing humans in mathematics means having formidable abilities in modeling and making breakthroughs on extremely difficult problems. And these two reinforce each other. In other words, with every industry it conquers, AI's capabilities multiply. Different fields strengthen one another, until it becomes too formidable to face and impossible to defeat.",
+      "text": "Chaque fois que l’IA « conquiert » un domaine, le gain de puissance qui en résulte dépasse de très loin un simple calcul du type 1 + 1 = 2. Savoir coder lui donne des capacités de réalisation technique terrifiantes, tandis que dépasser les humains en mathématiques signifie disposer d’une formidable capacité de modélisation et de résolution de problèmes extrêmement difficiles. Et ces deux capacités se renforcent mutuellement. Autrement dit, à chaque secteur conquis, les capacités de l’IA se multiplient. Les différents domaines se renforcent les uns les autres, jusqu’à ce qu’elle devienne trop puissante pour qu’on ose lui faire face, impossible à vaincre.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:f9e08bb8566f5cc57954": {
+      "source": "When AI moves into other industries in the future, the sheer force of its problem modeling, coding, and breakthroughs in core theory will let it easily overrun other fields of science and engineering. Multimodal breakthroughs are also coming at an increasingly staggering pace, and AI is gaining more and more interfaces with the real world. Perhaps even experimental science will not be a secure moat in the future.",
+      "text": "Quand l’IA s’attaquera à d’autres secteurs, la puissance brute de sa modélisation des problèmes, de son code et de ses percées théoriques fondamentales lui permettra de faire tomber sans peine d’autres domaines des sciences et de l’ingénierie. Les avancées multimodales se succèdent elles aussi à un rythme de plus en plus vertigineux, et l’IA dispose de toujours plus d’interfaces avec le monde réel. Peut-être même que les sciences expérimentales ne constitueront plus à l’avenir un rempart solide.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:5f630e2bc2cf6e90d1be": {
+      "source": "Some people think researching AI itself might offer more security. But today's top models have already begun to iterate on themselves. If, in the future, model training, model releases, and so on no longer need humans to carry them out, will we really need this many people working in AI?",
+      "text": "Certains pensent que faire de la recherche en IA pourrait être plus sûr. Mais les meilleurs modèles actuels ont déjà commencé à s’améliorer eux-mêmes. Si, à l’avenir, l’entraînement des modèles, leur mise à disposition et ainsi de suite ne nécessitent plus d’intervention humaine, aurons-nous vraiment besoin d’autant de personnes travaillant en IA ?",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:fed2857d882459060f61": {
+      "source": "Embodied intelligence is also beginning to produce results, and AI's ability to act in the real world is growing. Physical labor, hands-on experiments, real-world feedback—all of these will fall too. The threat AI poses to people's ability to survive in most fields is no longer something imagined in science fiction.",
+      "text": "Le développement de l’intelligence incarnée commence lui aussi à porter ses fruits, et la capacité de l’IA à agir dans le monde réel progresse. Travail physique, manipulations expérimentales, retours du monde réel : ces domaines céderont eux aussi. La menace que l’IA fait peser sur les moyens de subsistance des humains dans la plupart des domaines ne relève plus de l’imagination des auteurs de science-fiction.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:a15904cd8de1c5bee4b2": {
+      "source": "Since OpenAI published its series of mathematics papers, I've seen a great many posts in the past few days attacking mathematical researchers. Tao has borne the brunt of the criticism, turned into fodder for public opinion.",
+      "text": "Depuis qu’OpenAI a publié sa série d’articles de mathématiques, j’ai vu ces derniers jours énormément de messages s’en prendre aux chercheurs en mathématiques. Tao a été le premier à subir les critiques, livré en pâture à l’opinion publique.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:cf01481bec88eef31425": {
+      "source": "We should stand together.",
+      "text": "Nous devrions nous serrer les coudes.",
+      "locked": true
+    },
+    "essays/we-should-stand-together.qmd::body:91ff6f69d2ee58fb8a41": {
+      "source": "[Back to Reflections & Essays →]⟦P0000⟧⟦P0001⟧",
+      "text": "[Retour aux réflexions et essais →]⟦P0000⟧⟦P0001⟧",
+      "locked": true
+    }
+  }
+}

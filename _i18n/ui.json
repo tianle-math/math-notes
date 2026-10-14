@@ -213,5 +213,77 @@
       "original": "英語の原文",
       "translation": "この記事は英語からの翻訳です。"
     }
+  },
+  "fr": {
+    "website": {
+      "title": "Tian · Mathématiques et essais",
+      "description": "Le carnet ouvert de Tian : analyse harmonique, théorie des martingales, algèbres d’opérateurs, analyse fonctionnelle, réflexions et essais.",
+      "navbar": {
+        "title": "Tian · Mathématiques et essais",
+        "left": [
+          {
+            "href": "index.qmd",
+            "text": "Accueil"
+          },
+          {
+            "text": "Notes de mathématiques",
+            "menu": [
+              {
+                "href": "harmonic-analysis.qmd",
+                "text": "Analyse harmonique"
+              },
+              {
+                "href": "martingales.qmd",
+                "text": "Théorie des martingales"
+              },
+              {
+                "href": "operator-algebras.qmd",
+                "text": "Algèbres d’opérateurs"
+              },
+              {
+                "href": "functional-analysis.qmd",
+                "text": "Analyse fonctionnelle"
+              }
+            ]
+          },
+          {
+            "href": "personal.qmd",
+            "text": "Réflexions et essais"
+          }
+        ]
+      },
+      "page-footer": {
+        "center": "<div class=\"copyright-notice\">\n<p class=\"copyright-line\">© 2026 <strong>Tian</strong>. Tous droits réservés.</p>\n<p>Sauf indication contraire, les articles et illustrations protégés par le droit d’auteur ne peuvent être reproduits ni redistribués sans autorisation préalable, sauf dans les cas prévus par la loi applicable. Pour toute citation, veuillez mentionner Tian et inclure un lien vers la page d’origine.</p>\n</div>\n"
+      }
+    },
+    "format": {
+      "html": {
+        "lang": "fr",
+        "toc-title": "Sur cette page",
+        "date-format": "D MMMM YYYY"
+      }
+    },
+    "raw-replacements": {
+      "AN OPEN NOTEBOOK BY": "LE CARNET OUVERT DE",
+      "Tian on X, @tianmathmath (opens in a new tab)": "Tian sur X, @tianmathmath (s’ouvre dans un nouvel onglet)"
+    },
+    "category_names": {
+      "Mathematics": "Mathématiques",
+      "Harmonic Analysis": "Analyse harmonique",
+      "Martingale Theory": "Théorie des martingales",
+      "Operator Algebras": "Algèbres d’opérateurs",
+      "Functional Analysis": "Analyse fonctionnelle",
+      "Reflections & Essays": "Réflexions et essais"
+    },
+    "ui": {
+      "switch": "Langue de lecture",
+      "comments": "Discussion",
+      "intro": "Questions, corrections et réflexions sont les bienvenues. Toutes les versions linguistiques partagent cette discussion.",
+      "privacy": "Les commentaires ne se chargent que lorsque vous choisissez de les ouvrir. Cela établit une connexion avec Giscus et GitHub. Un compte GitHub est nécessaire pour publier un commentaire.",
+      "load": "Charger les commentaires",
+      "github": "Ouvrir les discussions sur GitHub",
+      "original": "Texte original en anglais",
+      "translation": "Traduit de l’anglais."
+    }
   }
 }
