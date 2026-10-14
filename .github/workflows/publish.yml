@@ -44,7 +44,7 @@ jobs:
           restore-keys: translations-v1-
       - name: Check translation safeguards
         run: python3 -m unittest discover -s scripts -p 'test_i18n.py'
-      - name: Render all three languages
+      - name: Render all language editions
         env:
           TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
           TRANSLATION_MODEL: ${{ vars.TRANSLATION_MODEL }}
