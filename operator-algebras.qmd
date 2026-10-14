@@ -1,6 +1,5 @@
 ---
 title: "Operator Algebras"
-subtitle: "OPERATOR ALGEBRAS"
 description: "Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces."
 toc: false
 listing:
@@ -21,8 +20,6 @@ listing:
 ::: {.page-breadcrumb}
 [Home](index.qmd) / Mathematical Notes / Operator Algebras
 :::
-
-Exploring the language and examples of C* algebras and von Neumann algebras, starting with operators on Hilbert spaces.
 
 <div class="category-artwork">
 <img src="assets/operator-algebras.webp" alt="Spectral projections and the spectral decomposition of an operator." width="1448" height="1086" loading="eager" decoding="async">

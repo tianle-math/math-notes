@@ -1,6 +1,5 @@
 ---
 title: "Reflections & Essays"
-subtitle: "REFLECTIONS & ESSAYS"
 description: "A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics."
 toc: false
 listing:
@@ -21,8 +20,6 @@ listing:
 ::: {.page-breadcrumb}
 [Home](index.qmd) / Reflections & Essays
 :::
-
-A place for thoughts that need not become theorems. Here I collect reflections on reading, everyday observations, and essays beyond mathematics.
 
 <div class="category-artwork">
 <img src="assets/reflections.webp" alt="An open notebook with mathematical ideas and a path from questions to understanding." width="1448" height="1086" loading="eager" decoding="async">

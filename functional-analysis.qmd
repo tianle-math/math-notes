@@ -1,6 +1,5 @@
 ---
 title: "Functional Analysis"
-subtitle: "FUNCTIONAL ANALYSIS"
 description: "Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures."
 toc: false
 listing:
@@ -21,8 +20,6 @@ listing:
 ::: {.page-breadcrumb}
 [Home](index.qmd) / Mathematical Notes / Functional Analysis
 :::
-
-Notes on normed spaces, linear operators, and duality, with an emphasis on concrete understanding behind abstract structures.
 
 <div class="category-artwork">
 <img src="assets/functional-analysis.webp" alt="A normed space and its dual, with unit balls and supporting functionals." width="1448" height="1086" loading="eager" decoding="async">

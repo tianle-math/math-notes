@@ -1,6 +1,5 @@
 ---
 title: "Martingale Theory"
-subtitle: "MARTINGALE THEORY"
 description: "Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes."
 toc: false
 listing:
@@ -21,8 +20,6 @@ listing:
 ::: {.page-breadcrumb}
 [Home](index.qmd) / Mathematical Notes / Martingale Theory
 :::
-
-Notes on conditional expectation, martingales, and stopping times, covering basic concepts, convergence, and inequalities in stochastic processes.
 
 <div class="category-artwork">
 <img src="assets/martingales.webp" alt="Conditional expectation along a martingale path through an increasing filtration." width="1448" height="1086" loading="eager" decoding="async">
