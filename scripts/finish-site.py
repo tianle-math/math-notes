@@ -7,11 +7,10 @@ import posixpath
 import re
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
+from i18n import LANGUAGES, LANGUAGE_NAMES, LOCALES
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
-LANGUAGES = {"en": "en", "zh": "zh-CN", "ja": "ja"}
-NAMES = {"en": "English", "zh": "中文", "ja": "日本語"}
 UI = json.loads((ROOT / "_i18n/ui.json").read_text())
 CONFIG = json.loads((ROOT / "_i18n/giscus.json").read_text())
 PROFILE = ROOT / "_quarto-publish.yml"
@@ -46,6 +45,7 @@ def comments(locale, relative):
         "en": "Embedded comments are being set up. You can visit the discussions on GitHub.",
         "zh": "网页内评论正在设置中，你可以先前往 GitHub 讨论区。",
         "ja": "埋め込みコメントは準備中です。GitHub のディスカッションをご利用いただけます。",
+        "fr": "Les commentaires intégrés sont en cours de configuration. Vous pouvez consulter les discussions sur GitHub.",
     }
     status = "" if enabled else escape(pending[locale])
     return f'''<section id="article-discussion" class="article-comments" {data} aria-labelledby="discussion-heading">
@@ -65,7 +65,7 @@ for path in sorted(OUT.rglob("*.html")):
         continue
     current = path.relative_to(OUT).as_posix()
     first = current.split("/", 1)[0]
-    locale = first if first in ("zh", "ja") else "en"
+    locale = first if first in LOCALES else "en"
     relative = current[len(locale) + 1:] if locale != "en" else current
     labels = UI[locale]["ui"]
     links = []
@@ -75,7 +75,7 @@ for path in sorted(OUT.rglob("*.html")):
         if not (OUT / target).exists():
             raise SystemExit(f"Missing language edition: {target}")
         active = ' aria-current="page"' if other == locale else ""
-        links.append(f'<a href="{escape(relative_href(current, target))}" hreflang="{lang}" lang="{lang}"{active}>{NAMES[other]}</a>')
+        links.append(f'<a href="{escape(relative_href(current, target))}" hreflang="{lang}" lang="{lang}"{active}>{LANGUAGE_NAMES[other]}</a>')
         alternatives.append(f'<link rel="alternate" hreflang="{lang}" href="{escape(url_for(other, relative))}">')
     alternatives.append(f'<link rel="alternate" hreflang="x-default" href="{escape(url_for("en", relative))}">')
     bar = f'<!-- multilingual-controls -->\n<nav class="language-switch" aria-label="{escape(labels["switch"])}">' + "".join(links) + "</nav>"
@@ -88,8 +88,8 @@ for path in sorted(OUT.rglob("*.html")):
             original = relative_href(current, output_path(original_locale, relative))
             original_label, translation_label = labels["original"], labels["translation"]
             if original_locale == "zh":
-                original_label = {"en": "Chinese original", "ja": "中国語の原文"}[locale]
-                translation_label = {"en": "Translated from Chinese.", "ja": "この記事は中国語からの翻訳です。"}[locale]
+                original_label = {"en": "Chinese original", "ja": "中国語の原文", "fr": "Texte original en chinois"}[locale]
+                translation_label = {"en": "Translated from Chinese.", "ja": "この記事は中国語からの翻訳です。", "fr": "Traduit du chinois."}[locale]
             note = f'<aside class="translation-note"><p>{escape(translation_label)} <a data-language-link hreflang="{LANGUAGES[original_locale]}" href="{escape(original)}">{escape(original_label)} ↗</a></p></aside>' 
             source = source.replace(bar, bar + note, 1)
         source = source.replace("</main>", comments(locale, relative) + "\n</main>", 1)
@@ -110,7 +110,7 @@ if main_map.exists():
     tree = ET.parse(main_map)
     root = tree.getroot()
     existing = {entry.findtext(f"{{{ns}}}loc") for entry in root}
-    for locale in ("zh", "ja"):
+    for locale in LOCALES:
         localized = OUT / locale / "sitemap.xml"
         if not localized.exists():
             continue

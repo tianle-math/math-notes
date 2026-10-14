@@ -202,9 +202,9 @@ class BuildTests(unittest.TestCase):
             for locale in i18n.LOCALES:
                 i18n.write_json(root / "_i18n" / f"{locale}.json", cache_for(doc, lambda x: x.replace("A paragraph.", "段落。")))
             navigation = {"left": [{"text": "Home"}, {"text": "Notes"}, {"text": "Essays"}], "right": []}
-            i18n.write_json(root / "_i18n" / "ui.json", {k: {"website": {"navbar": navigation}} for k in ("en", "zh", "ja")})
+            i18n.write_json(root / "_i18n" / "ui.json", {k: {"website": {"navbar": navigation}} for k in i18n.LANGUAGES})
             stages = build.prepare(root, "https://example.test/math-notes/")
-            self.assertEqual(list(stages), ["en", "zh", "ja"])
+            self.assertEqual(list(stages), ["en", "zh", "ja", "fr"])
             self.assertEqual((root / "index.qmd").read_text(), source)
             self.assertEqual((root / "_quarto.yml").read_text(), base_config)
             self.assertEqual((stages["en"] / "index.qmd").read_text(), source)
@@ -216,9 +216,12 @@ class BuildTests(unittest.TestCase):
             self.assertIn("page-footer: Footer", staged_config)
             self.assertFalse((stages["en"] / "assets" / "private.key").exists())
             self.assertTrue((stages["zh"] / "assets" / "main.css").exists())
-            profile = json.loads((stages["ja"] / "_quarto-i18n.yml").read_text())
-            self.assertEqual(profile["website"]["site-url"], "https://example.test/math-notes/ja/")
-            self.assertEqual(Path(profile["project"]["output-dir"]), root / "_site" / "ja")
+            profile = json.loads((stages["fr"] / "_quarto-i18n.yml").read_text())
+            self.assertEqual(profile["website"]["site-url"], "https://example.test/math-notes/fr/")
+            self.assertEqual(Path(profile["project"]["output-dir"]), root / "_site" / "fr")
+            self.assertEqual(profile["format"]["html"]["lang"], "fr")
+            publish_profile = json.loads((stages["fr"] / "_quarto-publish.yml").read_text())
+            self.assertEqual(publish_profile["website"]["site-url"], profile["website"]["site-url"])
             self.assertEqual(len(profile["website"]["navbar"]["left"]), 3)
             rendered = root / "_site" / "ja" / "index.html"
             rendered.parent.mkdir(parents=True)

@@ -20,7 +20,9 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-LOCALES = ("zh", "ja")
+LANGUAGES = {"en": "en", "zh": "zh-CN", "ja": "ja", "fr": "fr"}
+LANGUAGE_NAMES = {"en": "English", "zh": "中文", "ja": "日本語", "fr": "Français"}
+LOCALES = tuple(locale for locale in LANGUAGES if locale != "en")
 TOKEN = re.compile(r"⟦P\d{4}⟧")
 METADATA_KEYS = {"title", "pagetitle", "subtitle", "description", "toc-title"}
 HTML_TAG = re.compile(r"<!--.*?-->|</?[A-Za-z][^<>]*?(?:\"[^\"]*\"|'[^']*'|[^'\"<>])*?>", re.S)
@@ -388,7 +390,7 @@ def translate_batch(segments: list[Segment], locale: str, key: str, model: str,
     https://developers.openai.com/api/reference/resources/responses/methods/create
     No content or credentials from error responses is printed to CI logs.
     """
-    language = {"zh": "Simplified Chinese", "ja": "Japanese"}[locale]
+    language = {"zh": "Simplified Chinese", "ja": "Japanese", "fr": "French"}[locale]
     instructions = (
         f"You are a professional mathematics translator. Translate the supplied English segments into {language}. "
         "Retain Tian's first-person voice, emotional nuance, degree of certainty, and restrained, warm tone. "
@@ -505,7 +507,7 @@ def main() -> None:
             missing = missing_segments(docs, merged_cache(args.root, locale))
             if missing:
                 raise TranslationError(f"_i18n/{locale}.json: {len(missing)} missing translations; run scripts/i18n.py extract")
-        print("Both translation caches match the English sources and preserve protected markup.")
+        print("All translation caches match the English sources and preserve protected markup.")
 
 
 if __name__ == "__main__":

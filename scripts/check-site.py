@@ -10,12 +10,13 @@ import json
 import os
 import re
 import sys
+import xml.etree.ElementTree as ET
+from i18n import LANGUAGES
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "_site"
 MODE = sys.argv[1] if len(sys.argv) > 1 else "output"
 FAILURES = []
-LANGUAGES = {"en": "en", "zh": "zh-CN", "ja": "ja"}
 SNAPSHOT = ROOT / ".translation-work" / "source-checksums.json"
 PATTERNS = {
     "email address": re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"),
@@ -214,8 +215,8 @@ def check_multilingual(pages, public_url):
             if page.navbar_items != len(expected_navbar):
                 fail(path, "navigation entries were duplicated or omitted during profile merge")
             links = {a.get("hreflang"): a for a in page.language_links}
-            if page.language_navs != 1 or len(page.language_links) != 3 or set(links) != set(LANGUAGES.values()):
-                fail(path, "expected one complete three-language switch")
+            if page.language_navs != 1 or len(page.language_links) != len(LANGUAGES) or set(links) != set(LANGUAGES.values()):
+                fail(path, "expected one complete language switch")
             else:
                 for target_locale, target_lang in LANGUAGES.items():
                     target_prefix = Path() if target_locale == "en" else Path(target_locale)
@@ -262,6 +263,19 @@ def check_multilingual(pages, public_url):
                 fail(path, "discussion backlink must identify the English article")
     for path in pages.keys() - expected_paths:
         fail(path, "unexpected page outside the authored language versions")
+    sitemap = OUT / "sitemap.xml"
+    expected_urls = {
+        public_url.rstrip("/") + "/" + ("" if locale == "en" else locale + "/")
+        + source.relative_to(ROOT).with_suffix(".html").as_posix()
+        for locale in LANGUAGES for source in sources
+        if source.name != "404.qmd" and not draft(source)
+    }
+    try:
+        locations = [node.text for node in ET.parse(sitemap).iter("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
+        if not expected_urls.issubset(locations) or len(locations) != len(set(locations)):
+            fail(sitemap, "sitemap must include unique URLs for every published language edition")
+    except (OSError, ET.ParseError):
+        fail(sitemap, "missing or invalid multilingual sitemap")
     if any(len(paths) != 1 for paths in shared_terms.values()):
         fail(OUT, "different articles share a discussion key")
     for locale in LANGUAGES:

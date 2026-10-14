@@ -1,4 +1,4 @@
-"""Build English, Simplified Chinese and Japanese sites from one English source.
+"""Build English, Simplified Chinese, Japanese and French sites from one English source.
 
 All edits happen in disposable staging directories. The English QMD files and
 reviewed translation caches are never rewritten by this build.
@@ -16,7 +16,7 @@ import subprocess
 import sys
 from urllib.parse import urlsplit
 
-from i18n import ROOT, TranslationError, documents, ensure_caches, write_json
+from i18n import LANGUAGES, ROOT, TranslationError, documents, ensure_caches, write_json
 
 ASSET_SUFFIXES = {".svg", ".webp", ".png", ".jpg", ".jpeg", ".gif", ".avif", ".ico",
                   ".css", ".scss", ".js", ".html", ".woff", ".woff2", ".ttf", ".otf", ".pdf"}
@@ -126,13 +126,13 @@ def prepare(root: Path, base_url: str) -> dict[str, Path]:
     caches = ensure_caches(docs, root)
     ui_path = root / "_i18n" / "ui.json"
     if not ui_path.exists():
-        raise TranslationError("Missing _i18n/ui.json with en, zh and ja website interface strings")
+        raise TranslationError("Missing _i18n/ui.json with website interface strings for every language")
     ui = json.loads(ui_path.read_text(encoding="utf-8"))
-    for locale in ("en", "zh", "ja"):
+    for locale in LANGUAGES:
         if locale not in ui:
             raise TranslationError(f"_i18n/ui.json is missing {locale}")
     stages = {}
-    for locale in ("en", "zh", "ja"):
+    for locale in LANGUAGES:
         stage = root / ".i18n-build" / locale
         if stage.exists():
             shutil.rmtree(stage)
@@ -143,25 +143,26 @@ def prepare(root: Path, base_url: str) -> dict[str, Path]:
             if side in locale_navbar:
                 base_config = remove_yaml_block(base_config, ("website", "navbar", side))
         (stage / "_quarto.yml").write_text(base_config, encoding="utf-8")
+        language_url = base_url if locale == "en" else base_url + locale + "/"
         publish = root / "_quarto-publish.yml"
-        if publish.exists():
-            shutil.copy2(publish, stage / publish.name)
-        else:
-            write_json(stage / "_quarto-publish.yml", {"website": {"site-url": base_url}})
+        publish_settings = json.loads(publish.read_text(encoding="utf-8")) if publish.exists() else {}
+        # Both profiles must agree: the publishing profile can take precedence
+        # for generated absolute URLs, including the locale's sitemap.
+        publish_settings.setdefault("website", {})["site-url"] = language_url
+        write_json(stage / "_quarto-publish.yml", publish_settings)
         copy_assets(root, stage)
         for doc in docs:
             destination = stage / doc.page
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(doc.render(caches.get(locale, {}), locale, ui[locale]), encoding="utf-8")
         output = root / "_site" if locale == "en" else root / "_site" / locale
-        language_url = base_url if locale == "en" else base_url + locale + "/"
         website = {**ui[locale].get("website", {}), "site-url": language_url}
         html_format = {"lang": locale, **ui[locale].get("format", {}).get("html", {})}
         override = {"project": {"output-dir": str(output)}, "website": website,
                     "format": {"html": html_format}}
         write_json(stage / "_quarto-i18n.yml", override)
         stages[locale] = stage
-    print(f"Prepared {len(docs)} source pages in English, Chinese and Japanese; English sources unchanged.")
+    print(f"Prepared {len(docs)} source pages in {len(stages)} languages; English sources unchanged.")
     return stages
 
 
