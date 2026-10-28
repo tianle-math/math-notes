@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import posixpath
 import re
+import shutil
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 from i18n import LANGUAGES, LANGUAGE_NAMES, LOCALES
@@ -40,6 +41,36 @@ def url_for(locale, relative):
     return f"{BASE}/{output_path(locale, relative)}"
 
 
+def preserve_previous_theme_urls():
+    """Keep cached HTML styled across the custom-domain migration.
+
+    Quarto changed the generated Bootstrap filename on redeployment. Browsers
+    can retain the previous HTML after its stylesheet has been removed, so
+    retain both published filenames using the original, unchanged theme.
+    Read each locale's HTML instead of guessing which compiled file to copy.
+    """
+    previous_themes = (
+        "bootstrap-b6e1525419f34f0381d01f6556f729e3.min.css",
+        "bootstrap-483cba9c5331f905ee21bb39fed2aef4.min.css",
+    )
+    for locale in LANGUAGES:
+        edition = OUT if locale == "en" else OUT / locale
+        homepage = (edition / "index.html").read_text(encoding="utf-8")
+        match = re.search(
+            r'href="(site_libs/bootstrap/bootstrap-[0-9a-f]+\.min\.css)"',
+            homepage,
+        )
+        if not match:
+            raise SystemExit(f"Missing compiled theme reference for {locale}")
+        theme = edition / match[1]
+        if not theme.is_file():
+            raise SystemExit(f"Missing compiled theme for {locale}")
+        for name in previous_themes:
+            alias = theme.with_name(name)
+            if alias != theme:
+                shutil.copyfile(theme, alias)
+
+
 def comments(locale, relative):
     labels = UI[locale]["ui"]
     enabled = all(CONFIG.get(key) for key in ("repo", "repo-id", "category", "category-id"))
@@ -62,6 +93,8 @@ def comments(locale, relative):
 <a data-discussion-link href="https://github.com/{escape(CONFIG['repo'])}/discussions" target="_blank" rel="noopener noreferrer">{escape(labels['github'])} ↗</a>
 </section>'''
 
+
+preserve_previous_theme_urls()
 
 count = 0
 for path in sorted(OUT.rglob("*.html")):
