@@ -72,6 +72,7 @@ class Page(HTMLParser):
         self.math_blocks = []
         self.math_capture = None
         self.active_external = []
+        self.unsafe_url_attributes = []
         self.elements = []
         self.has_content = False
         self.lang = ""
@@ -116,6 +117,15 @@ class Page(HTMLParser):
             self.comment_buttons += 1
         if tag == "meta" and attrs.get("name") == "giscus:backlink":
             self.backlinks.append(attrs.get("content", ""))
+        # HTMLParser has already decoded character references in attributes.
+        # Match browser URL parsing: discard tabs/line breaks, then leading C0
+        # controls/spaces before checking the scheme. Never echo a URL value.
+        for attr in ("href", "src", "poster", "action", "formaction", "xlink:href"):
+            raw = attrs.get(attr, "")
+            normalized = re.sub(r"[\t\r\n]", "", raw).lstrip("".join(chr(n) for n in range(33)))
+            scheme = re.match(r"([A-Za-z][A-Za-z0-9+.-]*):", normalized)
+            if scheme and scheme[1].lower() in {"javascript", "vbscript", "data"}:
+                self.unsafe_url_attributes.append((tag, attr))
         for attr in ("href", "src", "poster"):
             if attrs.get(attr):
                 self.links.append((tag, attr, attrs[attr]))
@@ -319,6 +329,8 @@ elif MODE == "output":
             fail(path, f"expected one main heading, found {page.h1}")
         if page.active_external:
             fail(path, "external active resource before reader consent")
+        if page.unsafe_url_attributes:
+            fail(path, "executable URL scheme in page attribute")
     public_url = site_url()
     for path, page in pages.items():
         for tag, attr, raw in page.links:

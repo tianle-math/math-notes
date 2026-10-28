@@ -3,6 +3,9 @@ import importlib.util
 import json
 from pathlib import Path
 import re
+import shutil
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -58,6 +61,60 @@ class ProtectionTests(unittest.TestCase):
         i18n.validate_translation(masked, masked.replace("thought", "想法"))
         self.assertEqual(i18n.restore(masked, tokens), source)
         self.assertEqual(list(tokens.values()), ["> ", "> "])
+
+    def test_translation_cannot_insert_destination_before_protected_url(self):
+        masked, _ = i18n.mask("Read [reference](https://example.test/reference).")
+        for destination in ("javascript:alert(1)", "data:text/html,example", "https://other.test/"):
+            translated = masked.replace("reference]", f"reference]({destination})")
+            with self.subTest(destination=destination), self.assertRaisesRegex(i18n.TranslationError, "link destination"):
+                i18n.validate_translation(masked, translated)
+        image = masked.replace("[reference]", "![reference](https://other.test/pixel.png)")
+        with self.assertRaisesRegex(i18n.TranslationError, "link destination"):
+            i18n.validate_translation(masked, image)
+
+    def test_reference_destinations_are_protected_and_cannot_be_invented(self):
+        source = '[reference]: https://example.test/\n  "Original title"'
+        masked, tokens = i18n.mask(source)
+        self.assertNotIn("https://", masked)
+        self.assertEqual(i18n.restore(masked, tokens), source)
+        i18n.validate_translation(masked, masked)
+        with self.assertRaisesRegex(i18n.TranslationError, "link destination"):
+            i18n.validate_translation("Read [reference].", "[reference]: javascript:alert(1)")
+
+
+class PublicationURLTests(unittest.TestCase):
+    """Exercise the real publication gate, without rendering or network calls."""
+
+    def check_page(self, fragment):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "scripts").mkdir()
+            for name in ("check-site.py", "i18n.py"):
+                shutil.copyfile(Path(__file__).with_name(name), root / "scripts" / name)
+            output = root / "_site" / "essays"
+            output.mkdir(parents=True)
+            page = '<html><body><h1 id="heading">Title</h1>' + fragment + '<math></math>' * 47 + '</body></html>'
+            (output / "fourier-frequency-geometry-1.html").write_text(page, encoding="utf-8")
+            return subprocess.run([sys.executable, str(root / "scripts/check-site.py"), "output"],
+                                  capture_output=True, text=True)
+
+    def test_publication_rejects_executable_url_schemes(self):
+        urls = ("javascript:alert(1)", "JaVaScRiPt:alert(1)", "java&#x73;cript:alert(1)",
+                "java&#9;script:alert(1)", "java&#10;script:alert(1)", "java&#13;script:alert(1)",
+                " &#1;javascript:alert(1)", "vbscript:msgbox(1)", "data:text/html,example")
+        for url in urls:
+            with self.subTest(url=url):
+                result = self.check_page(f'<a href="{url}">link</a>')
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("executable URL scheme", result.stdout)
+                self.assertNotIn(url, result.stdout)
+
+    def test_publication_keeps_ordinary_link_schemes_and_anchors(self):
+        links = '<a href="https://example.test/">https</a><a href="http://example.test/">http</a>'
+        links += '<a href="mailto:contact">mail</a><a href="tel:+1234567">phone</a>'
+        links += '<a href="#heading">anchor</a><a href="fourier-frequency-geometry-1.html">relative</a>'
+        result = self.check_page(links)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
 
 class DocumentTests(unittest.TestCase):

@@ -33,6 +33,7 @@ ATTR_BLOCK = re.compile(r"\{(?:[#.][^{}\n]*|(?:[A-Za-z][\w-]*=)[^{}\n]*)\}")
 CITATION = re.compile(r"\[[^\]\n]*@[A-Za-z][^\]\n]*\]|(?<![\w/])@[A-Za-z][\w:./-]*|\\(?:cite[a-z]*|eqref|ref|label)\{[^}]*\}")
 ESCAPED_MARKUP = re.compile(r"\\[$`<>]")
 QUOTE_PREFIX = re.compile(r"(?m)^[ \t]*(?:> ?)+")
+REFERENCE_LINK = re.compile(r"(?m)^ {0,3}\[(?!\^)(?:\\.|[^\]\\\n])+\]:[^\n]*(?:\n[ \t]+[^\n]+)*")
 
 
 class TranslationError(ValueError):
@@ -65,7 +66,7 @@ def link_destinations(text: str) -> list[tuple[int, int, str]]:
 
 def protected_spans(text: str) -> list[tuple[int, int, str]]:
     candidates = []
-    for pattern in (INLINE_CODE, MATH, HTML_TAG, ATTR_BLOCK, CITATION, ESCAPED_MARKUP, QUOTE_PREFIX):
+    for pattern in (INLINE_CODE, MATH, HTML_TAG, ATTR_BLOCK, CITATION, ESCAPED_MARKUP, QUOTE_PREFIX, REFERENCE_LINK):
         candidates.extend((m.start(), m.end(), m.group()) for m in pattern.finditer(text))
     candidates.extend(link_destinations(text))
     # Prefer the enclosing span: e.g. an HTML tag can contain a dollar sign in alt.
@@ -103,6 +104,11 @@ def validate_translation(source: str, translated: str) -> None:
     plain = TOKEN.sub("", translated)
     if re.search(r"[<>`$]|\\[\[(]", plain):
         raise TranslationError("Translation introduced unprotected code, HTML, or math")
+    # Original inline destinations and reference definitions are placeholders.
+    # Merely counting brackets is insufficient: an inserted ](javascript:...)
+    # can steal the existing label while leaving every placeholder untouched.
+    if link_destinations(plain) or REFERENCE_LINK.search(plain):
+        raise TranslationError("Translation introduced an unprotected link destination")
     for punctuation in ("[", "]", "**", "_"):
         if source.count(punctuation) != translated.count(punctuation):
             raise TranslationError("Translation changed Markdown link or emphasis structure")
